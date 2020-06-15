@@ -1,0 +1,4 @@
+---
+# file: roles/kubernetes/vars/main.yml
+user: ubuntu
+master: k8smaster

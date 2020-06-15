@@ -1,0 +1,7 @@
+---
+# file: roles/common/tasks/main.yml
+- name: Update cache and upgrade packages
+  apt:
+    upgrade: dist
+    update_cache: yes
+  become: yes

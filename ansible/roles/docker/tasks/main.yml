@@ -1,0 +1,13 @@
+---
+# file: roles/docker/tasks/main.yml
+- name: Install docker
+  apt:
+    name: docker.io
+    state: present
+
+- name: Adding existing user '{{ user }}' to group sudo
+  user:
+    name: "{{ user }}"
+    groups:
+      - docker
+    append: yes

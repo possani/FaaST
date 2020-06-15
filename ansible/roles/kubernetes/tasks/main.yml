@@ -1,0 +1,71 @@
+---
+# file: roles/kubernetes/tasks/main.yml
+- name: Add a GPG key for the packages
+  apt_key:
+    url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+    state: present
+
+- name: Add repository for kubernetes
+  apt_repository:
+    repo: deb  http://apt.kubernetes.io/  kubernetes-xenial  main
+    state: present
+
+- name: Install a list of packages
+  apt:
+    pkg:
+      - kubeadm=1.18.1-00
+      - kubelet=1.18.1-00
+      - kubectl=1.18.1-00
+
+- name: Prevent kubeadm from being upgraded.
+  dpkg_selections:
+    name: kubeadm
+    selection: hold
+
+- name: Prevent kubelet from being upgraded.
+  dpkg_selections:
+    name: kubelet
+    selection: hold
+
+- name: Prevent kubectl from being upgraded.
+  dpkg_selections:
+    name: kubectl
+    selection: hold
+
+- name: Add IP address of all hosts to all hosts
+  lineinfile:
+    dest: /etc/hosts
+    regexp: ".*{{ item }}$"
+    line: "{{ hostvars[item].ansible_ssh_host }} {{item}}"
+    state: present
+  when: hostvars[item].ansible_ssh_host is defined
+  with_items: "{{ groups.cloud }}"
+
+- name: Copy config to host
+  template:
+    src: "{{ role_path }}/templates/kubeadm-config.yml.j2"
+    dest: $PWD/kubeadm-config.yml
+    mode: "0644"
+
+- name: Run kubeadmin init
+  shell: kubeadm init --config=kubeadm-config.yml --upload-certs | tee kubeadm-init.out
+
+- name: Create config directory for non-root user
+  file:
+    path: /home/{{ user }}/.kube
+    state: directory
+    owner: "{{ user }}"
+    group: "{{ user }}"
+    mode: "0755"
+
+- name: Copy config file to non-root user directory
+  copy:
+    remote_src: yes
+    src: /etc/kubernetes/admin.conf
+    dest: /home/{{ user }}/.kube/config
+    owner: "{{ user }}"
+    group: "{{ user }}"
+    mode: "0644"
+
+- name: Run kubeadmin init
+  shell: KUBECONFIG=/etc/kubernetes/admin.conf kubectl taint node {{ master }} node.kubernetes.io/not-ready:NoExecute-
