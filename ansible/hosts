@@ -1,2 +1,0 @@
-[cloud]
-k8smaster ansible_ssh_host=138.246.233.29

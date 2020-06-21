@@ -167,6 +167,6 @@
     insertafter: "^spec:"
 
 - name: Install Cinder
-  command: /snap/bin/helm install --namespace kube-system cinder-csi cinder/charts/cinder-csi-plugin
+  command: /snap/bin/helm install --namespace kube-system cinder-csi cinder/charts/cinder-csi-plugin --set storageClass.delete.isDefault=true
   become: True
   become_user: "{{ user }}"

@@ -5,3 +5,4 @@
     - { role: common, become: yes }
     - { role: docker, become: yes }
     - { role: kubernetes, become: yes }
+    - { role: openwhisk }

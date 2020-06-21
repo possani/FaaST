@@ -1,0 +1,40 @@
+---
+# file: roles/openwhisk/tasks/main.yml
+- name: Use Local Storage
+  command: kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/master/deploy/local-path-storage.yaml
+
+- name: Make local-path the default storage class
+  command: 'kubectl patch storageclass local-path -p ''{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'''
+
+- name: Label node for running openwhisk
+  command: kubectl label node {{ ansible_hostname }} openwhisk-role=core
+  ignore_errors: True
+
+- name: Copy config to host
+  template:
+    src: "{{ role_path }}/templates/mycluster.yaml.j2"
+    dest: $PWD/mycluster.yaml
+    mode: "0644"
+
+- name: Clone Openwhisk's git repository
+  git:
+    repo: https://github.com/apache/openwhisk-deploy-kube.git
+    dest: $PWD/openwhisk
+    force: yes
+
+- name: Install Openwhisk
+  command: /snap/bin/helm install owdev openwhisk/helm/openwhisk -n openwhisk --create-namespace -f mycluster.yaml
+  ignore_errors: True
+
+- name: Label node for running openwhisk
+  command: kubectl label node {{ ansible_hostname }} openwhisk-role=invoker --overwrite
+
+- name: Install Openwhisk command line
+  unarchive:
+    src: https://github.com/apache/openwhisk-cli/releases/download/latest/OpenWhisk_CLI-latest-linux-amd64.tgz
+    dest: /usr/bin
+    remote_src: yes
+  become: True
+
+- name: Set CLI properties
+  command: "wsk property set --apihost {{ ansible_default_ipv4.address }}:{{ node_port }} --auth {{ auth_key }}"

@@ -1,0 +1,20 @@
+whisk:
+  ingress:
+    type: NodePort
+    apiHostName: {{ hostvars['k8smaster'].ansible_ssh_host }}
+    apiHostPort: {{ node_port }}
+
+k8s:
+  persistence:
+    enabled: false
+
+nginx:
+  httpsNodePort: {{ node_port }}
+
+invoker:
+  containerFactory:
+    impl: "kubernetes"
+    
+metrics:
+  prometheusEnabled: true
+  userMetricsEnabled: true
