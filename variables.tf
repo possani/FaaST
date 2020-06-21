@@ -58,7 +58,7 @@ variable "instance_block_device_delete_on_termination" {
 
 variable "instance_network" {
   type    = string
-  default = "internet"
+  default = "cloud"
 }
 
 ## Security Group Variables

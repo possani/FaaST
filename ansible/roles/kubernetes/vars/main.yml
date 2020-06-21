@@ -2,3 +2,13 @@
 # file: roles/kubernetes/vars/main.yml
 user: ubuntu
 master: k8smaster
+
+# [Global]
+auth_url: http://kolla-int.cloud.lrz.de:5000
+
+# [Networking]
+subnet_id: 2da51738-f4f2-42df-9a6a-62367930cb17
+floating_network_id: cca21b1f-03cd-410b-a80f-5cfce18afeec
+
+# [BlockStorage]
+bs_version: v2

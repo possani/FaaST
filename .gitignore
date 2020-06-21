@@ -36,11 +36,4 @@ override.tf.json
 terraform.rc
 
 ### Openstack Env Vars ###
-di57yic-openrc.sh
-
-### Rancher ###
-cluster.yml
-cluster.rkestate
-kube_config_cluster.yml
-
-cmds
+*-openrc.sh
