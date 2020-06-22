@@ -3,6 +3,33 @@ variable "floatingip_pool" {
   default = "internet_pool"
 }
 
+## Network variables
+
+variable "cloud_network_name" {
+  type    = string
+  default = "cloud_network"
+}
+
+variable "cloud_subnet_name" {
+  type    = string
+  default = "cloud_subnet"
+}
+
+variable "cloud_subnet_cidr" {
+  type    = string
+  default = "10.0.0.0/24"
+}
+
+variable "public_network_name" {
+  type    = string
+  default = "internet_pool"
+}
+
+variable "cloud_router_name" {
+  type    = string
+  default = "cloud_router"
+}
+
 ## Instance Variables
 
 variable "instance_name" {
@@ -56,30 +83,26 @@ variable "instance_block_device_delete_on_termination" {
   default = true
 }
 
-variable "instance_network" {
-  type    = string
-  default = "cloud"
-}
-
 ## Security Group Variables
 
-variable "rke_secgroup_name" {
+variable "k8s_secgroup_name" {
   type    = string
-  default = "rke"
+  default = "k8s"
 }
 
-variable "rke_secgroup_description" {
+variable "k8s_secgroup_description" {
   type    = string
-  default = "rke security group description"
+  default = "k8s security group description"
 }
 
-variable "rke_secgroup_rules" {
+variable "k8s_secgroup_rules" {
   type = list
   default = [
     { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 22 },
     { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 6443 },
     { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 80 },
-    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 443 }
+    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 443 },
+    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 31011 }
   ]
 }
 

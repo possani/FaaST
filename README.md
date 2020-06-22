@@ -45,3 +45,29 @@ Bootstrap the cluster
 terraform apply
 yes
 ```
+
+## Access the Dashboards
+
+### Grafana
+
+Get the port of the service
+
+```bash
+kubectl -n openwhisk get svc owdev-nginx -o jsonpath='{.spec.ports[0].nodePort}'
+```
+
+URL
+
+http://<floating_ip>:<service_port>/monitoring/dashboards
+
+### Kubernetes
+
+Get the port of the service
+
+```bash
+kubectl -n kubernetes-dashboard get svc kubernetes-dashboard -o jsonpath='{.spec.ports[0].nodePort}'
+```
+
+URL
+
+https://<floating_ip>:<service_port>/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy/#!/overview?namespace=default

@@ -37,3 +37,6 @@ terraform.rc
 
 ### Openstack Env Vars ###
 *-openrc.sh
+
+### Other files ###
+ignoreme

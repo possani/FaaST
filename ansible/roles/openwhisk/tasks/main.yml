@@ -38,3 +38,13 @@
 
 - name: Set CLI properties
   command: "wsk property set --apihost {{ ansible_default_ipv4.address }}:{{ node_port }} --auth {{ auth_key }}"
+
+- name: Copy test function
+  copy:
+    src: "{{ role_path }}/files/hello.go"
+    dest: $PWD/hello.go
+# - name: Create an action
+#   command: wsk -i action create hello-go hello.go
+
+# - name: Invoke the action
+#   command: wsk -i action invoke hello-go --result

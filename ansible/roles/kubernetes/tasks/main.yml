@@ -148,6 +148,11 @@
   become: True
   become_user: "{{ user }}"
 
+- name: Export port for the Dashboard
+  command: 'kubectl -n kubernetes-dashboard patch svc kubernetes-dashboard -p ''{"spec":{"type":"NodePort"}}'''
+  become: True
+  become_user: "{{ user }}"
+
 - name: Install helm
   snap:
     name: helm
