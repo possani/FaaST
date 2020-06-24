@@ -1,21 +1,21 @@
+# Network variables
+
 variable "floatingip_pool" {
   type    = string
   default = "internet_pool"
 }
 
-## Network variables
-
-variable "cloud_network_name" {
+variable "private_network_name" {
   type    = string
   default = "cloud_network"
 }
 
-variable "cloud_subnet_name" {
+variable "subnet_name" {
   type    = string
   default = "cloud_subnet"
 }
 
-variable "cloud_subnet_cidr" {
+variable "subnet_cidr" {
   type    = string
   default = "10.0.0.0/24"
 }
@@ -25,12 +25,33 @@ variable "public_network_name" {
   default = "internet_pool"
 }
 
-variable "cloud_router_name" {
+variable "router_name" {
   type    = string
   default = "cloud_router"
 }
 
-## Instance Variables
+variable "secgroup_name" {
+  type    = string
+  default = "k8s"
+}
+
+variable "secgroup_description" {
+  type    = string
+  default = "k8s security group description"
+}
+
+variable "secgroup_rules" {
+  type = list
+  default = [
+    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 22 },
+    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 6443 },
+    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 80 },
+    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 443 },
+    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 31011 }
+  ]
+}
+
+# Compute Variables
 
 variable "instance_name" {
   type    = string
@@ -83,37 +104,12 @@ variable "instance_block_device_delete_on_termination" {
   default = true
 }
 
-## Security Group Variables
-
-variable "k8s_secgroup_name" {
-  type    = string
-  default = "k8s"
-}
-
-variable "k8s_secgroup_description" {
-  type    = string
-  default = "k8s security group description"
-}
-
-variable "k8s_secgroup_rules" {
-  type = list
-  default = [
-    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 22 },
-    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 6443 },
-    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 80 },
-    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 443 },
-    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 31011 }
-  ]
-}
-
-## RKE Cloud Cluster Variables
-
-variable "cloud_cluster_user" {
+variable "instance_user" {
   type    = string
   default = "ubuntu"
 }
 
-variable "cloud_cluster_ssh_key" {
+variable "ssh_key_file" {
   type    = string
   default = "~/.ssh/thesis-lrz"
 }
