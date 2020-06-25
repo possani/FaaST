@@ -52,7 +52,7 @@ resource "null_resource" "ansible" {
 
       # Add entry to the hosts file
       cd ansible;
-      printf "\n[${var.cluster_name}]\nk8smaster ansible_ssh_host=${var.floatingip_address}" > ${var.cluster_name}.ini
+      printf "\n[${var.cluster_name}]\n${var.instance_name} ansible_ssh_host=${var.floatingip_address}" > ${var.cluster_name}.ini
 
       # Run Playbook
       ansible-playbook -i ${var.cluster_name}.ini site.yml

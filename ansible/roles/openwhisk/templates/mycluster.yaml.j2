@@ -1,7 +1,7 @@
 whisk:
   ingress:
     type: NodePort
-    apiHostName: {{ hostvars['k8smaster'].ansible_ssh_host }}
+    apiHostName: {{ hostvars[inventory_hostname].ansible_ssh_host }}
     apiHostPort: {{ node_port }}
 
 k8s:

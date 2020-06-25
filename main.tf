@@ -61,7 +61,6 @@ data "template_file" "group_vars_edge" {
   template = "${file("./group_vars.tpl")}"
   vars = {
     subnet_cidr = "10.0.1.0/24"
-    master_name = "edge_k8smaster"
   }
 }
 

@@ -26,6 +26,11 @@
   command: /snap/bin/helm install owdev openwhisk/helm/openwhisk -n openwhisk --create-namespace -f mycluster.yaml
   ignore_errors: True
 
+- name: Export port for the monitoring dashboard
+  command: 'kubectl -n openwhisk patch svc owdev-grafana -p ''{"spec":{"type":"NodePort"}}'''
+  become: True
+  become_user: "{{ user }}"
+
 - name: Label node for running openwhisk
   command: kubectl label node {{ ansible_hostname }} openwhisk-role=invoker --overwrite
 

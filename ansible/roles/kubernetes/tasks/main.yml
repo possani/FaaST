@@ -1,12 +1,5 @@
 ---
 # file: roles/kubernetes/tasks/main.yml
-- name: Disable ipv6 and swap
-  sysctl:
-    name: "{{ item.name }}"
-    value: "{{ item.value }}"
-    state: present
-  with_items: "{{ sysctl }}"
-
 - name: Add a GPG key for the packages
   apt_key:
     url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
@@ -42,8 +35,8 @@
 - name: Add IP address of all hosts to all hosts
   lineinfile:
     dest: /etc/hosts
-    regexp: ".*{{ ansible_hostname }}$"
-    line: "{{ hostvars['k8smaster'].ansible_ssh_host }} {{ ansible_hostname }}"
+    regexp: ".*{{ inventory_hostname }}$"
+    line: "{{ hostvars[inventory_hostname].ansible_ssh_host }} {{ inventory_hostname }}"
     state: present
 
 - name: Copy config to host
@@ -150,6 +143,33 @@
   command: 'kubectl -n kubernetes-dashboard patch svc kubernetes-dashboard -p ''{"spec":{"type":"NodePort"}}'''
   become: True
   become_user: "{{ user }}"
+
+- name: Copy dashboard-admin-user.yaml to the cluster
+  copy:
+    src: "{{ role_path }}/files/dashboard-admin-user.yaml"
+    dest: $PWD/dashboard-admin-user.yaml
+    owner: "{{ user }}"
+    group: "{{ user }}"
+    mode: "0644"
+
+- name: Create the admin user
+  command: kubectl apply -f dashboard-admin-user.yaml
+  become: True
+  become_user: "{{ user }}"
+
+- name: Save token to file
+  shell: kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep admin-user | awk '{print $1}') | grep "token:" | awk '{print $2}' | tee admin-user-token.out
+  become: True
+  become_user: "{{ user }}"
+
+- name: Fetch token from remote
+  fetch:
+    src: admin-user-token.out
+    dest: from_remote
+  become: True
+  become_user: "{{ user }}"
+  tags:
+    - test
 
 - name: Install helm
   snap:
