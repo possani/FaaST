@@ -42,11 +42,9 @@
 - name: Add IP address of all hosts to all hosts
   lineinfile:
     dest: /etc/hosts
-    regexp: ".*{{ item }}$"
-    line: "{{ hostvars[item].ansible_ssh_host }} {{ item }}"
+    regexp: ".*{{ ansible_hostname }}$"
+    line: "{{ hostvars['k8smaster'].ansible_ssh_host }} {{ ansible_hostname }}"
     state: present
-  when: hostvars[item].ansible_ssh_host is defined
-  with_items: "{{ groups.cloud }}"
 
 - name: Copy config to host
   template:
@@ -81,14 +79,14 @@
     mode: "0644"
 
 - name: Check for taint
-  shell: kubectl describe node {{ master }} | grep "node-role.kubernetes.io/master:NoSchedule"
+  shell: kubectl describe node {{ ansible_hostname }} | grep "node-role.kubernetes.io/master:NoSchedule"
   register: hasTaint
   ignore_errors: True
   become: True
   become_user: "{{ user }}"
 
 - name: Remove the taint from master
-  command: kubectl taint node {{ master }} node-role.kubernetes.io/master:NoSchedule-
+  command: kubectl taint node {{ ansible_hostname }} node-role.kubernetes.io/master:NoSchedule-
   when: hasTaint is succeeded
   become: True
   become_user: "{{ user }}"
@@ -173,5 +171,25 @@
 
 - name: Install Cinder
   command: /snap/bin/helm install --namespace kube-system cinder-csi cinder/charts/cinder-csi-plugin #--set storageClass.delete.isDefault=true
+  become: True
+  become_user: "{{ user }}"
+
+- name: Add stable repository
+  command: /snap/bin/helm repo add stable https://kubernetes-charts.storage.googleapis.com
+  become: True
+  become_user: "{{ user }}"
+
+- name: Update repositories
+  command: /snap/bin/helm repo update
+  become: True
+  become_user: "{{ user }}"
+
+- name: Install Prometheus for monitoring
+  command: /snap/bin/helm install -n prometheus-operator --create-namespace prometheus-operator stable/prometheus-operator
+  become: True
+  become_user: "{{ user }}"
+
+- name: Export port for the monitoring dashboard
+  command: 'kubectl -n prometheus-operator patch svc prometheus-operator-grafana -p ''{"spec":{"type":"NodePort"}}'''
   become: True
   become_user: "{{ user }}"

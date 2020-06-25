@@ -63,3 +63,7 @@ variable "instance_user" {
 variable "ssh_key_file" {
   type = string
 }
+
+variable "cluster_name" {
+  type = string
+}

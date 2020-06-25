@@ -1,18 +1,13 @@
+variable "cluster_name" {
+  type    = string
+  default = "cloud"
+}
+
 # Network variables
 
 variable "floatingip_pool" {
   type    = string
   default = "internet_pool"
-}
-
-variable "private_network_name" {
-  type    = string
-  default = "cloud_network"
-}
-
-variable "subnet_name" {
-  type    = string
-  default = "cloud_subnet"
 }
 
 variable "subnet_cidr" {
@@ -23,11 +18,6 @@ variable "subnet_cidr" {
 variable "public_network_name" {
   type    = string
   default = "internet_pool"
-}
-
-variable "router_name" {
-  type    = string
-  default = "cloud_router"
 }
 
 variable "secgroup_name" {
@@ -47,7 +37,7 @@ variable "secgroup_rules" {
     { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 6443 },
     { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 80 },
     { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 443 },
-    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 31011 }
+    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 31001 }
   ]
 }
 
@@ -55,7 +45,7 @@ variable "secgroup_rules" {
 
 variable "instance_name" {
   type    = string
-  default = "k8smaster"
+  default = "cloudk8smaster"
 }
 
 variable "instance_image_id" {
@@ -65,7 +55,7 @@ variable "instance_image_id" {
 
 variable "instance_flavor_name" {
   type    = string
-  default = "lrz.medium"
+  default = "lrz.large"
 }
 
 variable "instance_keypair_name" {

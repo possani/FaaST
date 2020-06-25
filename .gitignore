@@ -40,3 +40,4 @@ terraform.rc
 
 ### Other files ###
 ignoreme
+ansible/*.ini

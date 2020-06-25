@@ -7,6 +7,7 @@ resource "openstack_compute_instance_v2" "instance" {
   key_pair          = var.instance_keypair_name
   availability_zone = var.instance_availability_zone
   security_groups   = ["default", var.secgroup_name]
+  user_data         = "#cloud-config\nhostname: ${var.instance_name}\nfqdn: ${var.instance_name}"
 
   block_device {
     uuid                  = var.instance_image_id
@@ -51,11 +52,10 @@ resource "null_resource" "ansible" {
 
       # Add entry to the hosts file
       cd ansible;
-      touch hosts;
-      printf "\n[cloud]\n${var.instance_name} ansible_ssh_host=${var.floatingip_address}" >> hosts
+      printf "\n[${var.cluster_name}]\nk8smaster ansible_ssh_host=${var.floatingip_address}" > ${var.cluster_name}.ini
 
       # Run Playbook
-      ansible-playbook site.yml
+      ansible-playbook -i ${var.cluster_name}.ini site.yml
 
     EOT
   }

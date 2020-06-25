@@ -42,23 +42,10 @@ terraform init
 Bootstrap the cluster
 
 ```bash
-terraform apply
-yes
+terraform apply -auto-approve
 ```
 
 ## Access the Dashboards
-
-### Grafana
-
-Get the port of the service
-
-```bash
-kubectl -n openwhisk get svc owdev-nginx -o jsonpath='{.spec.ports[0].nodePort}'
-```
-
-URL
-
-http://<floating_ip>:<service_port>/monitoring/dashboards
 
 ### Kubernetes
 
@@ -71,3 +58,30 @@ kubectl -n kubernetes-dashboard get svc kubernetes-dashboard -o jsonpath='{.spec
 URL
 
 https://<floating_ip>:<service_port>/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy/#!/overview?namespace=default
+
+### Grafana Monitoring
+
+Get the port of the service
+
+```bash
+kubectl get svc prometheus-operator-grafana -o jsonpath='{.spec.ports[0].nodePort}'
+```
+
+URL
+
+http://<floating_ip>:<service_port>/
+
+user: admin
+pw: prom-operator
+
+### Grafana Openwhisk
+
+Get the port of the service
+
+```bash
+kubectl -n openwhisk get svc owdev-nginx -o jsonpath='{.spec.ports[0].nodePort}'
+```
+
+URL
+
+http://<floating_ip>:<service_port>/monitoring/dashboards
