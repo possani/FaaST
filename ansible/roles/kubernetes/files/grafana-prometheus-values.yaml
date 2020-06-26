@@ -1,0 +1,4 @@
+grafana:
+  grafana.ini:
+    server:
+      root_url: http://localhost:8001/api/v1/namespaces/prometheus-operator/services/http:prometheus-operator-grafana:service/proxy/

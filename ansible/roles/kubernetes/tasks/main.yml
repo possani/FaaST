@@ -4,11 +4,13 @@
   apt_key:
     url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
     state: present
+  become: True
 
 - name: Add repository for kubernetes
   apt_repository:
     repo: deb  http://apt.kubernetes.io/  kubernetes-xenial  main
     state: present
+  become: True
 
 - name: Install a list of packages
   apt:
@@ -16,21 +18,17 @@
       - kubeadm=1.18.3-00
       - kubelet=1.18.3-00
       - kubectl=1.18.3-00
+  become: True
 
-- name: Prevent kubeadm from being upgraded.
+- name: Prevent packages from being upgraded.
   dpkg_selections:
-    name: kubeadm
+    name: "{{ item }}"
     selection: hold
-
-- name: Prevent kubelet from being upgraded.
-  dpkg_selections:
-    name: kubelet
-    selection: hold
-
-- name: Prevent kubectl from being upgraded.
-  dpkg_selections:
-    name: kubectl
-    selection: hold
+  with_items:
+    - kubeadm
+    - kubelet
+    - kubectl
+  become: True
 
 - name: Add IP address of all hosts to all hosts
   lineinfile:
@@ -38,6 +36,7 @@
     regexp: ".*{{ inventory_hostname }}$"
     line: "{{ hostvars[inventory_hostname].ansible_ssh_host }} {{ inventory_hostname }}"
     state: present
+  become: True
 
 - name: Copy config to host
   template:
@@ -49,17 +48,16 @@
   template:
     src: "{{ role_path }}/templates/cloud.conf.j2"
     dest: /etc/kubernetes/cloud-config
-    mode: "0644"
+  become: True
 
 - name: Run kubeadmin init
   shell: kubeadm init --config=kubeadm-config.yml --upload-certs | tee kubeadm-init.out
+  become: True
 
 - name: Create config directory for non-root user
   file:
     path: $PWD/.kube
     state: directory
-    owner: "{{ user }}"
-    group: "{{ user }}"
     mode: "0755"
 
 - name: Copy config file to non-root user directory
@@ -69,112 +67,68 @@
     dest: $PWD/.kube/config
     owner: "{{ user }}"
     group: "{{ user }}"
-    mode: "0644"
+  become: True
 
 - name: Check for taint
   shell: kubectl describe node {{ ansible_hostname }} | grep "node-role.kubernetes.io/master:NoSchedule"
   register: hasTaint
   ignore_errors: True
-  become: True
-  become_user: "{{ user }}"
 
 - name: Remove the taint from master
   command: kubectl taint node {{ ansible_hostname }} node-role.kubernetes.io/master:NoSchedule-
   when: hasTaint is succeeded
-  become: True
-  become_user: "{{ user }}"
 
-- name: Copy cloud-controller-manager-roles.yaml to the cluster
+- name: Copy files to host
   copy:
-    src: "{{ role_path }}/files/cloud-controller-manager-roles.yaml"
-    dest: $PWD/cloud-controller-manager-roles.yaml
-    owner: "{{ user }}"
-    group: "{{ user }}"
-    mode: "0644"
-
-- name: Copy cloud-controller-manager-role-bindings.yaml to the cluster
-  copy:
-    src: "{{ role_path }}/files/cloud-controller-manager-role-bindings.yaml"
-    dest: $PWD/cloud-controller-manager-role-bindings.yaml
-    owner: "{{ user }}"
-    group: "{{ user }}"
-    mode: "0644"
-
-- name: Copy cloud-controller-manager.yaml to the cluster
-  copy:
-    src: "{{ role_path }}/files/cloud-controller-manager.yaml"
-    dest: $PWD/cloud-controller-manager.yaml
-    owner: "{{ user }}"
-    group: "{{ user }}"
-    mode: "0644"
+    src: "{{ item }}"
+    dest: $PWD/
+  with_fileglob:
+    - "{{ role_path }}/files/*"
 
 - name: Apply cloud-controller-manager-roles.yaml
   command: kubectl apply -f cloud-controller-manager-roles.yaml
-  become: True
-  become_user: "{{ user }}"
 
 - name: Apply cloud-controller-manager-role-bindings.yaml
   command: kubectl apply -f cloud-controller-manager-role-bindings.yaml
-  become: True
-  become_user: "{{ user }}"
 
 - name: Apply cloud-controller-manager.yaml
   command: kubectl apply -f cloud-controller-manager.yaml
-  become: True
-  become_user: "{{ user }}"
 
 - name: Get Kubernetes version
   shell: kubectl version | base64 -w 0
   register: k8sversion
-  become: True
-  become_user: "{{ user }}"
 
 - name: Apply the network plugin configuration
   command: kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version={{ k8sversion.stdout }}"
-  become: True
-  become_user: "{{ user }}"
 
 - name: Create Dashboard
   command: kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml
-  become: True
-  become_user: "{{ user }}"
-
-- name: Export port for the Dashboard
-  command: 'kubectl -n kubernetes-dashboard patch svc kubernetes-dashboard -p ''{"spec":{"type":"NodePort"}}'''
-  become: True
-  become_user: "{{ user }}"
 
 - name: Copy dashboard-admin-user.yaml to the cluster
   copy:
     src: "{{ role_path }}/files/dashboard-admin-user.yaml"
     dest: $PWD/dashboard-admin-user.yaml
-    owner: "{{ user }}"
-    group: "{{ user }}"
-    mode: "0644"
 
 - name: Create the admin user
   command: kubectl apply -f dashboard-admin-user.yaml
-  become: True
-  become_user: "{{ user }}"
 
 - name: Save token to file
   shell: kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep admin-user | awk '{print $1}') | grep "token:" | awk '{print $2}' | tee admin-user-token.out
-  become: True
-  become_user: "{{ user }}"
 
 - name: Fetch token from remote
   fetch:
     src: admin-user-token.out
     dest: from_remote
-  become: True
-  become_user: "{{ user }}"
-  tags:
-    - test
 
 - name: Install helm
   snap:
     name: helm
     classic: yes
+  become: True
+
+- name: Get Helm releases
+  shell: /snap/bin/helm list -A
+  register: helm_releases
 
 - name: Clone cinder's git repository
   git:
@@ -182,34 +136,16 @@
     dest: $PWD/cinder
     force: yes
 
-- name: Patch buggy statefulset
-  lineinfile:
-    path: cinder/charts/cinder-csi-plugin/templates/controllerplugin-statefulset.yaml
-    firstmatch: yes
-    line: "  serviceName: csi-cinder-controller"
-    insertafter: "^spec:"
-
 - name: Install Cinder
-  command: /snap/bin/helm install --namespace kube-system cinder-csi cinder/charts/cinder-csi-plugin #--set storageClass.delete.isDefault=true
-  become: True
-  become_user: "{{ user }}"
+  command: /snap/bin/helm install cinder-csi cinder/charts/cinder-csi-plugin -n kube-system #--set storageClass.delete.isDefault=true
+  when: helm_releases.stdout.find('cinder-csi') == -1
 
 - name: Add stable repository
   command: /snap/bin/helm repo add stable https://kubernetes-charts.storage.googleapis.com
-  become: True
-  become_user: "{{ user }}"
 
 - name: Update repositories
   command: /snap/bin/helm repo update
-  become: True
-  become_user: "{{ user }}"
 
 - name: Install Prometheus for monitoring
-  command: /snap/bin/helm install -n prometheus-operator --create-namespace prometheus-operator stable/prometheus-operator
-  become: True
-  become_user: "{{ user }}"
-
-- name: Export port for the monitoring dashboard
-  command: 'kubectl -n prometheus-operator patch svc prometheus-operator-grafana -p ''{"spec":{"type":"NodePort"}}'''
-  become: True
-  become_user: "{{ user }}"
+  command: /snap/bin/helm install prometheus-operator stable/prometheus-operator -n prometheus-operator --create-namespace -f grafana-prometheus-values.yaml
+  when: helm_releases.stdout.find('prometheus-operator') == -1

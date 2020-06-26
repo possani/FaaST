@@ -45,44 +45,20 @@ Bootstrap the cluster
 terraform apply -auto-approve
 ```
 
-## Access the Dashboards - Using the public IP and NodePort
+## Access the Dashboards with Kubectl
 
-Get the NodePort for the specified service and access the following URL:
-
-https://<floating_ip>:<service_port>/
-
-### Kubernetes Dashboard
+Select a VM and start a proxy
 
 ```bash
-kubectl -n kubernetes-dashboard get svc kubernetes-dashboard -o jsonpath='{.spec.ports[0].nodePort}'
-```
-
-### Grafana Monitoring
-
-```bash
-kubectl get svc prometheus-operator-grafana -o jsonpath='{.spec.ports[0].nodePort}'
-```
-
-user: admin
-pw: prom-operator
-
-### Grafana Openwhisk
-
-```bash
-kubectl -n openwhisk get svc owdev-nginx -o jsonpath='{.spec.ports[0].nodePort}'
-```
-
-## Access the Dashboards - Using kubectl
-
-Start a proxy in the backgroud
-
-```bash
-kubectl proxy &
+ssh -L 8001:0.0.0.0:8001 <vm-user>@<vm-ip-address> -i <private-key-path>
+kubectl proxy
 ```
 
 ### Kubernetes Dashboard
 
 http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+
+token: ansible/from_remote/<instance_name>/admin-user-token.out
 
 ### Grafana Monitoring
 
@@ -93,6 +69,6 @@ pw: prom-operator
 
 ### Grafana Openwhisk
 
-http://localhost:8001/api/v1/namespaces/openwhisk/services/http:owdev-nginx:http/proxy/monitoring/dashboards
+http://localhost:8001/api/v1/namespaces/openwhisk/services/http:owdev-grafana:http/proxy/
 
 > **_NOTE:_**  It takes about 15 min to run.

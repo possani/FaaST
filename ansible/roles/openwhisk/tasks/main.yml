@@ -22,14 +22,20 @@
     dest: $PWD/openwhisk
     force: yes
 
+- name: Get Helm releases
+  shell: /snap/bin/helm list -A
+  register: helm_releases
+
 - name: Install Openwhisk
   command: /snap/bin/helm install owdev openwhisk/helm/openwhisk -n openwhisk --create-namespace -f mycluster.yaml
-  ignore_errors: True
+  when: helm_releases.stdout.find('owdev') == -1
 
-- name: Export port for the monitoring dashboard
-  command: 'kubectl -n openwhisk patch svc owdev-grafana -p ''{"spec":{"type":"NodePort"}}'''
-  become: True
-  become_user: "{{ user }}"
+- name: Get grafana pod
+  command: kubectl -n openwhisk get pods -l name=owdev-grafana --no-headers -o custom-columns=":metadata.name"
+  register: grafana_pod
+
+- name: Update root_url
+  command: kubectl -n openwhisk set env deployment/owdev-grafana GF_SERVER_ROOT_URL=http://localhost:8001/api/v1/namespaces/openwhisk/services/http:owdev-grafana:http/proxy/
 
 - name: Label node for running openwhisk
   command: kubectl label node {{ ansible_hostname }} openwhisk-role=invoker --overwrite
@@ -44,12 +50,5 @@
 - name: Set CLI properties
   command: "wsk property set --apihost {{ ansible_default_ipv4.address }}:{{ node_port }} --auth {{ auth_key }}"
 
-- name: Copy test function
-  copy:
-    src: "{{ role_path }}/files/hello.go"
-    dest: $PWD/hello.go
-# - name: Create an action
-#   command: wsk -i action create hello-go hello.go
-
-# - name: Invoke the action
-#   command: wsk -i action invoke hello-go --result
+- name: Delete old pod #due to anti-affinity rules for single node deployment
+  command: kubectl -n openwhisk delete pod {{ grafana_pod.stdout }}

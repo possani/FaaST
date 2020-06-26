@@ -38,6 +38,10 @@ terraform.rc
 ### Openstack Env Vars ###
 *-openrc.sh
 
+### Ansible Dynamic Vars ###
+ansible/from_remote
+ansible/group_vars
+ansible/*.ini
+
 ### Other files ###
 ignoreme
-ansible/*.ini
