@@ -2,12 +2,12 @@
 resource "openstack_compute_instance_v2" "instance" {
   depends_on = [var.instance_depends_on]
 
-  name              = var.instance_name
+  name              = "${var.cluster_name}-${var.instance_role}"
   flavor_name       = var.instance_flavor_name
   key_pair          = var.instance_keypair_name
   availability_zone = var.instance_availability_zone
   security_groups   = ["default", var.secgroup_name]
-  user_data         = "#cloud-config\nhostname: ${var.instance_name}\nfqdn: ${var.instance_name}"
+  user_data         = "#cloud-config\nhostname: ${var.cluster_name}-${var.instance_role}\nfqdn: ${var.cluster_name}-${var.instance_role}"
 
   block_device {
     uuid                  = var.instance_image_id
@@ -23,9 +23,14 @@ resource "openstack_compute_instance_v2" "instance" {
   }
 }
 
+# Create a Floating IP
+resource "openstack_networking_floatingip_v2" "floatingip" {
+  pool = var.floatingip_pool
+}
+
 # Create a Floating IP association
 resource "openstack_compute_floatingip_associate_v2" "floatingip_associate_instance" {
-  floating_ip = var.floatingip_address
+  floating_ip = openstack_networking_floatingip_v2.floatingip.address
   instance_id = openstack_compute_instance_v2.instance.id
 }
 
@@ -40,7 +45,7 @@ resource "null_resource" "ansible" {
 
     connection {
       user        = var.instance_user
-      host        = var.floatingip_address
+      host        = openstack_networking_floatingip_v2.floatingip.address
       private_key = file(var.ssh_key_file)
       agent       = "true"
     }
@@ -52,10 +57,11 @@ resource "null_resource" "ansible" {
 
       # Add entry to the hosts file
       cd ansible;
-      printf "\n[${var.cluster_name}]\n${var.instance_name} ansible_ssh_host=${var.floatingip_address}" > ${var.cluster_name}.ini
+      printf "[${var.cluster_name}:children]\n${var.instance_role}\n" > ${openstack_compute_instance_v2.instance.name}.ini
+      printf "[${var.instance_role}]\n${openstack_compute_instance_v2.instance.name} ansible_ssh_host=${openstack_networking_floatingip_v2.floatingip.address} ansible_python_interpreter=/usr/bin/python3" >> ${openstack_compute_instance_v2.instance.name}.ini
 
       # Run Playbook
-      ansible-playbook -i ${var.cluster_name}.ini site.yml
+      ansible-playbook -i ${openstack_compute_instance_v2.instance.name}.ini site.yml
 
     EOT
   }

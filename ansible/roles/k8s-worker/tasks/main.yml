@@ -1,0 +1,49 @@
+---
+# file: roles/k8s-worker/tasks/main.yml
+- name: Add a GPG key for the packages
+  apt_key:
+    url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+    state: present
+  become: True
+
+- name: Add repository for kubernetes
+  apt_repository:
+    repo: deb  http://apt.kubernetes.io/  kubernetes-xenial  main
+    state: present
+  become: True
+
+- name: Install a list of packages
+  apt:
+    pkg:
+      - kubeadm=1.18.3-00
+      - kubelet=1.18.3-00
+      - kubectl=1.18.3-00
+  become: True
+
+- name: Prevent packages from being upgraded.
+  dpkg_selections:
+    name: "{{ item }}"
+    selection: hold
+  with_items:
+    - kubeadm
+    - kubelet
+    - kubectl
+  become: True
+
+- name: Add IP address to /etc/hosts
+  lineinfile:
+    dest: /etc/hosts
+    regexp: ".*{{ inventory_hostname }}$"
+    line: "{{ hostvars[inventory_hostname].ansible_ssh_host }} {{ inventory_hostname }}"
+    state: present
+  become: True
+
+- name: Wait for the token to be created
+  pause:
+    minutes: "1"
+# local_action: shell while [[ ! -f "{{ playbook_dir }}/from_remote/{{ cluster_name }}-master/join.sh" ]]; do echo "Waiting for the token"; sleep 5; done;
+
+- name: Join cluster
+  script:
+    cmd: "{{ playbook_dir }}/from_remote/{{ cluster_name }}-master/join.sh"
+  become: True

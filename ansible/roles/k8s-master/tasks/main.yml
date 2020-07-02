@@ -30,7 +30,7 @@
     - kubectl
   become: True
 
-- name: Add IP address of all hosts to all hosts
+- name: Add IP address to /etc/hosts
   lineinfile:
     dest: /etc/hosts
     regexp: ".*{{ inventory_hostname }}$"
@@ -53,6 +53,16 @@
 - name: Run kubeadmin init
   shell: kubeadm init --config=kubeadm-config.yml --upload-certs | tee kubeadm-init.out
   become: True
+
+- name: Get token
+  shell: |
+    echo "echo \"{{ ansible_default_ipv4.address }} {{ cluster_name }}-master\" >> /etc/hosts" > join.sh;
+    tail -n 2 kubeadm-init.out >> join.sh;
+
+- name: Fetch join.sh
+  fetch:
+    src: join.sh
+    dest: from_remote
 
 - name: Create config directory for non-root user
   file:

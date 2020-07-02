@@ -38,7 +38,7 @@
   command: kubectl -n openwhisk set env deployment/owdev-grafana GF_SERVER_ROOT_URL=http://localhost:8001/api/v1/namespaces/openwhisk/services/http:owdev-grafana:http/proxy/
 
 - name: Label node for running openwhisk
-  command: kubectl label node {{ ansible_hostname }} openwhisk-role=invoker --overwrite
+  command: kubectl label nodes --all openwhisk-role=invoker --overwrite
 
 - name: Install Openwhisk command line
   unarchive:

@@ -31,11 +31,6 @@ resource "openstack_networking_router_interface_v2" "router_interface" {
   subnet_id = openstack_networking_subnet_v2.subnet.id
 }
 
-# Create a Floating IP
-resource "openstack_networking_floatingip_v2" "floatingip" {
-  pool = var.floatingip_pool
-}
-
 # Create a Secutiry Group for k8s
 resource "openstack_networking_secgroup_v2" "secgroup" {
   name        = var.secgroup_name

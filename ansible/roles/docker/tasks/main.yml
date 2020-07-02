@@ -1,9 +1,44 @@
 ---
 # file: roles/docker/tasks/main.yml
-- name: Install docker
+- name: Uninstall old packages
   apt:
-    name: docker.io
+    state: absent
+    pkg:
+      - docker
+      - docker-engine
+      - docker.io
+      - containerd
+      - runc
+
+- name: Install requirements
+  apt:
+    pkg:
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - gnupg-agent
+      - software-properties-common
+
+- name: Add a GPG key for the packages
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
     state: present
+
+- name: Add repository for kubernetes
+  apt_repository:
+    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu  bionic stable
+    state: present
+
+- name: Update cache
+  apt:
+    update_cache: yes
+
+- name: Install packages
+  apt:
+    pkg:
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
 
 - name: Adding existing user '{{ user }}' to group sudo
   user:
@@ -11,3 +46,14 @@
     groups:
       - docker
     append: yes
+
+- name: Copy docker daemon config to host
+  copy:
+    src: "{{ role_path }}/files/daemon.json"
+    dest: /etc/docker/daemon.json
+
+- name: Enable service docker
+  systemd:
+    name: docker
+    enabled: yes
+    state: restarted

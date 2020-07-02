@@ -7,7 +7,6 @@
     state: present
     reload: no
   with_items: "{{ sysctl }}"
-
 # - name: Use closer mirrors
 #   blockinfile:
 #     path: /etc/apt/sources.list
@@ -18,7 +17,7 @@
 #       deb mirror://mirrors.ubuntu.com/mirrors.txt bionic-backports main restricted universe multiverse
 #       deb mirror://mirrors.ubuntu.com/mirrors.txt bionic-security main restricted universe multiverse
 
-- name: Update cache and upgrade packages
-  apt:
-    upgrade: dist
-    update_cache: yes
+# - name: Update cache and upgrade packages
+#   apt:
+#     upgrade: dist
+#     update_cache: yes

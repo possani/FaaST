@@ -3,10 +3,6 @@ variable "instance_depends_on" {
   default = null
 }
 
-variable "instance_name" {
-  type = string
-}
-
 variable "instance_image_id" {
   type = string
 }
@@ -52,10 +48,6 @@ variable "network_name" {
   type = string
 }
 
-variable "floatingip_address" {
-  type = string
-}
-
 variable "instance_user" {
   type = string
 }
@@ -65,5 +57,13 @@ variable "ssh_key_file" {
 }
 
 variable "cluster_name" {
+  type = string
+}
+
+variable "instance_role" {
+  type = string
+}
+
+variable "floatingip_pool" {
   type = string
 }

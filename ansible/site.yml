@@ -1,8 +1,16 @@
 ---
 # file: site.yml
 - hosts: all
+  become: yes
   roles:
-    - { role: common, become: yes }
-    - { role: docker, become: yes }
-    - { role: kubernetes }
-    - { role: openwhisk }
+    - common
+    - docker
+
+- hosts: master
+  roles:
+    - k8s-master
+    - openwhisk
+
+- hosts: worker
+  roles:
+    - k8s-worker

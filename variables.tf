@@ -43,11 +43,6 @@ variable "secgroup_rules" {
 
 # Compute Variables
 
-variable "instance_name" {
-  type    = string
-  default = "cloudk8smaster"
-}
-
 variable "instance_image_id" {
   type    = string
   default = "0d006427-aef5-4ed8-99c6-e381724a60e0"

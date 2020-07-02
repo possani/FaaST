@@ -1,6 +1,4 @@
-variable "floatingip_pool" {
-  type = string
-}
+
 
 variable "private_network_name" {
   type = string
