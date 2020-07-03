@@ -67,3 +67,7 @@ variable "instance_role" {
 variable "floatingip_pool" {
   type = string
 }
+
+variable "instance_count" {
+  type = number
+}

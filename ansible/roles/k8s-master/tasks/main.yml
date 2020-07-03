@@ -50,18 +50,34 @@
     dest: /etc/kubernetes/cloud-config
   become: True
 
+- name: Check cluster
+  command: kubectl cluster-info
+  register: cluster_info
+
 - name: Run kubeadmin init
   shell: kubeadm init --config=kubeadm-config.yml --upload-certs | tee kubeadm-init.out
   become: True
+  when: cluster_info.rc == 1
 
-- name: Get token
+- name: Copy config to host
+  template:
+    src: "{{ role_path }}/templates/kubeadm-join-config.yml.j2"
+    dest: $PWD/kubeadm-join-config.yml
+    mode: "0644"
+
+# - name: Get token
+#   shell: |
+#     echo "echo \"{{ ansible_default_ipv4.address }} {{ cluster_name }}-master-01\" >> /etc/hosts" > join.sh;
+#     tail -n 2 kubeadm-init.out >> join.sh;
+
+- name: Replace with correct values
   shell: |
-    echo "echo \"{{ ansible_default_ipv4.address }} {{ cluster_name }}-master\" >> /etc/hosts" > join.sh;
-    tail -n 2 kubeadm-init.out >> join.sh;
+    sed -i "s/token: .*/token: $(tail -n 2 kubeadm-init.out | grep -oP '.*token \K\w+\.\w+')/" kubeadm-join-config.yml
+    sed -i "s/sha256:.*/sha256:$(tail -n 1 kubeadm-init.out | grep -oP '.*sha256:\K\w+')\"]/" kubeadm-join-config.yml
 
-- name: Fetch join.sh
+- name: Fetch kubeadm-join-config.yml
   fetch:
-    src: join.sh
+    src: kubeadm-join-config.yml
     dest: from_remote
 
 - name: Create config directory for non-root user
@@ -77,6 +93,12 @@
     dest: $PWD/.kube/config
     owner: "{{ user }}"
     group: "{{ user }}"
+  become: True
+
+- name: Fetch config
+  fetch:
+    src: /etc/kubernetes/admin.conf
+    dest: from_remote
   become: True
 
 - name: Check for taint

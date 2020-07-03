@@ -5,7 +5,7 @@
     name: "{{ item.name }}"
     value: "{{ item.value }}"
     state: present
-    reload: no
+    # reload: no
   with_items: "{{ sysctl }}"
 # - name: Use closer mirrors
 #   blockinfile:

@@ -43,6 +43,11 @@ variable "secgroup_rules" {
 
 # Compute Variables
 
+variable "worker_count" {
+  type    = number
+  default = 1
+}
+
 variable "instance_image_id" {
   type    = string
   default = "0d006427-aef5-4ed8-99c6-e381724a60e0"
@@ -50,7 +55,7 @@ variable "instance_image_id" {
 
 variable "instance_flavor_name" {
   type    = string
-  default = "lrz.large"
+  default = "lrz.medium"
 }
 
 variable "instance_keypair_name" {

@@ -7,7 +7,7 @@ provider "openstack" {
 data "template_file" "group_vars_cloud" {
   template = "${file("./group_vars.tpl")}"
   vars = {
-    subnet_cidr = var.subnet_cidr
+    subnet_cidr  = var.subnet_cidr
     cluster_name = var.cluster_name
   }
 }
@@ -37,6 +37,7 @@ module "cloud_master" {
   instance_depends_on                         = [module.cloud_networking.subnet, local_file.group_vars_cloud]
   cluster_name                                = var.cluster_name
   instance_role                               = "master"
+  instance_count                              = 1
   instance_image_id                           = var.instance_image_id
   instance_flavor_name                        = var.instance_flavor_name
   instance_keypair_name                       = var.instance_keypair_name
@@ -50,7 +51,7 @@ module "cloud_master" {
   network_name                                = "${var.cluster_name}_network"
   instance_user                               = var.instance_user
   ssh_key_file                                = var.ssh_key_file
-  floatingip_pool      = var.floatingip_pool
+  floatingip_pool                             = var.floatingip_pool
 }
 
 module "cloud_worker" {
@@ -58,6 +59,7 @@ module "cloud_worker" {
   instance_depends_on                         = [module.cloud_networking.subnet, local_file.group_vars_cloud]
   cluster_name                                = var.cluster_name
   instance_role                               = "worker"
+  instance_count                              = 2
   instance_image_id                           = var.instance_image_id
   instance_flavor_name                        = var.instance_flavor_name
   instance_keypair_name                       = var.instance_keypair_name
@@ -71,7 +73,7 @@ module "cloud_worker" {
   network_name                                = "${var.cluster_name}_network"
   instance_user                               = var.instance_user
   ssh_key_file                                = var.ssh_key_file
-  floatingip_pool      = var.floatingip_pool
+  floatingip_pool                             = var.floatingip_pool
 }
 
 #--------------------------------------------------------------------------------------------------------------------------

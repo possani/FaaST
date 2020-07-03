@@ -1,3 +1,3 @@
-output "floatingip_address" {
-  value = openstack_networking_floatingip_v2.floatingip.address
+output "instances" {
+  value = data.null_data_source.instances[*].outputs
 }

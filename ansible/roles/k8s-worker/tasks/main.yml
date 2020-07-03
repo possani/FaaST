@@ -38,12 +38,22 @@
     state: present
   become: True
 
+- name: Copy cloud config to host
+  template:
+    src: "{{ role_path }}/templates/cloud.conf.j2"
+    dest: /etc/kubernetes/cloud-config
+  become: True
+
 - name: Wait for the token to be created
   pause:
-    minutes: "1"
+    minutes: "2"
 # local_action: shell while [[ ! -f "{{ playbook_dir }}/from_remote/{{ cluster_name }}-master/join.sh" ]]; do echo "Waiting for the token"; sleep 5; done;
 
+- name: Copy config to host
+  copy:
+    src: "{{ playbook_dir }}/from_remote/{{ cluster_name }}-master-01/kubeadm-join-config.yml"
+    dest: $PWD/kubeadm-join-config.yml
+
 - name: Join cluster
-  script:
-    cmd: "{{ playbook_dir }}/from_remote/{{ cluster_name }}-master/join.sh"
+  command: kubeadm join --config kubeadm-join-config.yml
   become: True
