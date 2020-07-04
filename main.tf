@@ -4,17 +4,39 @@ provider "openstack" {
 }
 
 # Cloud Cluster
-data "template_file" "group_vars_cloud" {
-  template = "${file("./group_vars.tpl")}"
+data "template_file" "cloud_group_vars" {
+  template = "${file("./ansible/templates/group_vars.tpl")}"
   vars = {
     subnet_cidr  = var.subnet_cidr
     cluster_name = var.cluster_name
   }
 }
 
-resource "local_file" "group_vars_cloud" {
-  content  = data.template_file.group_vars_cloud.rendered
+resource "local_file" "cloud_group_vars" {
+  content  = data.template_file.cloud_group_vars.rendered
   filename = "./ansible/group_vars/cloud"
+}
+
+# data "template_file" "cloud_hosts" {
+#   template = "${file("./hosts.tpl")}"
+#   depends_on = [ module.cloud_master, module.cloud_worker ]
+
+#   vars = {
+#     cluster_name = var.cluster_name
+#     master_instances  = module.cloud_master.instances
+#     worker_instances  = module.cloud_worker.instances
+#   }
+# }
+
+resource "local_file" "cloud_hosts" {
+  content = templatefile("./ansible/templates/hosts.tpl",
+    {
+      cluster_name = var.cluster_name
+      master_instances  = module.cloud_master.instances
+      worker_instances  = module.cloud_worker.instances
+    }
+  )
+  filename = "./ansible/cloud_hosts.ini"
 }
 
 # Create the network
@@ -34,10 +56,10 @@ module "cloud_networking" {
 # Create the compute instance
 module "cloud_master" {
   source                                      = "./modules/compute"
-  instance_depends_on                         = [module.cloud_networking.subnet, local_file.group_vars_cloud]
+  instance_depends_on                         = [module.cloud_networking.subnet, local_file.cloud_group_vars]
   cluster_name                                = var.cluster_name
   instance_role                               = "master"
-  instance_count                              = 1
+  instance_count                              = var.master_count
   instance_image_id                           = var.instance_image_id
   instance_flavor_name                        = var.instance_flavor_name
   instance_keypair_name                       = var.instance_keypair_name
@@ -56,10 +78,10 @@ module "cloud_master" {
 
 module "cloud_worker" {
   source                                      = "./modules/compute"
-  instance_depends_on                         = [module.cloud_networking.subnet, local_file.group_vars_cloud]
+  instance_depends_on                         = [module.cloud_networking.subnet, local_file.cloud_group_vars]
   cluster_name                                = var.cluster_name
   instance_role                               = "worker"
-  instance_count                              = 2
+  instance_count                              = var.worker_count
   instance_image_id                           = var.instance_image_id
   instance_flavor_name                        = var.instance_flavor_name
   instance_keypair_name                       = var.instance_keypair_name
@@ -74,6 +96,57 @@ module "cloud_worker" {
   instance_user                               = var.instance_user
   ssh_key_file                                = var.ssh_key_file
   floatingip_pool                             = var.floatingip_pool
+}
+
+# Run Ansible
+resource "null_resource" "ansible_master" {
+  count = var.master_count
+  triggers = {
+    master_instance_id = module.cloud_master.instances[count.index].id
+  }
+
+  provisioner "remote-exec" {
+    inline = ["#Connected"]
+
+    connection {
+      user        = var.instance_user
+      host        = module.cloud_master.instances[count.index].floating_ip
+      private_key = file(var.ssh_key_file)
+      agent       = "true"
+    }
+  }
+
+  provisioner "local-exec" {
+    command = <<EOT
+    cd ansible;
+    ansible-playbook -i cloud_hosts.ini master.yml
+    EOT
+  }
+}
+
+resource "null_resource" "ansible_worker" {
+  count = var.worker_count
+  triggers = {
+    worker_instance_id = module.cloud_worker.instances[count.index].id
+  }
+
+  provisioner "remote-exec" {
+    inline = ["#Connected"]
+
+    connection {
+      user        = var.instance_user
+      host        = module.cloud_worker.instances[count.index].floating_ip
+      private_key = file(var.ssh_key_file)
+      agent       = "true"
+    }
+  }
+
+  provisioner "local-exec" {
+    command = <<EOT
+    cd ansible;
+    ansible-playbook -i cloud_hosts.ini worker.yml
+    EOT
+  }
 }
 
 #--------------------------------------------------------------------------------------------------------------------------

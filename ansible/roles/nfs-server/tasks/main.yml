@@ -1,0 +1,25 @@
+---
+# file: roles/nfs-server/tasks/main.yml
+- name: Install requirements
+  apt:
+    pkg: nfs-kernel-server
+
+- name: Copy exports to host
+  copy:
+    src: "{{ role_path }}/files/exports"
+    dest: /etc/exports
+    mode: "0644"
+
+- name: Make sure the service is running
+  systemd:
+    state: started
+    name: nfs-kernel-server
+
+- name: Create config directory for non-root user
+  file:
+    path: /mnt/share
+    state: directory
+    mode: "0777"
+
+- name: Reexport all directories
+  command: exportfs -r

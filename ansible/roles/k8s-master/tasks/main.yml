@@ -34,7 +34,7 @@
   lineinfile:
     dest: /etc/hosts
     regexp: ".*{{ inventory_hostname }}$"
-    line: "{{ hostvars[inventory_hostname].ansible_ssh_host }} {{ inventory_hostname }}"
+    line: "{{ hostvars[inventory_hostname].ansible_host }} {{ inventory_hostname }}"
     state: present
   become: True
 
@@ -53,6 +53,7 @@
 - name: Check cluster
   command: kubectl cluster-info
   register: cluster_info
+  ignore_errors: True
 
 - name: Run kubeadmin init
   shell: kubeadm init --config=kubeadm-config.yml --upload-certs | tee kubeadm-init.out

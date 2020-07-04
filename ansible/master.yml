@@ -1,0 +1,9 @@
+---
+# file: master.yml
+- import_playbook: common.yml
+
+- hosts: master
+  roles:
+    - { role: nfs-server, become: yes }
+    - k8s-master
+    - openwhisk

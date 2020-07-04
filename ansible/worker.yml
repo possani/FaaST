@@ -1,0 +1,8 @@
+---
+# file: worker.yml
+- import_playbook: common.yml
+
+- hosts: worker
+  roles:
+    - { role: nfs-client, become: yes }
+    - k8s-worker

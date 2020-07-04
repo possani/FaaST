@@ -43,6 +43,11 @@ variable "secgroup_rules" {
 
 # Compute Variables
 
+variable "master_count" {
+  type    = number
+  default = 1
+}
+
 variable "worker_count" {
   type    = number
   default = 1

@@ -1,0 +1,7 @@
+---
+# file: site.yml
+- hosts: all
+  become: yes
+  roles:
+    - common
+    - docker

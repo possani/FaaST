@@ -37,45 +37,46 @@ resource "openstack_compute_floatingip_associate_v2" "floatingip_associate_insta
   instance_id = openstack_compute_instance_v2.instance[count.index].id
 }
 
-# Run Ansible
-resource "null_resource" "ansible" {
-  count = var.instance_count
-  triggers = {
-    node_instance_id = openstack_compute_instance_v2.instance[count.index].id
-  }
+# # Run Ansible
+# resource "null_resource" "ansible" {
+#   count = var.instance_count
+#   triggers = {
+#     node_instance_id = openstack_compute_instance_v2.instance[count.index].id
+#   }
 
-  provisioner "remote-exec" {
-    inline = ["#Connected"]
+#   provisioner "remote-exec" {
+#     inline = ["#Connected"]
 
-    connection {
-      user        = var.instance_user
-      host        = openstack_networking_floatingip_v2.floatingip[count.index].address
-      private_key = file(var.ssh_key_file)
-      agent       = "true"
-    }
-  }
+#     connection {
+#       user        = var.instance_user
+#       host        = openstack_networking_floatingip_v2.floatingip[count.index].address
+#       private_key = file(var.ssh_key_file)
+#       agent       = "true"
+#     }
+#   }
 
 
-  provisioner "local-exec" {
-    command = <<EOT
+#   provisioner "local-exec" {
+#     command = <<EOT
 
-      # Add entry to the hosts file
-      cd ansible;
-      printf "[${var.cluster_name}:children]\n${var.instance_role}\n" > ${openstack_compute_instance_v2.instance[count.index].name}.ini
-      printf "[${var.instance_role}]\n${openstack_compute_instance_v2.instance[count.index].name} ansible_ssh_host=${openstack_networking_floatingip_v2.floatingip[count.index].address} ansible_python_interpreter=/usr/bin/python3" >> ${openstack_compute_instance_v2.instance[count.index].name}.ini
+#       # Add entry to the hosts file
+#       cd ansible;
+#       printf "[${var.cluster_name}:children]\n${var.instance_role}\n" > ${openstack_compute_instance_v2.instance[count.index].name}.ini
+#       printf "[${var.instance_role}]\n${openstack_compute_instance_v2.instance[count.index].name} ansible_host=${openstack_networking_floatingip_v2.floatingip[count.index].address} ansible_python_interpreter=/usr/bin/python3" >> ${openstack_compute_instance_v2.instance[count.index].name}.ini
 
-      # Run Playbook
-      ansible-playbook -i ${openstack_compute_instance_v2.instance[count.index].name}.ini site.yml
+#       # Run Playbook
+#       ansible-playbook -i ${openstack_compute_instance_v2.instance[count.index].name}.ini site.yml
 
-    EOT
-  }
-}
+#     EOT
+#   }
+# }
 
 # Export the instances' data
 data "null_data_source" "instances" {
   count = var.instance_count
   inputs = {
     name        = openstack_compute_instance_v2.instance[count.index].name
+    id          = openstack_compute_instance_v2.instance[count.index].id
     internal_ip = openstack_compute_instance_v2.instance[count.index].access_ip_v4
     floating_ip = openstack_networking_floatingip_v2.floatingip[count.index].address
   }

@@ -1,0 +1,24 @@
+---
+# file: roles/nfs-server/tasks/main.yml
+- name: Install requirements
+  apt:
+    pkg: nfs-common
+
+- name: Create config directory for non-root user
+  file:
+    path: /mnt/share
+    state: directory
+    mode: "0777"
+
+- name: Wait for nfs server port to be open
+  wait_for:
+    host: "{{ hostvars[groups.master.0].internal_ip }}"
+    port: 2049
+
+- name: Mount NFS on the client side
+  mount:
+    fstype: nfs
+    opts: defaults
+    state: mounted
+    src: "{{ hostvars[groups.master.0].internal_ip }}:/mnt/share"
+    path: "/mnt/share"

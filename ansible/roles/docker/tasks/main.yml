@@ -24,14 +24,14 @@
     url: https://download.docker.com/linux/ubuntu/gpg
     state: present
 
-- name: Add repository for kubernetes
+- name: Add repository for docker
   apt_repository:
-    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu  bionic stable
+    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu  bionic edge
     state: present
 
-- name: Update cache
-  apt:
-    update_cache: yes
+# https://github.com/ansible/ansible/issues/51663
+- name: Wait for apt lock
+  shell: while fuser /var/lib/dpkg/lock-frontend >/dev/null 2>&1; do sleep 5; done;
 
 - name: Install packages
   apt:
