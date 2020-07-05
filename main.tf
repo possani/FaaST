@@ -4,29 +4,15 @@ provider "openstack" {
 }
 
 # Cloud Cluster
-data "template_file" "cloud_group_vars" {
-  template = "${file("./ansible/templates/group_vars.tpl")}"
-  vars = {
-    subnet_cidr  = var.subnet_cidr
-    cluster_name = var.cluster_name
-  }
-}
-
 resource "local_file" "cloud_group_vars" {
-  content  = data.template_file.cloud_group_vars.rendered
+  content = templatefile("./ansible/templates/group_vars.tpl",
+    {
+      subnet_cidr  = var.subnet_cidr
+      cluster_name = var.cluster_name
+    }
+  )
   filename = "./ansible/group_vars/cloud"
 }
-
-# data "template_file" "cloud_hosts" {
-#   template = "${file("./hosts.tpl")}"
-#   depends_on = [ module.cloud_master, module.cloud_worker ]
-
-#   vars = {
-#     cluster_name = var.cluster_name
-#     master_instances  = module.cloud_master.instances
-#     worker_instances  = module.cloud_worker.instances
-#   }
-# }
 
 resource "local_file" "cloud_hosts" {
   content = templatefile("./ansible/templates/hosts.tpl",
@@ -99,55 +85,55 @@ module "cloud_worker" {
 }
 
 # Run Ansible
-resource "null_resource" "ansible_master" {
-  count = var.master_count
-  triggers = {
-    master_instance_id = module.cloud_master.instances[count.index].id
-  }
+# resource "null_resource" "ansible_master" {
+#   count = var.master_count
+#   triggers = {
+#     master_instance_id = module.cloud_master.instances[count.index].id
+#   }
 
-  provisioner "remote-exec" {
-    inline = ["#Connected"]
+#   provisioner "remote-exec" {
+#     inline = ["#Connected"]
 
-    connection {
-      user        = var.instance_user
-      host        = module.cloud_master.instances[count.index].floating_ip
-      private_key = file(var.ssh_key_file)
-      agent       = "true"
-    }
-  }
+#     connection {
+#       user        = var.instance_user
+#       host        = module.cloud_master.instances[count.index].floating_ip
+#       private_key = file(var.ssh_key_file)
+#       agent       = "true"
+#     }
+#   }
 
-  provisioner "local-exec" {
-    command = <<EOT
-    cd ansible;
-    ansible-playbook -i cloud_hosts.ini master.yml
-    EOT
-  }
-}
+#   provisioner "local-exec" {
+#     command = <<EOT
+#     cd ansible;
+#     ansible-playbook -i cloud_hosts.ini master.yml
+#     EOT
+#   }
+# }
 
-resource "null_resource" "ansible_worker" {
-  count = var.worker_count
-  triggers = {
-    worker_instance_id = module.cloud_worker.instances[count.index].id
-  }
+# resource "null_resource" "ansible_worker" {
+#   count = var.worker_count
+#   triggers = {
+#     worker_instance_id = module.cloud_worker.instances[count.index].id
+#   }
 
-  provisioner "remote-exec" {
-    inline = ["#Connected"]
+#   provisioner "remote-exec" {
+#     inline = ["#Connected"]
 
-    connection {
-      user        = var.instance_user
-      host        = module.cloud_worker.instances[count.index].floating_ip
-      private_key = file(var.ssh_key_file)
-      agent       = "true"
-    }
-  }
+#     connection {
+#       user        = var.instance_user
+#       host        = module.cloud_worker.instances[count.index].floating_ip
+#       private_key = file(var.ssh_key_file)
+#       agent       = "true"
+#     }
+#   }
 
-  provisioner "local-exec" {
-    command = <<EOT
-    cd ansible;
-    ansible-playbook -i cloud_hosts.ini worker.yml
-    EOT
-  }
-}
+#   provisioner "local-exec" {
+#     command = <<EOT
+#     cd ansible;
+#     ansible-playbook -i cloud_hosts.ini worker.yml
+#     EOT
+#   }
+# }
 
 #--------------------------------------------------------------------------------------------------------------------------
 
