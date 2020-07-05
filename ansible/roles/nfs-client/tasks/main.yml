@@ -10,11 +10,6 @@
     state: directory
     mode: "0777"
 
-- name: Wait for nfs server port to be open
-  wait_for:
-    host: "{{ hostvars[groups.master.0].internal_ip }}"
-    port: 2049
-
 - name: Mount NFS on the client side
   mount:
     fstype: nfs
@@ -22,3 +17,7 @@
     state: mounted
     src: "{{ hostvars[groups.master.0].internal_ip }}:/mnt/share"
     path: "/mnt/share"
+  register: result
+  until: result is not failed
+  retries: 12 # Wait up to 1 min
+  delay: 5

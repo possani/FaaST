@@ -10,35 +10,14 @@ variable "floatingip_pool" {
   default = "internet_pool"
 }
 
-variable "subnet_cidr" {
-  type    = string
-  default = "10.0.0.0/24"
-}
-
 variable "public_network_name" {
   type    = string
   default = "internet_pool"
 }
 
-variable "secgroup_name" {
+variable "subnet_cidr" {
   type    = string
-  default = "k8s"
-}
-
-variable "secgroup_description" {
-  type    = string
-  default = "k8s security group description"
-}
-
-variable "secgroup_rules" {
-  type = list
-  default = [
-    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 22 },
-    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 6443 },
-    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 80 },
-    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 443 },
-    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 31001 }
-  ]
+  default = "10.0.0.0/24"
 }
 
 # Compute Variables
@@ -69,39 +48,9 @@ variable "instance_keypair_name" {
   description = "SSH keypair name"
 }
 
-variable "instance_availability_zone" {
-  type    = string
-  default = "nova"
-}
-
-variable "instance_block_device_source_type" {
-  type    = string
-  default = "image"
-}
-
 variable "instance_block_device_volume_size" {
   type    = number
   default = 20
-}
-
-variable "instance_block_device_boot_index" {
-  type    = number
-  default = 0
-}
-
-variable "instance_block_device_destination_type" {
-  type    = string
-  default = "volume"
-}
-
-variable "instance_block_device_delete_on_termination" {
-  type    = bool
-  default = true
-}
-
-variable "instance_user" {
-  type    = string
-  default = "ubuntu"
 }
 
 variable "ssh_key_file" {

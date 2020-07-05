@@ -38,7 +38,7 @@
     state: present
   become: True
 
-- name: Copy config to host
+- name: Copy kubeadm-config to host
   template:
     src: "{{ role_path }}/templates/kubeadm-config.yml.j2"
     dest: $PWD/kubeadm-config.yml
@@ -60,16 +60,11 @@
   become: True
   when: cluster_info.rc == 1
 
-- name: Copy config to host
+- name: Copy kubeadm-join-config to host
   template:
     src: "{{ role_path }}/templates/kubeadm-join-config.yml.j2"
     dest: $PWD/kubeadm-join-config.yml
     mode: "0644"
-
-# - name: Get token
-#   shell: |
-#     echo "echo \"{{ ansible_default_ipv4.address }} {{ cluster_name }}-master-01\" >> /etc/hosts" > join.sh;
-#     tail -n 2 kubeadm-init.out >> join.sh;
 
 - name: Replace with correct values
   shell: |

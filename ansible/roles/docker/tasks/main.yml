@@ -23,15 +23,13 @@
   apt_key:
     url: https://download.docker.com/linux/ubuntu/gpg
     state: present
+  retries: 12 # Wait up to 1 min
+  delay: 5
 
 - name: Add repository for docker
   apt_repository:
-    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu  bionic edge
+    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu  {{ ansible_lsb.codename }} stable
     state: present
-
-# https://github.com/ansible/ansible/issues/51663
-- name: Wait for apt lock
-  shell: while fuser /var/lib/dpkg/lock-frontend >/dev/null 2>&1; do sleep 5; done;
 
 - name: Install packages
   apt:
@@ -39,6 +37,12 @@
       - docker-ce
       - docker-ce-cli
       - containerd.io
+
+  # https://github.com/ansible/ansible/issues/51663
+  register: result
+  until: result is not failed
+  retries: 12 # Wait up to 1 min
+  delay: 5
 
 - name: Adding existing user '{{ user }}' to group sudo
   user:

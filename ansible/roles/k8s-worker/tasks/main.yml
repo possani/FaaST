@@ -44,16 +44,15 @@
     dest: /etc/kubernetes/cloud-config
   become: True
 
-- name: Wait for the token to be created
-  pause:
-    minutes: "2"
-# local_action: shell while [[ ! -f "{{ playbook_dir }}/from_remote/{{ cluster_name }}-master/join.sh" ]]; do echo "Waiting for the token"; sleep 5; done;
-
-- name: Copy config to host
+- name: Copy kubeadm-join-config to host
   copy:
     src: "{{ playbook_dir }}/from_remote/{{ cluster_name }}-master-01/kubeadm-join-config.yml"
     dest: $PWD/kubeadm-join-config.yml
+  register: result
+  until: result is not failed
+  retries: 36 # Wait up to 3 min for the file to be created
+  delay: 5
 
 - name: Join cluster
-  command: kubeadm join --config kubeadm-join-config.yml
+  command: kubeadm join -v=6 --config kubeadm-join-config.yml
   become: True

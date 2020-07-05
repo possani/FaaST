@@ -1,7 +1,7 @@
 apiVersion: kubeadm.k8s.io/v1beta2
 discovery:
   bootstrapToken:
-    apiServerEndpoint: {{ ansible_default_ipv4.address }}:6443
+    apiServerEndpoint: {{ hostvars[inventory_hostname].ansible_host }}:6443
     token: xxxxx
     caCertHashes: ["sha256:xxx"]
 kind: JoinConfiguration

@@ -10,7 +10,7 @@
   command: kubectl label node {{ ansible_hostname }} openwhisk-role=core
   ignore_errors: True
 
-- name: Copy config to host
+- name: Copy mycluster to host
   template:
     src: "{{ role_path }}/templates/mycluster.yaml.j2"
     dest: $PWD/mycluster.yaml

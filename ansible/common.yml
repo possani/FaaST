@@ -1,5 +1,5 @@
 ---
-# file: site.yml
+# file: common.yml
 - hosts: all
   become: yes
   roles:
