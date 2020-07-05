@@ -23,7 +23,7 @@ Replace the key variables in the config files accordingly
 
 ```bash
 variables.tf (instance_keypair_name)
-variables.tf (cloud_cluster_ssh_key)
+variables.tf (ssh_key_file)
 ansible/ansible.cfg (private_key_file)
 ```
 
@@ -71,4 +71,8 @@ pw: prom-operator
 
 http://localhost:8001/api/v1/namespaces/openwhisk/services/http:owdev-grafana:http/proxy/
 
-> **_NOTE:_**  It takes about 15 min to run.
+## Access the cluster with Kubectl
+
+export KUBECONFIG=ansible/from_remote/<instance_name>/etc/kubernetes/admin.conf
+
+> **_NOTE:_**  It takes about 10 min to run.
