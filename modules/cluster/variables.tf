@@ -9,7 +9,11 @@ variable "floatingip_pool" {
 }
 
 variable "subnet_cidr" {
-  type    = string
+  type = string
+}
+
+variable "pod_subnet" {
+  type = string
 }
 
 variable "public_network_name" {

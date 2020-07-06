@@ -3,6 +3,7 @@
 - import_playbook: common.yml
 
 - hosts: worker
+  become: yes
   roles:
-    - { role: nfs-client, become: yes }
+    - nfs-client
     - k8s-worker

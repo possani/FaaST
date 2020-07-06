@@ -20,6 +20,11 @@ variable "subnet_cidr" {
   default = "10.0.0.0/24"
 }
 
+variable "pod_subnet" {
+  type    = string
+  default = "10.1.0.0/16"
+}
+
 # Compute Variables
 
 variable "master_count" {

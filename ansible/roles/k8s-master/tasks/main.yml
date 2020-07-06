@@ -5,6 +5,10 @@
     url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
     state: present
   become: True
+  register: result
+  until: result is not failed
+  retries: 12 # Wait up to 1 min
+  delay: 5
 
 - name: Add repository for kubernetes
   apt_repository:
@@ -12,7 +16,7 @@
     state: present
   become: True
 
-- name: Install a list of packages
+- name: Install kubernetes packages
   apt:
     pkg:
       - kubeadm=1.18.3-00
@@ -20,15 +24,15 @@
       - kubectl=1.18.3-00
   become: True
 
-- name: Prevent packages from being upgraded.
-  dpkg_selections:
-    name: "{{ item }}"
-    selection: hold
-  with_items:
-    - kubeadm
-    - kubelet
-    - kubectl
-  become: True
+# - name: Prevent packages from being upgraded.
+#   dpkg_selections:
+#     name: "{{ item }}"
+#     selection: hold
+#   with_items:
+#     - kubeadm
+#     - kubelet
+#     - kubectl
+#   become: True
 
 - name: Add IP address to /etc/hosts
   lineinfile:
@@ -127,7 +131,8 @@
   register: k8sversion
 
 - name: Apply the network plugin configuration
-  command: kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version={{ k8sversion.stdout }}"
+  # command: kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version={{ k8sversion.stdout }}"
+  command: kubectl apply -f https://docs.projectcalico.org/v3.15/manifests/calico.yaml
 
 - name: Create Dashboard
   command: kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/aio/deploy/recommended.yaml

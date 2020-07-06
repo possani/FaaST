@@ -17,6 +17,7 @@ module "cloud_cluster" {
   floatingip_pool                   = var.floatingip_pool
   public_network_name               = var.public_network_name
   subnet_cidr                       = var.subnet_cidr
+  pod_subnet                        = var.pod_subnet
 }
 
 module "edge_cluster" {
@@ -32,4 +33,5 @@ module "edge_cluster" {
   floatingip_pool                   = var.floatingip_pool
   public_network_name               = var.public_network_name
   subnet_cidr                       = "10.0.0.1/24"
+  pod_subnet                        = "10.2.0.0/16"
 }

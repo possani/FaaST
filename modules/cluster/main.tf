@@ -2,7 +2,7 @@
 resource "local_file" "group_vars" {
   content = templatefile("./ansible/templates/group_vars.tpl",
     {
-      subnet_cidr  = var.subnet_cidr
+      pod_subnet   = var.pod_subnet
       cluster_name = var.cluster_name
     }
   )

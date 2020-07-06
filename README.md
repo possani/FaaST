@@ -75,4 +75,15 @@ http://localhost:8001/api/v1/namespaces/openwhisk/services/http:owdev-grafana:ht
 
 export KUBECONFIG=ansible/from_remote/<instance_name>/etc/kubernetes/admin.conf
 
-> **_NOTE:_**  It takes about 10 min to run.
+## Run a test function
+
+```bash
+git clone https://github.com/PrincetonUniversity/faas-profiler.git
+cd faas-profiler/functions/ocr-img
+wsk action create ocr-img handler.js --docker immortalfaas/nodejs-tesseract --web raw -i
+wget -P /mnt/share/ http://dev.blog.fairway.ne.jp/wp-content/uploads/2014/04/eurotext.png
+curl -H "Content-Type: image/png" --data-binary @/mnt/share/eurotext.png $(wsk action get ocr-img --url -i) -k -v >output.txt
+cat output.txt
+```
+
+> **_NOTE:_**  It takes about 10 min for Terraform to run + 5 min for all the Openwhisk Pods to be _Running_/_Completed_.

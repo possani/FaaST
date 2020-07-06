@@ -13,4 +13,3 @@ output "edge_cluster_master_instance" {
 output "edge_cluster_worker_instances" {
   value = module.edge_cluster.worker_instances
 }
-

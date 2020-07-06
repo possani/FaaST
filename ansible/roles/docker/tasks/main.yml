@@ -23,6 +23,8 @@
   apt_key:
     url: https://download.docker.com/linux/ubuntu/gpg
     state: present
+  register: result
+  until: result is not failed
   retries: 12 # Wait up to 1 min
   delay: 5
 

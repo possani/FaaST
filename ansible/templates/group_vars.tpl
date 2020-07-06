@@ -1,2 +1,2 @@
-subnet_cidr: "${subnet_cidr}"
+pod_subnet: "${pod_subnet}"
 cluster_name: "${cluster_name}"
