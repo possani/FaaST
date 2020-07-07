@@ -1,6 +1,6 @@
 # Cloud Cluster
 resource "local_file" "group_vars" {
-  content = templatefile("./ansible/templates/group_vars.tpl",
+  content = templatefile("./templates/group_vars.tpl",
     {
       pod_subnet   = var.pod_subnet
       cluster_name = var.cluster_name
@@ -10,7 +10,7 @@ resource "local_file" "group_vars" {
 }
 
 resource "local_file" "hosts" {
-  content = templatefile("./ansible/templates/hosts.tpl",
+  content = templatefile("./templates/hosts.tpl",
     {
       cluster_name     = var.cluster_name
       master_instances = module.master.instances
