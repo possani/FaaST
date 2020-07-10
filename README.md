@@ -45,13 +45,13 @@ Bootstrap the cluster
 terraform apply -auto-approve
 ```
 
-## Access the Dashboards with Kubectl
+## Access the Dashboards via proxy
 
-Select a VM and start a proxy
+Select a VM and start a proxy (use **&** for running it in the background)
 
 ```bash
 ssh -L 8001:0.0.0.0:8001 <vm-user>@<vm-ip-address> -i <private-key-path>
-kubectl proxy
+kubectl proxy &
 ```
 
 ### Kubernetes Dashboard
@@ -70,6 +70,9 @@ pw: prom-operator
 ### Grafana Openwhisk
 
 http://localhost:8001/api/v1/namespaces/openwhisk/services/http:owdev-grafana:http/proxy/
+
+user: admin
+pw: admin
 
 ## Access the cluster with Kubectl
 

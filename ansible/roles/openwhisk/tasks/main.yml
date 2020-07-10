@@ -24,17 +24,10 @@
   command: /snap/bin/helm install owdev openwhisk/helm/openwhisk -n openwhisk --create-namespace -f mycluster.yaml
   when: helm_releases.stdout.find('owdev') == -1
 
-- name: Get grafana pod
-  command: kubectl -n openwhisk get pods -l name=owdev-grafana --no-headers -o custom-columns=":metadata.name"
-  register: grafana_pod
-
-- name: Update root_url
-  command: kubectl -n openwhisk set env deployment/owdev-grafana GF_SERVER_ROOT_URL=http://localhost:8001/api/v1/namespaces/openwhisk/services/http:owdev-grafana:http/proxy/
-
 - name: Label node for running openwhisk
   command: kubectl label nodes --all openwhisk-role=invoker --overwrite
 
-- name: Install Openwhisk command line
+- name: Install Openwhisk CLI
   unarchive:
     src: https://github.com/apache/openwhisk-cli/releases/download/latest/OpenWhisk_CLI-latest-linux-amd64.tgz
     dest: /usr/bin
@@ -44,5 +37,12 @@
 - name: Set CLI properties
   command: "wsk property set --apihost {{ ansible_default_ipv4.address }}:{{ node_port }} --auth {{ auth_key }}"
 
-- name: Delete old pod #due to anti-affinity rules for single node deployment
+- name: Get grafana pod
+  command: kubectl -n openwhisk get pods -l name=owdev-grafana --no-headers --field-selector=status.phase!=Terminating -o custom-columns=":metadata.name"
+  register: grafana_pod
+
+- name: Update root_url and disable anonymous login
+  command: kubectl -n openwhisk set env deployment/owdev-grafana GF_SERVER_ROOT_URL=http://localhost:8001/api/v1/namespaces/openwhisk/services/http:owdev-grafana:http/proxy/ GF_AUTH_ANONYMOUS_ENABLED=false
+
+- name: Delete old pod #otherwise it will timeout
   command: kubectl -n openwhisk delete pod {{ grafana_pod.stdout }}

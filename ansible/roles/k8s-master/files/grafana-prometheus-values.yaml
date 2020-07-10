@@ -2,3 +2,21 @@ grafana:
   grafana.ini:
     server:
       root_url: http://localhost:8001/api/v1/namespaces/prometheus-operator/services/http:prometheus-operator-grafana:service/proxy/
+  dashboardProviders:
+    dashboardproviders.yaml:
+      apiVersion: 1
+      providers:
+        - name: "myprovider"
+          orgId: 1
+          folder: ""
+          type: file
+          disableDeletion: true
+          editable: false
+          options:
+            path: /var/lib/grafana/dashboards/myprovider
+  dashboards:
+    myprovider:
+      nginx-ingress-controller:
+        datasource: Prometheus
+        gnetId: 11074
+        revision: 1
