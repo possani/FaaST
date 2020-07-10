@@ -179,6 +179,10 @@
 - name: Update repositories
   command: /snap/bin/helm repo update
 
+- name: Install NFS StorageClass
+  command: /snap/bin/helm install nfs-client-provisioner stable/nfs-client-provisioner --set nfs.server={{ hostvars[groups.master.0].internal_ip }} --set nfs.path=/mnt/share --set storageClass.defaultClass=true
+  when: helm_releases.stdout.find('nfs-client-provisioner') == -1
+
 - name: Install Prometheus for monitoring
   command: /snap/bin/helm install prometheus-operator stable/prometheus-operator -n prometheus-operator --create-namespace -f grafana-prometheus-values.yaml
   when: helm_releases.stdout.find('prometheus-operator') == -1

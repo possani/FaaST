@@ -1,11 +1,5 @@
 ---
 # file: roles/openwhisk/tasks/main.yml
-- name: Use Local Storage
-  command: kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/master/deploy/local-path-storage.yaml
-
-- name: Make local-path the default storage class
-  command: 'kubectl patch storageclass local-path -p ''{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'''
-
 - name: Label node for running openwhisk
   command: kubectl label node {{ ansible_hostname }} openwhisk-role=core
   ignore_errors: True
