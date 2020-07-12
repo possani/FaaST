@@ -71,3 +71,11 @@ variable "floatingip_pool" {
 variable "instance_count" {
   type = number
 }
+
+variable "network_pool_id" {
+  type = string
+}
+
+variable "network_subnet_id" {
+  type = string
+}

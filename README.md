@@ -80,6 +80,8 @@ export KUBECONFIG=ansible/from_remote/<instance_name>/etc/kubernetes/admin.conf
 
 ## Run a test function
 
+### FaaS-Profiler OCR
+
 ```bash
 git clone https://github.com/PrincetonUniversity/faas-profiler.git
 cd faas-profiler/functions/ocr-img
@@ -87,6 +89,23 @@ wsk action create ocr-img handler.js --docker immortalfaas/nodejs-tesseract --we
 wget -P /mnt/share/ http://dev.blog.fairway.ne.jp/wp-content/uploads/2014/04/eurotext.png
 curl -H "Content-Type: image/png" --data-binary @/mnt/share/eurotext.png $(wsk action get ocr-img --url -i) -k -v >output.txt
 cat output.txt
+```
+
+### Python MinIO GET/PUT
+
+Uncomment the *service_ip* variable from ansible/function.yml and replace the IP with the one from the Terraform output *\<cluster-name\>_cluster_loadbalancer_service_ip*.
+
+Run the **function** playbook.
+
+```bash
+cd ansible
+ansible-playbook -i <cluster-name>_hosts.ini function.yml
+```
+
+Connect to the master VM and invoke the function
+
+```bash
+wsk -i action invoke test-minio --result
 ```
 
 > **_NOTE:_**  It takes about 10 min for Terraform to run + 5 min for all the Openwhisk Pods to be _Running_/_Completed_.

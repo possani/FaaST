@@ -3,6 +3,8 @@ whisk:
     type: NodePort
     apiHostName: {{ hostvars[inventory_hostname].ansible_host }}
     apiHostPort: {{ node_port }}
+    annotations:
+      nginx.ingress.kubernetes.io/proxy-body-size: "100m"
 
 k8s:
   persistence:

@@ -37,12 +37,11 @@
 - name: Set CLI properties
   command: "wsk property set --apihost {{ ansible_default_ipv4.address }}:{{ node_port }} --auth {{ auth_key }}"
 
-- name: Get grafana pod
-  command: kubectl -n openwhisk get pods -l name=owdev-grafana --no-headers --field-selector=status.phase!=Terminating -o custom-columns=":metadata.name"
-  register: grafana_pod
-
 - name: Update root_url and disable anonymous login
   command: kubectl -n openwhisk set env deployment/owdev-grafana GF_SERVER_ROOT_URL=http://localhost:8001/api/v1/namespaces/openwhisk/services/http:owdev-grafana:http/proxy/ GF_AUTH_ANONYMOUS_ENABLED=false
 
-- name: Delete old pod #otherwise it will timeout
-  command: kubectl -n openwhisk delete pod {{ grafana_pod.stdout }}
+- name: Add bitnami repo
+  command: /snap/bin/helm repo add bitnami https://charts.bitnami.com/bitnami
+
+- name: Install MinIO
+  command: /snap/bin/helm install minio bitnami/minio --set accessKey.password=minio-access-key --set secretKey.password=minio-secret-key --set service.type=NodePort --set service.nodePort=31002 --set defaultBuckets=openwhisk

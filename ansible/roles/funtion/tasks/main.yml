@@ -1,0 +1,44 @@
+---
+# file: roles/funtion/tasks/main.yml
+- name: Download sample image
+  get_url:
+    url: https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png
+    dest: /mnt/share/sample.png
+
+- name: Copy sample image to bucket
+  shell: |
+    docker run -it -v '/mnt/share':'/mnt/share' --entrypoint="" --network host minio/mc sh -c " \
+    mc config host add minio http://localhost:31002 minio-access-key minio-secret-key; \
+    mc cp /mnt/share/sample.png minio/openwhisk "
+# kubectl run minio-client --rm -ti --restart='Never' --env MINIO_SERVER_ACCESS_KEY=minio-access-key --env MINIO_SERVER_SECRET_KEY=minio-secret-key --env MINIO_SERVER_HOST=minio --image docker.io/bitnami/minio-client:2020.7.11-debian-10-r0 -- cp /mnt/share/sample.png minio/openwhisk
+
+- name: Create directory for the python function
+  file:
+    path: $PWD/function
+    state: directory
+    mode: "0755"
+
+- name: Copy python function
+  template:
+    src: "{{ role_path }}/templates/__main__.py.j2"
+    dest: $PWD/function/__main__.py
+
+- name: Install packages for packing the function
+  apt:
+    pkg:
+      - virtualenv
+      - zip
+  become: yes
+
+- name: Install pip packages
+  pip:
+    name: minio
+    virtualenv: "$PWD/function/virtualenv"
+    virtualenv_python: python3.6
+
+- name: Pack the function
+  shell: |
+    wsk -i action delete test-minio
+    cd function
+    zip -r test-minio.zip virtualenv __main__.py
+    wsk -i action create test-minio --kind python:3 test-minio.zip

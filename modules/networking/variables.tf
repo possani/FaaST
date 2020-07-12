@@ -31,3 +31,7 @@ variable "secgroup_description" {
 variable "secgroup_rules" {
   type = list
 }
+
+variable "floatingip_pool" {
+  type = string
+}

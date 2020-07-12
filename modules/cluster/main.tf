@@ -37,7 +37,7 @@ module "networking" {
   secgroup_name        = local.secgroup_name
   secgroup_description = var.secgroup_description
   secgroup_rules       = var.secgroup_rules
-
+  floatingip_pool      = var.floatingip_pool
 }
 
 # Create the compute instance
@@ -61,6 +61,8 @@ module "master" {
   instance_user                               = var.instance_user
   ssh_key_file                                = var.ssh_key_file
   floatingip_pool                             = var.floatingip_pool
+  network_pool_id                             = module.networking.pool.id
+  network_subnet_id                           = module.networking.subnet.id
 }
 
 module "worker" {
@@ -83,6 +85,8 @@ module "worker" {
   instance_user                               = var.instance_user
   ssh_key_file                                = var.ssh_key_file
   floatingip_pool                             = var.floatingip_pool
+  network_pool_id                             = module.networking.pool.id
+  network_subnet_id                           = module.networking.subnet.id
 }
 
 # Run Ansible
