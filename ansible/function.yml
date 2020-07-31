@@ -1,7 +1,0 @@
----
-# file: function.yml
-- hosts: master
-  roles:
-    - role: funtion
-      vars:
-#        service_ip: 138.246.234.247

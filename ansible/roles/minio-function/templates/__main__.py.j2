@@ -1,0 +1,18 @@
+from minio import Minio
+
+def main(args):
+    minioClient = Minio(endpoint='{{ service_ip }}:9000',
+                    access_key='{{ access_key }}',
+                    secret_key='{{ secret_key }}',
+                    secure=False)
+
+    try:
+      # Download image from MinIO
+      get = minioClient.fget_object('openwhisk', 'sample.png', '/tmp/sample.png')
+
+      # Upload image to MinIO
+      put = minioClient.fput_object('openwhisk', 'sample.png', '/tmp/sample.png', content_type='image/png')
+
+      return {"get": str(get), "put": str(put)}
+    except Exception as e:
+      return {"error": str(e)}

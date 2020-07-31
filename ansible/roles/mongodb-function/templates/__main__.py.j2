@@ -1,0 +1,19 @@
+import pymongo
+from bson.objectid import ObjectId
+
+def main(args):
+    client = pymongo.MongoClient("mongodb://mongodb:master-thesis@{{ service_ip }}:27017/")
+    db = client["openwhisk"]
+    col = db["users"]
+
+    try:
+      # Create user
+      user = { "name": args.get("name", "anonymous") }
+      x = col.insert_one(user)
+
+      # Delete user
+      y = col.delete_one({ "_id": ObjectId(x.inserted_id) })
+
+      return {"name": user.get("name"), "id": str(x.inserted_id), "del_count": y.deleted_count}
+    except Exception as e:
+      return {"error": str(e)}

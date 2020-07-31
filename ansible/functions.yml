@@ -1,0 +1,10 @@
+---
+# file: function.yml
+- hosts: master
+  vars:
+    # service_ip: w.x.y.z
+    # access_key: a
+    # secret_key: b
+  roles:
+    - role: minio-function
+    - role: mongodb-function

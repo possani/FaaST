@@ -1,18 +1,11 @@
 whisk:
   ingress:
-    type: NodePort
     apiHostName: {{ hostvars[inventory_hostname].ansible_host }}
-    apiHostPort: {{ node_port }}
     annotations:
       nginx.ingress.kubernetes.io/proxy-body-size: "100m"
-
-k8s:
-  persistence:
-    enabled: true
-
-nginx:
-  httpsNodePort: {{ node_port }}
-
+  limits:
+    actionsInvokesPerminute: 10000
+    actionsInvokesConcurrent: 10000
 invoker:
   containerFactory:
     impl: "kubernetes"

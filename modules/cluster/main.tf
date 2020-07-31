@@ -61,7 +61,7 @@ module "master" {
   instance_user                               = var.instance_user
   ssh_key_file                                = var.ssh_key_file
   floatingip_pool                             = var.floatingip_pool
-  network_pool_id                             = module.networking.pool.id
+  #network_pool_id                             = module.networking.pool.id
   network_subnet_id                           = module.networking.subnet.id
 }
 
@@ -85,7 +85,7 @@ module "worker" {
   instance_user                               = var.instance_user
   ssh_key_file                                = var.ssh_key_file
   floatingip_pool                             = var.floatingip_pool
-  network_pool_id                             = module.networking.pool.id
+  #network_pool_id                             = module.networking.pool.id
   network_subnet_id                           = module.networking.subnet.id
 }
 

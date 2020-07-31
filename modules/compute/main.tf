@@ -48,11 +48,11 @@ data "null_data_source" "instances" {
   }
 }
 
-resource "openstack_lb_member_v2" "member" {
-  count = var.instance_count
+# resource "openstack_lb_member_v2" "member" {
+#   count = var.instance_count
 
-  pool_id       = var.network_pool_id
-  subnet_id     = var.network_subnet_id
-  address       = openstack_compute_instance_v2.instance[count.index].access_ip_v4
-  protocol_port = 31002
-}
+#   pool_id       = var.network_pool_id
+#   subnet_id     = var.network_subnet_id
+#   address       = openstack_compute_instance_v2.instance[count.index].access_ip_v4
+#   protocol_port = 31002
+# }

@@ -16,7 +16,23 @@ grafana:
             path: /var/lib/grafana/dashboards/myprovider
   dashboards:
     myprovider:
-      nginx-ingress-controller:
+      one-node-exporter:
         datasource: Prometheus
         gnetId: 11074
         revision: 1
+      k6-load-testing-results:
+        datasource: influxdb
+        gnetId: 2587
+        revision: 3
+  additionalDataSources:
+    - name: influxdb
+      access: proxy
+      database: db
+      basicAuth: true
+      basicAuthPassword: admin
+      basicAuthUser: admin
+      editable: true
+      orgId: 1
+      type: influxdb
+      url: http://influxdb.default:8086
+      version: 1

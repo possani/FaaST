@@ -52,36 +52,36 @@ resource "openstack_networking_secgroup_rule_v2" "secgroup_rules" {
 }
 
 #  Load Balancer
-resource "openstack_lb_loadbalancer_v2" "lb_svc" {
-  name          = "lb_svc"
-  vip_subnet_id = openstack_networking_subnet_v2.subnet.id
-}
+# resource "openstack_lb_loadbalancer_v2" "lb_svc" {
+#   name          = "lb_svc"
+#   vip_subnet_id = openstack_networking_subnet_v2.subnet.id
+# }
 
-resource "openstack_networking_floatingip_v2" "lb_floatingip_svc" {
-  pool       = var.floatingip_pool
-  port_id    = openstack_lb_loadbalancer_v2.lb_svc.vip_port_id
-  depends_on = [openstack_networking_router_interface_v2.router_interface]
-}
+# resource "openstack_networking_floatingip_v2" "lb_floatingip_svc" {
+#   pool       = var.floatingip_pool
+#   port_id    = openstack_lb_loadbalancer_v2.lb_svc.vip_port_id
+#   depends_on = [openstack_networking_router_interface_v2.router_interface]
+# }
 
-resource "openstack_lb_pool_v2" "pool_svc" {
-  name            = "pool_svc"
-  protocol        = "HTTP"
-  lb_method       = "ROUND_ROBIN"
-  loadbalancer_id = openstack_lb_loadbalancer_v2.lb_svc.id
-}
+# resource "openstack_lb_pool_v2" "pool_svc" {
+#   name            = "pool_svc"
+#   protocol        = "HTTP"
+#   lb_method       = "ROUND_ROBIN"
+#   loadbalancer_id = openstack_lb_loadbalancer_v2.lb_svc.id
+# }
 
-resource "openstack_lb_listener_v2" "listener_svc" {
-  name            = "listener_svc"
-  protocol        = "HTTP"
-  protocol_port   = 80
-  default_pool_id = openstack_lb_pool_v2.pool_svc.id
-  loadbalancer_id = openstack_lb_loadbalancer_v2.lb_svc.id
-}
+# resource "openstack_lb_listener_v2" "listener_svc" {
+#   name            = "listener_svc"
+#   protocol        = "HTTP"
+#   protocol_port   = 80
+#   default_pool_id = openstack_lb_pool_v2.pool_svc.id
+#   loadbalancer_id = openstack_lb_loadbalancer_v2.lb_svc.id
+# }
 
-resource "openstack_lb_monitor_v2" "monitor_svc" {
-  pool_id     = openstack_lb_pool_v2.pool_svc.id
-  type        = "TCP"
-  delay       = 20
-  timeout     = 10
-  max_retries = 5
-}
+# resource "openstack_lb_monitor_v2" "monitor_svc" {
+#   pool_id     = openstack_lb_pool_v2.pool_svc.id
+#   type        = "TCP"
+#   delay       = 20
+#   timeout     = 10
+#   max_retries = 5
+# }

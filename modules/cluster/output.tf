@@ -6,6 +6,6 @@ output "worker_instances" {
   value = module.worker.instances
 }
 
-output "loadbalancer_service_ip" {
-  value = module.networking.service_ip
-}
+# output "loadbalancer_service_ip" {
+#   value = module.networking.service_ip
+# }

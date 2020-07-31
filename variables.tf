@@ -34,7 +34,7 @@ variable "master_count" {
 
 variable "worker_count" {
   type    = number
-  default = 1
+  default = 0
 }
 
 variable "instance_image_id" {

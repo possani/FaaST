@@ -44,4 +44,4 @@
   command: /snap/bin/helm repo add bitnami https://charts.bitnami.com/bitnami
 
 - name: Install MinIO
-  command: /snap/bin/helm install minio bitnami/minio --set accessKey.password=minio-access-key --set secretKey.password=minio-secret-key --set service.type=NodePort --set service.nodePort=31002 --set defaultBuckets=openwhisk
+  command: /snap/bin/helm install minio bitnami/minio --set accessKey.password=minio-access-key --set secretKey.password=minio-secret-key --set service.type=NodePort --set service.nodePort=31003 --set defaultBuckets=openwhisk

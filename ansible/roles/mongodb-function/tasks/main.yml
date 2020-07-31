@@ -1,0 +1,36 @@
+---
+# file: roles/mongodb-funtion/tasks/main.yml
+- name: Create directory for the python function
+  file:
+    path: $PWD/mongodb-function
+    state: directory
+    mode: "0755"
+
+- name: Copy python function
+  template:
+    src: "{{ role_path }}/templates/__main__.py.j2"
+    dest: $PWD/mongodb-function/__main__.py
+
+- name: Install packages for packing the function
+  apt:
+    pkg:
+      - virtualenv
+      - zip
+  become: yes
+
+- name: Install pip packages
+  pip:
+    name:
+      - pymongo
+    virtualenv: "$PWD/mongodb-function/virtualenv"
+    virtualenv_python: python3.6
+
+- name: Pack the function
+  shell: |
+    wsk -i action list | grep "python-mongodb"
+    if [ $? -eq 0 ]; then
+      wsk -i action delete python-mongodb
+    fi
+    cd mongodb-function
+    zip -r python-mongodb.zip virtualenv __main__.py
+    wsk -i action create python-mongodb --kind python:3 python-mongodb.zip

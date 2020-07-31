@@ -45,3 +45,6 @@ ansible/*.ini
 
 ### Other files ###
 ignoreme
+metrics.py
+queries.json
+Dockerfile
