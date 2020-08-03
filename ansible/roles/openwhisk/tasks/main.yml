@@ -45,3 +45,26 @@
 
 - name: Install MinIO
   command: /snap/bin/helm install minio bitnami/minio --set accessKey.password=minio-access-key --set secretKey.password=minio-secret-key --set service.type=NodePort --set service.nodePort=31003 --set defaultBuckets=openwhisk
+
+- name: Copy daemon-rbac.yaml
+  copy:
+    src: "{{ role_path }}/files/daemon-rbac.yaml"
+    dest: $PWD/daemon-rbac.yaml
+
+- name: Create daemon Role and RoleBinding
+  command: kubectl -n openwhisk apply -f daemon-rbac.yaml
+
+- name: Create watcher Deployment
+  command: kubectl -n openwhisk create deployment watcher --image=possani/watcher:latest
+
+- name: Configure watcher Deployment
+  command: kubectl -n openwhisk set env deployment/watcher SERVER_IP={{ hostvars[inventory_hostname].ansible_host }}
+
+- name: Patch watcher Deployment port
+  command: 'kubectl -n openwhisk patch deploy watcher -p ''{"spec": {"template": {"spec": {"containers": [{"name": "watcher", "ports": [{"containerPort": 8080}]}]}}}}'''
+
+- name: Create watcher Service
+  command: kubectl -n openwhisk expose deployment watcher --port=80 --target-port=8080 --type=NodePort
+
+- name: Patch watcher Service port
+  command: 'kubectl -n openwhisk patch svc watcher -p ''{"spec": {"ports": [{"nodePort": 31004, "port": 80, "name"}]}}'''

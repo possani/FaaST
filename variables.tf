@@ -55,7 +55,7 @@ variable "instance_keypair_name" {
 
 variable "instance_block_device_volume_size" {
   type    = number
-  default = 20
+  default = 40
 }
 
 variable "ssh_key_file" {

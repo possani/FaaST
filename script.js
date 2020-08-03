@@ -1,10 +1,8 @@
 import http from 'k6/http';
-import { sleep } from 'k6';
 
 export let options = {
   insecureSkipTLSVerify: true,
   vus: 10,
-  duration: '60m',
 };
 
 export default function () {
@@ -20,6 +18,6 @@ export default function () {
     },
   };
 
-  let res = http.post(url, payload, params);
-  console.log(res.body);
+  http.post(url, payload, params);
+  // console.log(res.body);
 }

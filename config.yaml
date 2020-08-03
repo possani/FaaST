@@ -1,0 +1,9 @@
+function: python-minio
+
+clusters:
+  - name: cloud
+    prometheus: localhost:8080
+    openwhisk: 138.246.235.0
+  - name: edge
+    prometheus: localhost:8081
+    openwhisk: 138.246.235.16

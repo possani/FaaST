@@ -34,7 +34,8 @@ variable "secgroup_rules" {
     { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 443 },
     { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 31001 },
     { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 31002 },
-    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 31003 }
+    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 31003 },
+    { "cidr" = "0.0.0.0/0", "ip_protocol" = "tcp", "port" = 31004 }
   ]
 }
 
