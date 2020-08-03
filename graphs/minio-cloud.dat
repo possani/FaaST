@@ -1,0 +1,5 @@
+# Cloud
+# scenario   avg
+LRZ-VM       4.34
+AWS          9.16
+LOCALHOST    0.058
