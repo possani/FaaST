@@ -2,7 +2,7 @@ import pymongo
 from bson.objectid import ObjectId
 
 def main(args):
-    client = pymongo.MongoClient("mongodb://mongodb:master-thesis@{{ service_ip }}:27017/")
+    client = pymongo.MongoClient(args['connection_string'])
     db = client["openwhisk"]
     col = db["users"]
 

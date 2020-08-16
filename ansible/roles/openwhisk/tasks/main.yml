@@ -46,6 +46,9 @@
 - name: Install MinIO
   command: /snap/bin/helm install minio bitnami/minio --set accessKey.password=minio-access-key --set secretKey.password=minio-secret-key --set service.type=NodePort --set service.nodePort=31003 --set defaultBuckets=openwhisk
 
+- name: Install MongoDB
+  command: /snap/bin/helm install mongodb bitnami/mongodb --set auth.username=mongodb --set auth.password=master-thesis --set auth.database=openwhisk
+
 - name: Copy daemon-rbac.yaml
   copy:
     src: "{{ role_path }}/files/daemon-rbac.yaml"
@@ -67,4 +70,4 @@
   command: kubectl -n openwhisk expose deployment watcher --port=80 --target-port=8080 --type=NodePort
 
 - name: Patch watcher Service port
-  command: 'kubectl -n openwhisk patch svc watcher -p ''{"spec": {"ports": [{"nodePort": 31004, "port": 80, "name"}]}}'''
+  command: 'kubectl -n openwhisk patch svc watcher -p ''{"spec": {"ports": [{"nodePort": 31004, "port": 80}]}}'''

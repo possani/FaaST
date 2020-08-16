@@ -48,3 +48,7 @@ ignoreme
 metrics.py
 queries.json
 Dockerfile
+graphs/test.env
+graphs/*.dat
+graphs/*.gpi
+graphs/*.png
