@@ -32,6 +32,6 @@ module "edge_cluster" {
   ssh_key_file                      = var.ssh_key_file
   floatingip_pool                   = var.floatingip_pool
   public_network_name               = var.public_network_name
-  subnet_cidr                       = "10.0.0.1/24"
+  subnet_cidr                       = "10.0.1.0/24"
   pod_subnet                        = "10.2.0.0/16"
 }

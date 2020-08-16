@@ -33,4 +33,4 @@
     fi
     cd mongodb-function
     zip -r python-mongodb.zip virtualenv __main__.py
-    wsk -i action create python-mongodb --kind python:3 python-mongodb.zip
+    wsk -i action create python-mongodb -t 300000 --kind python:3 python-mongodb.zip

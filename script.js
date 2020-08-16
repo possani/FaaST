@@ -8,7 +8,7 @@ export let options = {
 export default function () {
   var url = `https://${__ENV.SERVER_IP}:31001/api/v1/namespaces/guest/actions/${__ENV.SCRIPT}?blocking=true&result=true`;
 
-  var payload = JSON.stringify({});
+  var payload = `${__ENV.PAYLOAD}`;
 
   var params = {
     timeout: 90000,
@@ -18,6 +18,7 @@ export default function () {
     },
   };
 
-  http.post(url, payload, params);
-  // console.log(res.body);
+  // http.post(url, payload, params);
+  var res = http.post(url, payload, params);
+  console.log(res.body);
 }

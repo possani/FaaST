@@ -1,4 +1,4 @@
-function: python-minio
+function: python-mongodb
 
 clusters:
   - name: cloud
