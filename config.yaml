@@ -1,4 +1,4 @@
-function: python-mongodb
+function: mongodb
 
 clusters:
   - name: cloud

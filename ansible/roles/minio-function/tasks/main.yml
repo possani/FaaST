@@ -38,13 +38,13 @@
 
 - name: Pack the function
   shell: |
-    wsk -i action list | grep "python-minio"
+    wsk -i action list | grep "minio"
     if [ $? -eq 0 ]; then
-      wsk -i action delete python-minio
+      wsk -i action delete minio
     fi
     cd minio-function
-    zip -r python-minio.zip virtualenv __main__.py
-    wsk -i action create python-minio -t 300000 --kind python:3 python-minio.zip
+    zip -r minio.zip virtualenv __main__.py
+    wsk -i action create minio -t 300000 --kind python:3 minio.zip
 
 #   register: result
 #   ignore_errors: true

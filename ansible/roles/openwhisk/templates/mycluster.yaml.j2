@@ -6,7 +6,17 @@ whisk:
   limits:
     actionsInvokesPerminute: 10000
     actionsInvokesConcurrent: 10000
+    actions:
+      time:
+        min: "10ms"
+        max: "15m"
+        std: "5m"
+  kafka:
+    containerPool:
+      userMemory: "4096m"
+        
 invoker:
+  jvmHeapMB: "1024"
   containerFactory:
     impl: "kubernetes"
     

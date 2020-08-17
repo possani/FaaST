@@ -52,3 +52,4 @@ graphs/test.env
 graphs/*.dat
 graphs/*.gpi
 graphs/*.png
+graphs/*.json

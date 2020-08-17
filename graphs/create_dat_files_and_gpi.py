@@ -5,9 +5,9 @@ import argparse
 
 
 def create_dat(cluster, function, metric, submetric):
-    aws_files = glob.glob("aws-*{}*.json".format(cluster))
-    lrz_files = glob.glob("lrz-*{}*.json".format(cluster))
-    local_files = glob.glob("local-*{}*.json".format(cluster))
+    aws_files = glob.glob("{}-aws-*-{}.json".format(function, cluster))
+    lrz_files = glob.glob("{}-lrz-*-{}.json".format(function, cluster))
+    local_files = glob.glob("{}-local-*-{}.json".format(function, cluster))
     aws = lrz = local = 0.0
 
     for aws_file in aws_files:

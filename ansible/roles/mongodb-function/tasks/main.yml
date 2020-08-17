@@ -27,10 +27,10 @@
 
 - name: Pack the function
   shell: |
-    wsk -i action list | grep "python-mongodb"
+    wsk -i action list | grep "mongodb"
     if [ $? -eq 0 ]; then
-      wsk -i action delete python-mongodb
+      wsk -i action delete mongodb
     fi
     cd mongodb-function
-    zip -r python-mongodb.zip virtualenv __main__.py
-    wsk -i action create python-mongodb -t 300000 --kind python:3 python-mongodb.zip
+    zip -r mongodb.zip virtualenv __main__.py
+    wsk -i action create mongodb -t 300000 --kind python:3 mongodb.zip
