@@ -48,8 +48,6 @@ ignoreme
 metrics.py
 queries.json
 Dockerfile
-graphs/test.env
-graphs/*.dat
-graphs/*.gpi
-graphs/*.png
-graphs/*.json
+graphs/*
+!graphs/graphs.py
+!graphs/k6.sh

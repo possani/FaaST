@@ -1,0 +1,21 @@
+---
+# file: roles/pv-funtion/tasks/main.yml
+- name: Create directory for the python function
+  file:
+    path: $PWD/pv-function
+    state: directory
+    mode: "0755"
+
+- name: Copy python function
+  copy:
+    src: "{{ role_path }}/files/pv.py"
+    dest: $PWD/pv-function/pv.py
+
+- name: Pack the function
+  shell: |
+    wsk -i action list | grep "pv"
+    if [ $? -eq 0 ]; then
+      wsk -i action delete pv
+    fi
+    cd pv-function
+    wsk -i action create pv -t 300000 --docker ansjin/minio:actionbg pv.py

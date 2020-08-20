@@ -10,7 +10,6 @@
     docker run -it -v '/mnt/share':'/mnt/share' --entrypoint="" --network host minio/mc sh -c " \
     mc config host add minio http://localhost:31003 minio-access-key minio-secret-key; \
     mc cp /mnt/share/sample.png minio/openwhisk "
-# kubectl run minio-client --rm -ti --restart='Never' --env MINIO_SERVER_ACCESS_KEY=minio-access-key --env MINIO_SERVER_SECRET_KEY=minio-secret-key --env MINIO_SERVER_HOST=minio --image docker.io/bitnami/minio-client:2020.7.11-debian-10-r0 -- cp /mnt/share/sample.png minio/openwhisk
 
 - name: Create directory for the python function
   file:
@@ -23,19 +22,6 @@
     src: "{{ role_path }}/templates/__main__.py.j2"
     dest: $PWD/minio-function/__main__.py
 
-- name: Install packages for packing the function
-  apt:
-    pkg:
-      - virtualenv
-      - zip
-  become: yes
-
-- name: Install pip packages
-  pip:
-    name: minio
-    virtualenv: "$PWD/minio-function/virtualenv"
-    virtualenv_python: python3.6
-
 - name: Pack the function
   shell: |
     wsk -i action list | grep "minio"
@@ -43,12 +29,4 @@
       wsk -i action delete minio
     fi
     cd minio-function
-    zip -r minio.zip virtualenv __main__.py
-    wsk -i action create minio -t 300000 --kind python:3 minio.zip
-
-#   register: result
-#   ignore_errors: true
-
-# - name: Debug function creation
-#   debug:
-#     var: result
+    wsk -i action create minio -t 300000 --docker ansjin/minio:actionbg __main__.py

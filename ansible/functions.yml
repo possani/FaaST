@@ -4,3 +4,4 @@
   roles:
     - role: minio-function
     - role: mongodb-function
+    - role: pv-function
