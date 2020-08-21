@@ -16,6 +16,19 @@
     dest: $PWD/openwhisk
     force: yes
 
+- name: Copy whiskconfig.conf
+  copy:
+    src: "{{ role_path }}/files/whiskconfig.conf"
+    dest: $PWD/openwhisk/helm/openwhisk/whiskconfig.conf
+
+- name: Copy pv.yaml
+  copy:
+    src: "{{ role_path }}/files/pv.yaml"
+    dest: $PWD/pv.yaml
+
+- name: Create persistent volume
+  command: kubectl -n openwhisk apply -f pv.yaml
+
 - name: Get Helm releases
   shell: /snap/bin/helm list -A
   register: helm_releases
