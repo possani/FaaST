@@ -1,5 +1,15 @@
 ---
 # file: roles/pv-funtion/tasks/main.yml
+- name: Download sample image
+  get_url:
+    url: https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png
+    dest: /mnt/share/sample.png
+
+- name: Move sample image to volume
+  shell: |
+    pv=$(kubectl -n openwhisk get pvc function-pvc --no-headers=true | cut -d' ' -f7)
+    mv /mnt/share/sample.png /mnt/share/openwhisk-function-pvc-${pv}/
+
 - name: Create directory for the python function
   file:
     path: $PWD/pv-function
