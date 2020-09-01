@@ -1,13 +1,18 @@
 #!/bin/bash
 
-export DURATION=60m
+export DURATION=30m
 
 k6port=6565
-for i in $(seq 3 $RANGE)
+for i in $(seq 1 $RANGE)
 do
-    for cluster in local lrz
+    for cluster in aws local
     do
         payload="${cluster^^}_${FUNCTION^^}_PAYLOAD"
+        if [ -z "${!payload}" ]
+        then
+            echo "There's no such variable ${payload}"
+            continue
+        fi
         export PAYLOAD=${!payload}
 
         # Cloud
