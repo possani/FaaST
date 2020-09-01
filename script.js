@@ -1,8 +1,9 @@
 import http from 'k6/http';
+import { check } from 'k6';
 
 export let options = {
   insecureSkipTLSVerify: true,
-  vus: 10,
+  vus: 1,
 };
 
 export default function () {
@@ -20,7 +21,12 @@ export default function () {
     },
   };
 
-  http.post(url, payload, params);
-  // var res = http.post(url, payload, params);
+  // http.post(url, payload, params);
+  var res = http.post(url, payload, params);
   // console.log(res.body);
+
+  // console.log(JSON.stringify(res));
+  check(res, {
+    'status is 200': (r) => r.status === 200,
+  });
 }
