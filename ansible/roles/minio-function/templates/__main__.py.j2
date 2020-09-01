@@ -1,29 +1,32 @@
 from minio import Minio
 from PIL import Image, ImageFilter
 
-
 def main(args):
     endpoint_str = "{}:{}".format(args['service_ip'], args['service_port'])
     minioClient = Minio(endpoint=endpoint_str,
                         access_key=args['access_key'],
                         secret_key=args['secret_key'],
                         secure=False)
-    image_name = args['image']
+    images = args['images']
 
-    try:
-        # Download image from MinIO
-        get = minioClient.fget_object(
-            'openwhisk', image_name, '/tmp/' + image_name)
+    for image_name in images:
+        try:
+            # Download image from MinIO
+            get = minioClient.fget_object(
+                'openwhisk', image_name, '/tmp/' + image_name)
 
-        # Create Thumbnail
-        image = Image.open('/tmp/' + image_name)
-        image.thumbnail((128, 128))
-        image.save('/tmp/thumbnail_' + image_name)
+            # Create Thumbnail
+            image = Image.open('/tmp/' + image_name)
+            image.transpose(Image.FLIP_TOP_BOTTOM)
+            image.transpose(Image.ROTATE_180)
+            image.thumbnail((128, 128))
+            image.save('/tmp/thumbnail_' + image_name)
 
-        # Upload image to MinIO
-        put = minioClient.fput_object(
-            'openwhisk', 'thumbnail_' + image_name, '/tmp/thumbnail_' + image_name, content_type='image/png')
+            # Upload image to MinIO
+            put = minioClient.fput_object(
+                'openwhisk', 'thumbnail_' + image_name, '/tmp/thumbnail_' + image_name, content_type='image/png')
 
-        return {"get": str(get), "put": str(put)}
-    except Exception as e:
-        return {"error": str(e)}
+        except Exception as e:
+            return {"Message": "Image: {} failed with error {}".format(i, str(e))}
+
+    return {"Message": "{} images were processed".format(len(images))}
