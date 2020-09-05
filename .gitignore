@@ -51,3 +51,5 @@ Dockerfile
 graphs/*
 !graphs/graphs.py
 !graphs/k6.sh
+!graphs/k6cp.sh
+!graphs/insert_copy_time.py

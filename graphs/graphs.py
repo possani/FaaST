@@ -30,7 +30,7 @@ def aggregate_results(be_files):
     elif submetric == "min":
         result = min(values)
     else:
-        result = sum(values)/len(values)
+        result = float(sum(values)/len(values))
 
     return result
 
@@ -92,9 +92,11 @@ def create_gpi():
         f.write(
             "\n'{}-local.dat' using 2: xtic(1) with linespoints linestyle 2 title 'LOCAL'".format(filename_prefix))
     else:
-        f.write("\nplot '{}-edge.dat' using 2: xtic(1) with linespoints linestyle 1 title 'Edge', \\".format(filename_prefix))
+        f.write("\nset style fill solid")
+        # f.write("\nset boxwidth 0.5")
+        f.write("\nplot '{}-edge.dat' using 2: xtic(1) with histogram linestyle 1 title 'Edge', \\".format(filename_prefix))
         f.write(
-            "\n'{}-cloud.dat' using 2: xtic(1) with linespoints linestyle 2 title 'Cloud'".format(filename_prefix))
+            "\n'{}-cloud.dat' using 2: xtic(1) with histogram linestyle 2 title 'Cloud'".format(filename_prefix))
     f.close()
 
 
