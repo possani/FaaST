@@ -15,7 +15,7 @@ if __name__ == "__main__":
                     data = json.load(jsonFile)
                     jsonFile.close()
 
-                    data["metrics"]["copy"] = {"speed": speed.group(1)}
+                    data["metrics"]["copy"] = {"speed": float(speed.group(1))}
 
                     jsonFile = open(k6s_output_files[index], 'w+')
                     jsonFile.write(json.dumps(data))
