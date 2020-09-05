@@ -27,6 +27,6 @@ def main(args):
                 'openwhisk', 'thumbnail_' + image_name, '/tmp/thumbnail_' + image_name, content_type='image/png')
 
         except Exception as e:
-            return {"Message": "Image: {} failed with error {}".format(i, str(e))}
+            return {"Message": "Image: {} failed with error {}".format(image_name, str(e))}
 
     return {"Message": "{} images were processed".format(len(images))}
