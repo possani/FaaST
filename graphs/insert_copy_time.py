@@ -1,19 +1,11 @@
 import glob
 import json
-import argparse
 import re
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument("-d", "--directory", nargs='?', default="multiple_5m",
-                        help="the name of the directory")
-    args = parser.parse_args()
 
-    directory = args.directory
-
-    minio_output_files = glob.glob("{}/*-cp-*.json".format(directory))
-    k6s_output_files = glob.glob("{}/*-local-*.json".format(directory))
+    minio_output_files = glob.glob("*-cp-*.json")
+    k6s_output_files = glob.glob("*-local-*.json")
     for index, files in enumerate(minio_output_files):
         with open(files) as f:
             for line in f:
