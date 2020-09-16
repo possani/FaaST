@@ -21,14 +21,6 @@
     src: "{{ role_path }}/files/whiskconfig.conf"
     dest: $PWD/openwhisk/helm/openwhisk/whiskconfig.conf
 
-- name: Copy pv.yaml
-  copy:
-    src: "{{ role_path }}/files/pv.yaml"
-    dest: $PWD/pv.yaml
-
-- name: Create persistent volume
-  command: kubectl -n openwhisk apply -f pv.yaml
-
 - name: Get Helm releases
   shell: /snap/bin/helm list -A
   register: helm_releases
@@ -52,6 +44,14 @@
 
 - name: Update root_url and disable anonymous login
   command: kubectl -n openwhisk set env deployment/owdev-grafana GF_SERVER_ROOT_URL=http://localhost:8001/api/v1/namespaces/openwhisk/services/http:owdev-grafana:http/proxy/ GF_AUTH_ANONYMOUS_ENABLED=false
+
+- name: Copy pv.yaml
+  copy:
+    src: "{{ role_path }}/files/pv.yaml"
+    dest: $PWD/pv.yaml
+
+- name: Create persistent volume
+  command: kubectl -n openwhisk apply -f pv.yaml
 
 - name: Add bitnami repo
   command: /snap/bin/helm repo add bitnami https://charts.bitnami.com/bitnami
