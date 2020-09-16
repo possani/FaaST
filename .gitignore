@@ -52,4 +52,7 @@ graphs/*
 !graphs/graphs.py
 !graphs/k6.sh
 !graphs/k6cp.sh
+!graphs/k6cpsync.sh
+!graphs/miniocp.sh
 !graphs/insert_copy_time.py
+!graphs/influx.py
