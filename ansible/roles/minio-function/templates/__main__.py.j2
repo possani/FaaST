@@ -24,7 +24,7 @@ def main(args):
 
             # Upload image to MinIO
             put = minioClient.fput_object(
-                'openwhisk', 'thumbnail_' + image_name, '/tmp/thumbnail_' + image_name, content_type='image/png')
+                'openwhisk2', 'thumbnail_' + image_name, '/tmp/thumbnail_' + image_name, content_type='image/png')
 
         except Exception as e:
             return {"Message": "Image: {} failed with error {}".format(image_name, str(e))}
