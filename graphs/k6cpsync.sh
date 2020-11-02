@@ -1,13 +1,11 @@
 #!/bin/bash
 
-# Empty bucket
+# Empty buckets
 docker run -it --entrypoint="" --network host minio/mc sh -c " \
     mc -q config host add remote http://$REMOTE:9000 $REMOTE_ACCESS_KEY $REMOTE_SECRET_KEY > /dev/null; \
-    mc -q rm --recursive --force remote/openwhisk/"
-
-docker run -v "$(pwd)"/images:/tmp/images -it --entrypoint="" --network host minio/mc sh -c " \
-            mc -q config host add remote http://$REMOTE:9000 $REMOTE_ACCESS_KEY $REMOTE_SECRET_KEY > /dev/null;
-            mc -q cp -r /tmp/images/ remote/openwhisk/"
+    mc -q config host add local http://$LOCAL:31003 $LOCAL_ACCESS_KEY $LOCAL_SECRET_KEY > /dev/null; \
+    mc -q rm --recursive --force remote/openwhisk/; \
+    mc -q rm --recursive --force local/openwhisk/ "
 
 for case in single multiple partial
 do
@@ -15,7 +13,7 @@ do
     then 
         docker run -v "$(pwd)"/images:/tmp/images -it --entrypoint="" --network host minio/mc sh -c " \
             mc -q config host add remote http://$REMOTE:9000 $REMOTE_ACCESS_KEY $REMOTE_SECRET_KEY > /dev/null;
-            mc -q cp /tmp/images/sample00.png remote/openwhisk/"
+            mc -q cp /tmp/images/sample000.png remote/openwhisk/"
     elif [ $case == "multiple" ]
     then
         for i in {0..9}
@@ -30,7 +28,7 @@ do
             mc -q cp -r /tmp/images/ remote/openwhisk/"
     fi
 
-    for i in 5m 30m
+    for i in 30m
     do
         export DURATION=$i
         payload="${FUNCTION^^}_REMOTE_${case^^}_PAYLOAD"
@@ -39,7 +37,10 @@ do
             echo "There's no such variable ${payload}"
             continue
         fi
+
         export PAYLOAD=${!payload}
+        echo $case
+        echo $PAYLOAD
 
         DATE=$(date +%s)
         # Copy images
@@ -56,7 +57,8 @@ do
 
         payload="${FUNCTION^^}_LOCAL_${case^^}_PAYLOAD"
         export PAYLOAD=${!payload}
-
+        echo $PAYLOAD
+        
         # Wait for the migration
         sleep 5
         while [ $(docker ps | wc -l) -gt 1 ]; do sleep 0.5; done
@@ -64,9 +66,9 @@ do
         pkill -x k6
         DURATION_SEC=$(( ${DURATION%"m"} * 60 ))
         REMAINING_TIME=$(( $DURATION_SEC - $SECONDS ))s
-        echo $DURATION_SEC
-        echo $SECONDS
-        echo $REMAINING_TIME
+        echo "duration in sec: $DURATION_SEC"
+        echo "current time: $SECONDS"
+        echo "remaining time: $REMAINING_TIME"
         export DURATION=$REMAINING_TIME
 
         k6 run ../script.js --duration ${DURATION} \
@@ -87,3 +89,8 @@ do
         sleep 5m
     done
 done
+
+# Empty buckets
+docker run -it --entrypoint="" --network host minio/mc sh -c " \
+    mc -q config host add remote http://$REMOTE:9000 $REMOTE_ACCESS_KEY $REMOTE_SECRET_KEY > /dev/null; \
+    mc -q rm --recursive --force remote/openwhisk/"

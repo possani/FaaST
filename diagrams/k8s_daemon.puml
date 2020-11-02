@@ -1,0 +1,26 @@
+@startuml
+
+hide footbox
+
+participant watcher as w
+participant openwhisk as o
+participant prometheus as p
+
+loop updateConfigMap() every 60s
+    w -> o: getFunctionNames()
+    activate o
+    w <-- o: functionNames
+    deactivate o
+
+    loop over every function
+        w -> p: getData(functionName)
+        activate p
+        w <-- p: data
+        deactivate p
+
+        w -> w: computeAvg()
+        deactivate w
+    end
+end
+
+@enduml

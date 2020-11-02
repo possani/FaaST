@@ -20,7 +20,7 @@ do
         echo $r
 
         # Populate remote bucket
-        docker run -v "$(pwd)"/large_images:/tmp/images -it --entrypoint="" --network host minio/mc sh -c " \
+        docker run -v "$(pwd)"/large-images:/tmp/images -it --entrypoint="" --network host minio/mc sh -c " \
             mc -q config host add remote http://$REMOTE:9000 $REMOTE_ACCESS_KEY $REMOTE_SECRET_KEY > /dev/null;
             mc -q find /tmp/images --name \"sample$r.png\" --exec \"mc -q cp {} remote/test\" "
 
@@ -38,3 +38,10 @@ do
         fi
     done
 done
+
+# Empty buckets
+docker run -it --entrypoint="" --network host minio/mc sh -c " \
+    mc -q config host add local http://$LOCAL:31003 $LOCAL_ACCESS_KEY $LOCAL_SECRET_KEY > /dev/null; \
+    mc -q config host add remote http://$REMOTE:9000 $REMOTE_ACCESS_KEY $REMOTE_SECRET_KEY > /dev/null; \
+    mc -q rm --recursive --force local/test/; \
+    mc -q rm --recursive --force remote/test/ "
