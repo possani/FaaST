@@ -1,70 +1,11 @@
+from minio import Minio
 import json
-import datetime
 import subprocess
 import requests
 import yaml
-import logging
+import concurrent.futures
 from urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
-
-# Global variables
-log = logging.getLogger('root')
-FORMAT = "[ %(asctime)s %(levelname)s %(funcName)15s() ] %(message)s"
-logging.basicConfig(format=FORMAT, level=logging.INFO,
-                    datefmt="%Y-%m-%d %H:%M:%S")
-
-
-class Cluster:
-    def __init__(self, prometheus, openwhisk):
-        self.prometheus = prometheus
-        self.openwhisk = openwhisk
-
-
-def getAction():
-    with open(r'config.yaml') as config:
-        config_obj = yaml.load(config, Loader=yaml.FullLoader)
-        return(config_obj['function'])
-
-
-def getClusters():
-    with open(r'config.yaml') as config:
-        config_obj = yaml.load(config, Loader=yaml.FullLoader)
-        return(config_obj['clusters'])
-
-
-# def getClusters():
-#     clusters = subprocess.check_output(
-#         "ls ansible/from_remote/",
-#         shell=True,
-#     ).decode().split()
-#     log.info("Clusters: ".format(clusters))
-#     return clusters
-
-
-# def getPods():
-#     for cluster in getClusters():
-#         pods = subprocess.check_output(
-#             "export KUBECONFIG=ansible/from_remote/{}/etc/kubernetes/admin.conf; kubectl get pods".format(
-#                 cluster),
-#             shell=True,
-#         ).decode()
-#         print(pods)
-
-
-def getSmallestAvg():
-    action = getAction()
-    smallest = 999999999
-    cluster = None
-
-    for c in getClusters():
-        url = "http://{}?action={}".format(c["prometheus"], action)
-        resp = requests.get(url)
-        data = resp.json()
-        if float(data["avg"]) < smallest:
-            smallest = float(data["avg"])
-            cluster = c
-
-    return cluster
 
 
 def callFunction(cluster, action):
@@ -81,10 +22,121 @@ def callFunction(cluster, action):
     return resp.json()
 
 
+def getImages():
+    with open(r'config.yaml') as config:
+        config_obj = yaml.load(config, Loader=yaml.FullLoader)
+        return(config_obj['payload']['images'])
+
+
+def getMinioClient(location):
+    backend = location + 'Backend'
+    with open(r'config.yaml') as config:
+        config_obj = yaml.load(config, Loader=yaml.FullLoader)
+
+        service_ip = config_obj[backend]['service_ip']
+        service_port = config_obj[backend]['service_port']
+        access_key = config_obj[backend]['access_key']
+        secret_key = config_obj[backend]['secret_key']
+
+        endpoint_str = "{}:{}".format(service_ip, service_port)
+        minioClient = Minio(endpoint=endpoint_str,
+                            access_key=access_key,
+                            secret_key=secret_key,
+                            secure=False)
+        return minioClient
+
+
+def getPlayload(location, images):
+    backend = location + 'Backend'
+    with open(r'config.yaml') as config:
+        config_obj = yaml.load(config, Loader=yaml.FullLoader)
+
+        service_ip = config_obj[backend]['service_ip']
+        service_port = config_obj[backend]['service_port']
+        access_key = config_obj[backend]['access_key']
+        secret_key = config_obj[backend]['secret_key']
+
+        payload = {
+            "service_ip": service_ip,
+            "service_port": service_port,
+            "access_key": access_key,
+            "secret_key": secret_key,
+            "images": images
+        }
+
+        return json.dumps(payload)
+
+
+def checkLocal(images):
+    mc = getMinioClient('local')
+    for i in images:
+        try:
+            stat = mc.stat_object('openwhisk', i)
+        except Exception as e:
+            if str(e).__contains__("NoSuchKey"):
+                return True
+    return False
+
+
+def getClusterIP():
+    with open(r'config.yaml') as config:
+        config_obj = yaml.load(config, Loader=yaml.FullLoader)
+        return(config_obj['cluster']['ip'])
+
+
+def callFunction(location, images):
+    url = "https://{}:31001/api/v1/namespaces/guest/actions/minio?blocking=true&result=true".format(
+        getClusterIP())
+    headers = {"Authorization": "Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A=",
+               "Content-Type": "application/json"}
+
+    payload = getPlayload(location, images)
+    resp = requests.post(url,
+                         headers=headers,
+                         verify=False,
+                         data=payload)
+    return resp.json()
+
+
+def checkDocker():
+    return subprocess.check_output("docker ps --format {{.Names}} --filter name=^/copying-images-123$", shell=True).decode()
+
+
+def copyImages():
+    f = open("config.yaml", "r")
+    config_obj = yaml.load(f, Loader=yaml.FullLoader)
+
+    local_service_ip = config_obj['localBackend']['service_ip']
+    local_service_port = config_obj['localBackend']['service_port']
+    local_access_key = config_obj['localBackend']['access_key']
+    local_secret_key = config_obj['localBackend']['secret_key']
+
+    remote_service_ip = config_obj['remoteBackend']['service_ip']
+    remote_service_port = config_obj['remoteBackend']['service_port']
+    remote_access_key = config_obj['remoteBackend']['access_key']
+    remote_secret_key = config_obj['remoteBackend']['secret_key']
+
+    subprocess.Popen(
+        "docker run -d --rm --name copying-images-123 --entrypoint=\"\" --network host minio/mc sh -c \"mc -q config host add local http://{}:{} {} {} > /dev/null; mc -q config host add remote http://{}:{} {} {} > /dev/null; mc -q --json cp -r remote/openwhisk/ local/openwhisk/ \" >> /dev/null".format(
+            local_service_ip, local_service_port, local_access_key, local_secret_key,
+            remote_service_ip, remote_service_port, remote_access_key, remote_secret_key),
+        shell=True,
+        stdin=None, stdout=None, stderr=None, close_fds=True)
+
+
 def main():
-    cluster = getSmallestAvg()
-    resp = callFunction(cluster, getAction())
-    log.info({"Cluster": cluster["name"], "Response": resp})
+    images = getImages()
+    missing_image = checkLocal(images)
+
+    if not missing_image:
+        print('Local: ', callFunction('local', images))
+    else:
+        executor = concurrent.futures.ThreadPoolExecutor(max_workers=1)
+        t1 = executor.submit(callFunction, 'remote', images)
+        print('Remote: ', t1.result())
+        if not checkDocker():
+            print('Copying images...')
+            copyImages()
 
 
 if __name__ == "__main__":
