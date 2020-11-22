@@ -1,6 +1,6 @@
 #!/bin/bash
 
-regex=("00" "0[0-4]" "0[0-9]" "[0-4][0-9]" "[0-9][0-9]")
+regex=("000" "00[0-4]" "00[0-9]" "0[0-4][0-9]" "0[0-9][0-9]")
 for i in {1..5}
 do
     # Empty buckets
@@ -20,7 +20,7 @@ do
         echo $r
 
         # Populate remote bucket
-        docker run -v "$(pwd)"/large-images:/tmp/images -it --entrypoint="" --network host minio/mc sh -c " \
+        docker run -v "$(pwd)"/images:/tmp/images -it --entrypoint="" --network host minio/mc sh -c " \
             mc -q config host add remote http://$REMOTE:9000 $REMOTE_ACCESS_KEY $REMOTE_SECRET_KEY > /dev/null;
             mc -q find /tmp/images --name \"sample$r.png\" --exec \"mc -q cp {} remote/test\" "
 
