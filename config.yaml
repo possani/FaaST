@@ -1,9 +1,21 @@
-function: mongodb
+function: minio
+payload:
+  images:
+    - "sample000.png"
+    - "sample001.png"    
+
+localBackend:
+  service_ip: "138.246.235.42"
+  service_port: 31003
+  access_key: "<key>"
+  secret_key: "<secret>"
+remoteBackend:
+  service_ip: "34.105.65.71"
+  service_port: 9000
+  access_key: "<key>"
+  secret_key: "<secret>"
 
 clusters:
-  - name: cloud
+  - name: local
     prometheus: localhost:8080
-    openwhisk: 138.246.235.0
-  - name: edge
-    prometheus: localhost:8081
-    openwhisk: 138.246.235.16
+    openwhisk: 138.246.235.42

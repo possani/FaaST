@@ -8,20 +8,6 @@ from urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
 
 
-def callFunction(cluster, action):
-    url = "https://{}:31001/api/v1/namespaces/guest/actions/{}?blocking=true&result=true".format(
-        cluster["openwhisk"],
-        action)
-    headers = {"Authorization": "Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A=",
-               "Content-Type": "application/json"}
-
-    resp = requests.post(url,
-                         headers=headers,
-                         verify=False,
-                         data=json.dumps({}))
-    return resp.json()
-
-
 def getImages():
     with open(r'config.yaml') as config:
         config_obj = yaml.load(config, Loader=yaml.FullLoader)
@@ -69,19 +55,21 @@ def getPlayload(location, images):
 
 def checkLocal(images):
     mc = getMinioClient('local')
+    missing = []
     for i in images:
         try:
             stat = mc.stat_object('openwhisk', i)
         except Exception as e:
             if str(e).__contains__("NoSuchKey"):
-                return True
-    return False
+                missing.append(i)
+    missingStr = '|'.join(missing)
+    return missingStr
 
 
 def getClusterIP():
     with open(r'config.yaml') as config:
         config_obj = yaml.load(config, Loader=yaml.FullLoader)
-        return(config_obj['cluster']['ip'])
+        return(config_obj['clusters'][0]['openwhisk'])
 
 
 def callFunction(location, images):
@@ -102,7 +90,7 @@ def checkDocker():
     return subprocess.check_output("docker ps --format {{.Names}} --filter name=^/copying-images-123$", shell=True).decode()
 
 
-def copyImages():
+def copyImages(missing_images):
     f = open("config.yaml", "r")
     config_obj = yaml.load(f, Loader=yaml.FullLoader)
 
@@ -117,18 +105,19 @@ def copyImages():
     remote_secret_key = config_obj['remoteBackend']['secret_key']
 
     subprocess.Popen(
-        "docker run -d --rm --name copying-images-123 --entrypoint=\"\" --network host minio/mc sh -c \"mc -q config host add local http://{}:{} {} {} > /dev/null; mc -q config host add remote http://{}:{} {} {} > /dev/null; mc -q --json cp -r remote/openwhisk/ local/openwhisk/ \" >> /dev/null".format(
+        "docker run --rm --name copying-images-123 --entrypoint=\"\" --network host minio/mc sh -c \"mc -q config host add local http://{}:{} {} {} > /dev/null; mc -q config host add remote http://{}:{} {} {} > /dev/null; mc -q find remote/openwhisk --regex \\\"{}\\\" --exec \\\"mc -q cp {{}} local/openwhisk\\\"\" >> /dev/null".format(
             local_service_ip, local_service_port, local_access_key, local_secret_key,
-            remote_service_ip, remote_service_port, remote_access_key, remote_secret_key),
+            remote_service_ip, remote_service_port, remote_access_key, remote_secret_key,
+            missing_images),
         shell=True,
         stdin=None, stdout=None, stderr=None, close_fds=True)
 
 
 def main():
     images = getImages()
-    missing_image = checkLocal(images)
+    missing_images = checkLocal(images)
 
-    if not missing_image:
+    if not missing_images:
         print('Local: ', callFunction('local', images))
     else:
         executor = concurrent.futures.ThreadPoolExecutor(max_workers=1)
@@ -136,7 +125,7 @@ def main():
         print('Remote: ', t1.result())
         if not checkDocker():
             print('Copying images...')
-            copyImages()
+            copyImages(missing_images)
 
 
 if __name__ == "__main__":
