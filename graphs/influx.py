@@ -65,10 +65,18 @@ def create_dat(file, cumulative):
     f.close()
 
 
+def get_line_title(title, duration, case):
+    title = re.sub('\.dat$', '', title)
+    title = re.sub('-{}$'.format(case), '', title)
+    title = re.sub('-{}$'.format(duration), '', title)
+    title = re.sub('^minio-', '', title)
+    return title
+
+
 def create_gpi(duration, case):
     f = open("cumulative-{}.gpi".format(duration), "w")
     f.write("set terminal pngcairo size 960,540 enhanced font 'Verdana,10'")
-    f.write("\nset title 'Cumulative - {}'".format(duration))
+    f.write("\nset title 'Cumulative - {} - {}'".format(duration, case))
     f.write("\nset output 'cumulative-{}.png'".format(duration))
     # f.write("\nset yrange [0:10]")
     f.write("\nset ylabel 'Requests'")
@@ -76,15 +84,18 @@ def create_gpi(duration, case):
     files = glob.glob("*-{}-{}.dat".format(duration, case))
     n_files = len(files)
     for i in range(n_files):
+
         if not i:
-            f.write("\nplot '{}' using 1: 2 with lines title '{}' \\".format(
-                files[i], files[i][:-4]))
-        elif i == n_files-1:
-            f.write("\n, '{}' using 1: 2 with lines title '{}'".format(
-                files[i], files[i][:-4]))
+            f.write("\nplot ")
         else:
-            f.write("\n, '{}' using 1: 2 with lines title '{}' \\".format(
-                files[i], files[i][:-4]))
+            f.write("\n, ")
+
+        new_title = get_line_title(files[i], duration, case)
+        f.write("'{}' using 1: 2 with lines title '{}'".format(
+            files[i], new_title))
+
+        if i != n_files-1:
+            f.write(" \\")
     f.close()
 
 
