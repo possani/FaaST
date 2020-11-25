@@ -1,0 +1,33 @@
+@startuml
+
+hide footbox
+
+actor user as u
+participant faast as f
+collections "watcher'n'" as w
+participant openwhisk as o
+
+u -> f: function request
+activate f
+
+f -> f: getSmallestAvg()
+activate f
+loop over every action
+    f -> w: getAction()
+    activate w
+    f <-- w: executionTime
+    deactivate w
+    f -> f: compareTimes()
+end
+f <-- f: smallestAvg
+deactivate f
+
+f -> o: callFunction()
+activate o
+f <-- o:
+deactivate o
+
+u <-- f: function response
+deactivate f
+
+@enduml

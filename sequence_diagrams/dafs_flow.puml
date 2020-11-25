@@ -1,0 +1,46 @@
+@startuml
+
+hide footbox
+
+actor user as u
+participant faast as f
+participant local as l
+participant remote as r
+
+u -> f: function request
+activate f
+
+f -> f: checkPayload()
+activate f
+loop over every item
+    f -> l: exists()
+    activate l
+    f <-- l: bool
+    deactivate l
+end
+f <-- f: missingItems
+deactivate f
+
+alt not missing items
+    f -> l: callFunction()
+    activate l
+    f <-- l:
+    deactivate l
+    u <-- f: function response
+else 
+    f ->> r: callFunction()
+    activate r
+    f <<-- r:
+    deactivate r
+    f -> f: copyItems()
+    activate f
+    u <<-- f: function response
+    loop over every item
+        f -> r: copy(item)
+        activate r
+        l <-- r: item
+        deactivate r
+    end
+end
+
+@enduml
