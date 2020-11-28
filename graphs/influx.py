@@ -8,6 +8,9 @@ import re
 
 def get_files(filter, duration, case):
     files = glob.glob("*{}-{}-{}-summary.json".format(filter, duration, case))
+    for f in files:
+        if re.match('[0-9]+-[0-9]+-', f):
+            files.remove(f)  # remove partial1k remote phase
     files = sorted(files)
     return files
 
@@ -74,10 +77,10 @@ def get_line_title(title, duration, case):
 
 
 def create_gpi(duration, case):
-    f = open("cumulative-{}.gpi".format(duration), "w")
+    f = open("cumulative-{}-{}.gpi".format(duration, case), "w")
     f.write("set terminal pngcairo size 960,540 enhanced font 'Verdana,10'")
     f.write("\nset title 'Cumulative - {} - {}'".format(duration, case))
-    f.write("\nset output 'cumulative-{}.png'".format(duration))
+    f.write("\nset output 'cumulative-{}-{}.png'".format(duration, case))
     # f.write("\nset yrange [0:10]")
     f.write("\nset ylabel 'Requests'")
     # f.write("\nset style line 1 linecolor rgb '#0060ad' linetype 1 linewidth 2 pointtype 7 pointsize 0.05")

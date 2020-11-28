@@ -15,7 +15,7 @@ def main(args):
             get = minioClient.fget_object(
                 'openwhisk', image_name, '/tmp/' + image_name)
 
-            # Create Thumbnail
+            # Do image transformations
             image = Image.open('/tmp/' + image_name)
             image.transpose(Image.FLIP_TOP_BOTTOM)
             image.transpose(Image.ROTATE_180)
