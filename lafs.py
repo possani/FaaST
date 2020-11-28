@@ -15,8 +15,8 @@ logging.basicConfig(format=FORMAT, level=logging.INFO,
 
 
 class Cluster:
-    def __init__(self, prometheus, openwhisk):
-        self.prometheus = prometheus
+    def __init__(self, watcher, openwhisk):
+        self.watcher = watcher
         self.openwhisk = openwhisk
 
 
@@ -57,7 +57,7 @@ def getSmallestAvg():
     cluster = None
 
     for c in getClusters():
-        url = "http://{}?action={}".format(c["prometheus"], action)
+        url = "http://{}?action={}".format(c["watcher"], action)
         resp = requests.get(url)
         data = resp.json()
         if float(data["avg"]) < smallest:
@@ -67,6 +67,12 @@ def getSmallestAvg():
     return cluster
 
 
+def getPlayload():
+    with open(r'config.yaml') as config:
+        config_obj = yaml.load(config, Loader=yaml.FullLoader)
+        return json.dumps(config_obj['payload'])
+
+
 def callFunction(cluster, action):
     url = "https://{}:31001/api/v1/namespaces/guest/actions/{}?blocking=true&result=true".format(
         cluster["openwhisk"],
@@ -74,10 +80,11 @@ def callFunction(cluster, action):
     headers = {"Authorization": "Basic MjNiYzQ2YjEtNzFmNi00ZWQ1LThjNTQtODE2YWE0ZjhjNTAyOjEyM3pPM3haQ0xyTU42djJCS0sxZFhZRnBYbFBrY2NPRnFtMTJDZEFzTWdSVTRWck5aOWx5R1ZDR3VNREdJd1A=",
                "Content-Type": "application/json"}
 
+    payload = getPlayload()
     resp = requests.post(url,
                          headers=headers,
                          verify=False,
-                         data=json.dumps({}))
+                         data=payload)
     return resp.json()
 
 

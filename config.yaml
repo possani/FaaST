@@ -2,20 +2,32 @@ function: minio
 payload:
   images:
     - "sample000.png"
-    - "sample001.png"    
+  service_ip: "<ip>"
+  service_port: <port>
+  access_key: "<key>"
+  secret_key: "<secret>"
+  
+# function: mongodb
+# payload:
+#   connection_string: mongodb://<user>:<password>@<host>/<database> 
+#   name: "<username>"
+
+# function: pv
+# payload:
+#   image: sample.png
 
 localBackend:
-  service_ip: "138.246.235.42"
-  service_port: 31003
+  service_ip: "<ip>"
+  service_port: <port>
   access_key: "<key>"
   secret_key: "<secret>"
 remoteBackend:
-  service_ip: "34.105.65.71"
-  service_port: 9000
+  service_ip: "<ip>"
+  service_port: <port>
   access_key: "<key>"
   secret_key: "<secret>"
 
 clusters:
-  - name: local
-    prometheus: localhost:8080
-    openwhisk: 138.246.235.42
+  - name: <cluster-name>
+    prometheus: <ip>:<port>
+    openwhisk: <ip>
