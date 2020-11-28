@@ -5,6 +5,7 @@
 The following components are necessary for setting up and interacting with the cluster:
  * [terraform](https://learn.hashicorp.com/terraform/getting-started/install.html)
  * [ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
+ * [docker](https://docs.docker.com/engine/install/)
  
 ## Get Started
 
