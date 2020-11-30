@@ -92,21 +92,32 @@ curl -H "Content-Type: image/png" --data-binary @/mnt/share/eurotext.png $(wsk a
 cat output.txt
 ```
 
-### Python MinIO GET/PUT
+### Sample Functions
 
-Uncomment the *service_ip* variable from ansible/function.yml and replace the IP with the one from the Terraform output *\<cluster-name\>_cluster_loadbalancer_service_ip*.
+Connect to the master VM and invoke the sample functions shipped with the cluster.
 
-Run the **function** playbook.
+#### MinIO
+
+Does image transformations.
 
 ```bash
-cd ansible
-ansible-playbook -i <cluster-name>_hosts.ini function.yml
+wsk -i action invoke minio -p service_ip <service-ip> -p service_port <service-port> -p access_key <access-key> -p secret_key <secret-key> -p images '["<image>.png"]' -r
 ```
 
-Connect to the master VM and invoke the function
+#### MongoDB
+
+Inserts an entry in the users collection.
 
 ```bash
-wsk -i action invoke test-minio --result
+wsk -i action invoke mongodb -p connection_string mongodb://<user>:<password>@<host>/openwhisk -p name <username> -r
+```
+
+#### PV
+
+Creates a thumbnail using the sample image.
+
+```bash
+wsk -i action invoke pv -p image sample.png -r
 ```
 
 > **_NOTE:_**  It takes about 10 min for Terraform to run + 5 min for all the Openwhisk Pods to be _Running_/_Completed_.
