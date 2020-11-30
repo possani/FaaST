@@ -1,6 +1,7 @@
 import glob
 import json
 import argparse
+import re
 from os import system, remove
 
 filename_prefix = ""
@@ -9,8 +10,9 @@ unity = "ms"
 function = ""
 metric = ""
 submetric = ""
-cluster = "cloud"
-split = False
+case = "single"
+tests = ["local", "lrz", "remote"]
+duration = "1m"
 
 
 def aggregate_results(be_files):
@@ -35,68 +37,45 @@ def aggregate_results(be_files):
     return result
 
 
-def create_dat(cluster):
-    backend = ["aws", "lrz", "local"]
+def get_files(test):
+    print("*{}-{}-{}-{}-summary.json".format(function, test, duration, case))
+    files = glob.glob(
+        "*{}-{}-{}-{}-summary.json".format(function, test, duration, case))
+    for f in files:
+        if re.match('[0-9]+-[0-9]+-', f):
+            files.remove(f)  # remove partial1k remote phase
+    files = sorted(files)
+    return files
 
-    f = open("{}-{}.dat".format(filename_prefix, cluster), "w")
-    f.write("# {}".format(cluster))
+
+def create_dat():
+    f = open("{}.dat".format(filename_prefix), "w")
+    f.write("# {}".format(function))
     f.write("\n# scenario\t{}".format(submetric))
 
-    for be in backend:
-        be_files = glob.glob("{}-{}-*-{}.json".format(function, be, cluster))
-        if not be_files:
+    for test in tests:
+        test_files = get_files(test)
+        if not test_files:
             continue
-        result = aggregate_results(be_files)
-        f.write("\n{}\t{}".format(be.upper(), result/factor))
+        result = aggregate_results(test_files)
+        f.write("\n{}\t{}".format(test.upper(), result/factor))
 
     f.close()
-
-
-def create_dat_per_be():
-    backend = ["aws", "lrz", "local"]
-
-    for be in backend:
-
-        be_files = glob.glob("{}-{}-*-{}.json".format(function, be, cluster))
-        if not be_files:
-            continue
-
-        f = open("{}-{}.dat".format(filename_prefix, be), "w")
-        f.write("# {} {}".format(cluster, be))
-        f.write("\n# scenario\t{}".format(submetric))
-
-        run = 1
-        for be_file in be_files:
-            with open(be_file) as be_f:
-                data = json.load(be_f)
-                value = data["metrics"][metric][submetric]
-                f.write("\n{}\t{}".format(run, value/factor))
-            run += 1
-        f.close()
 
 
 def create_gpi():
     f = open("{}.gpi".format(filename_prefix), "w")
     f.write("set terminal pngcairo size 960,540 enhanced font 'Verdana,10'")
-    if split:
-        f.write("\nset title '{}'".format(cluster))
-    else:
-        f.write("\nset title '{}'".format(function))
+    f.write("\nset title \"Comparison\"")
     f.write("\nset output '{}.png'".format(filename_prefix))
     # f.write("\nset yrange [0:10]")
     f.write("\nset ylabel '{} ({})'".format(metric.replace("_", "\_"), unity))
     f.write("\nset style line 1 linecolor rgb '#0060ad' linetype 1 linewidth 2 pointtype 7 pointsize 1.5")
     f.write("\nset style line 2 linecolor rgb '#dd181f' linetype 1 linewidth 2 pointtype 5 pointsize 1.5")
-    if split:
-        f.write("\nplot '{}-lrz.dat' using 2: xtic(1) with linespoints linestyle 1 title 'LRZ', \\".format(filename_prefix))
-        f.write(
-            "\n'{}-local.dat' using 2: xtic(1) with linespoints linestyle 2 title 'LOCAL'".format(filename_prefix))
-    else:
-        f.write("\nset style fill solid")
-        # f.write("\nset boxwidth 0.5")
-        f.write("\nplot '{}-edge.dat' using 2: xtic(1) with histogram linestyle 1 title 'Edge', \\".format(filename_prefix))
-        f.write(
-            "\n'{}-cloud.dat' using 2: xtic(1) with histogram linestyle 2 title 'Cloud'".format(filename_prefix))
+    f.write("\nset style fill solid")
+    # f.write("\nset boxwidth 0.5")
+    f.write("\nplot '{}.dat' using 2: xtic(1) with histogram linestyle 1 title '{}'".format(
+        filename_prefix, function))
     f.close()
 
 
@@ -126,16 +105,18 @@ if __name__ == "__main__":
                         help="k6 metric to be used")
     parser.add_argument("-sm", "--submetric", nargs='?', default="avg",
                         help="k6 aggregation type")
-    parser.add_argument("-c", "--cluster", nargs='?', default="cloud",
-                        help="select the cluster when splitting the runs")
+    parser.add_argument("--duration", nargs='?', default="1m",
+                        help="select the duration")
+    parser.add_argument("-c", "--case", nargs='?', default="single",
+                        help="select the case")
     parser.add_argument("-d", "--delete", help="delete gpi and dat generated files",
                         action="store_true")
     parser.add_argument("--delete-all", help="delete all gpi and dat generated files",
                         action="store_true")
     parser.add_argument("-s", "--seconds", help="display the time in seconds",
                         action="store_true")
-    parser.add_argument("--split", help="display every single run for a given cluster",
-                        action="store_true")
+    parser.add_argument("-t", "--tests", nargs='?', default="local,lrz,remote",
+                        help="type of the test: local, local-cp, etc.")
     args = parser.parse_args()
 
     function = args.function
@@ -151,17 +132,24 @@ if __name__ == "__main__":
         delete()
 
     else:
+        if args.tests:
+            tests = []
+            if ',' in args.tests:
+                for t in args.tests.split(','):
+                    tests.append(t)
+            else:
+                tests = [args.tests]
+
+        if args.case:
+            case = args.case
+
+        if args.duration:
+            duration = args.duration
+
         if args.seconds and args.metric != "iterations":
             factor = 1000
             unity = "s"
 
-        if args.split:
-            split = True
-            cluster = args.cluster
-            create_dat_per_be()
-        else:
-            create_dat("cloud")
-            create_dat("edge")
-
+        create_dat()
         create_gpi()
         create_graph()
