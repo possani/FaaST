@@ -9,21 +9,15 @@ do
     # Start with an empty PV
     ssh -i $HOME/.ssh/thesis-lrz ubuntu@$LOCAL rm -rf /mnt/share/$POD/*.png
 
-    for case in single multiple partial partial1k
+    for case in single multiple
     do
         echo $case
 
         if [ $case == "single" ]
         then 
             scp -i $HOME/.ssh/thesis-lrz $PWD/images/sample000.png ubuntu@$LOCAL:/mnt/share/$POD/
-        elif [ $case == "multiple" ]
-        then
-            scp -i $HOME/.ssh/thesis-lrz $PWD/images/sample00[0-9].png ubuntu@$LOCAL:/mnt/share/$POD/
-        elif [ $case == "partial" ]
-        then
-            scp -i $HOME/.ssh/thesis-lrz $PWD/images/sample0[0-9][0-9].png ubuntu@$LOCAL:/mnt/share/$POD/
         else
-            scp -i $HOME/.ssh/thesis-lrz $PWD/images/sample[0-9][0-9][0-9].png ubuntu@$LOCAL:/mnt/share/$POD/
+            scp -i $HOME/.ssh/thesis-lrz $PWD/images/sample00[0-9].png ubuntu@$LOCAL:/mnt/share/$POD/
         fi
 
         for i in 1m 5m 15m 30m
