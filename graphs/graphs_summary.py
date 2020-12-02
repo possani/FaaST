@@ -64,7 +64,7 @@ def create_dat():
 def create_gpi():
     f = open("{}.gpi".format(filename_prefix), "w")
     f.write("set terminal pngcairo size 960,540 enhanced font 'Verdana,10'")
-    f.write("\nset title \"Duration Comparison \"")
+    f.write("\nset title \"Comparison - {}\"".format(function))
     f.write("\nset output '{}.png'".format(filename_prefix))
     f.write("\nset style data histogram")
     f.write("\nset style fill solid 1.0 border -1")
