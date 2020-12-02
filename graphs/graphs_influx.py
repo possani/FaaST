@@ -7,7 +7,7 @@ import re
 
 
 def get_files(filter, duration, case):
-    files = glob.glob("*{}-{}-{}-summary.json".format(filter, duration, case))
+    files = glob.glob("**/*{}-{}-{}-summary.json".format(filter, duration, case))
     files = sorted(files)
     return files
 
@@ -15,7 +15,8 @@ def get_files(filter, duration, case):
 def get_timestamps(duration, file):
     duration_sec = int(duration[:-1]) * 60
     margin_sec = 3
-    start = int(file.split("-")[0])
+    remove_path = file.split("/")[1]
+    start = int(remove_path.split("-")[0])
     end = start + duration_sec
     return {"start": start, "end": end}
 
@@ -37,7 +38,7 @@ def query_data(duration, file, p90, group_by):
     return data
 
 def has_data(data):
-    return "results" in data["results"][0]
+    return "series" in data["results"][0]
 
 def extract_values(data):
     raw_values = data["results"][0]["series"][0]["values"]
@@ -58,7 +59,8 @@ def accumulate_values(values):
 
 
 def create_dat(file, cumulative):
-    filename = re.sub('^[0-9\-]+', '', file)
+    filename = re.sub('^.*?/', '', file)
+    filename = re.sub('^[0-9\-]+', '', filename)
     filename = re.sub('-summary.json', '', filename)
     f = open("{}.dat".format(filename), "w")
     f.write("# {}".format(filename))
