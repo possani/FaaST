@@ -1,0 +1,86 @@
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample02.png",
+ "target": "local/openwhisk/sample02.png",
+ "size": 4866,
+ "totalCount": 3,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample06.png",
+ "target": "local/openwhisk/sample06.png",
+ "size": 34791,
+ "totalCount": 7,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample07.png",
+ "target": "local/openwhisk/sample07.png",
+ "size": 57295,
+ "totalCount": 8,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample01.png",
+ "target": "local/openwhisk/sample01.png",
+ "size": 6161,
+ "totalCount": 2,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample04.png",
+ "target": "local/openwhisk/sample04.png",
+ "size": 26624,
+ "totalCount": 6,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample00.png",
+ "target": "local/openwhisk/sample00.png",
+ "size": 5615,
+ "totalCount": 2,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample05.png",
+ "target": "local/openwhisk/sample05.png",
+ "size": 54985,
+ "totalCount": 6,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample03.png",
+ "target": "local/openwhisk/sample03.png",
+ "size": 5958,
+ "totalCount": 6,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample08.png",
+ "target": "local/openwhisk/sample08.png",
+ "size": 7162,
+ "totalCount": 10,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample09.png",
+ "target": "local/openwhisk/sample09.png",
+ "size": 4019,
+ "totalCount": 10,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "total": 0,
+ "transferred": 207476,
+ "speed": 30649.499985270657
+}

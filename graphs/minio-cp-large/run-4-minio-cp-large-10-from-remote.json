@@ -1,0 +1,86 @@
+{
+ "status": "success",
+ "source": "remote/test/sample06.png",
+ "target": "local/test/sample06.png",
+ "size": 51582,
+ "totalCount": 7,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample01.png",
+ "target": "local/test/sample01.png",
+ "size": 176341,
+ "totalCount": 3,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample05.png",
+ "target": "local/test/sample05.png",
+ "size": 23573,
+ "totalCount": 7,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample03.png",
+ "target": "local/test/sample03.png",
+ "size": 256665,
+ "totalCount": 5,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample04.png",
+ "target": "local/test/sample04.png",
+ "size": 34959,
+ "totalCount": 5,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample02.png",
+ "target": "local/test/sample02.png",
+ "size": 241976,
+ "totalCount": 3,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample00.png",
+ "target": "local/test/sample00.png",
+ "size": 228354,
+ "totalCount": 3,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample07.png",
+ "target": "local/test/sample07.png",
+ "size": 403834,
+ "totalCount": 8,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample08.png",
+ "target": "local/test/sample08.png",
+ "size": 471266,
+ "totalCount": 9,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample09.png",
+ "target": "local/test/sample09.png",
+ "size": 34679,
+ "totalCount": 10,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "total": 0,
+ "transferred": 1923229,
+ "speed": 199901.05547952492
+}

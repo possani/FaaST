@@ -1,0 +1,406 @@
+{
+ "status": "success",
+ "source": "remote/test/sample01.png",
+ "target": "local/test/sample01.png",
+ "size": 6161,
+ "totalCount": 2,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample04.png",
+ "target": "local/test/sample04.png",
+ "size": 26624,
+ "totalCount": 5,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample05.png",
+ "target": "local/test/sample05.png",
+ "size": 54985,
+ "totalCount": 6,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample06.png",
+ "target": "local/test/sample06.png",
+ "size": 34791,
+ "totalCount": 7,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample07.png",
+ "target": "local/test/sample07.png",
+ "size": 57295,
+ "totalCount": 9,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample02.png",
+ "target": "local/test/sample02.png",
+ "size": 4866,
+ "totalCount": 3,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample03.png",
+ "target": "local/test/sample03.png",
+ "size": 5958,
+ "totalCount": 5,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample00.png",
+ "target": "local/test/sample00.png",
+ "size": 5615,
+ "totalCount": 2,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample08.png",
+ "target": "local/test/sample08.png",
+ "size": 7162,
+ "totalCount": 9,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample09.png",
+ "target": "local/test/sample09.png",
+ "size": 4019,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample10.png",
+ "target": "local/test/sample10.png",
+ "size": 5615,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample11.png",
+ "target": "local/test/sample11.png",
+ "size": 6161,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample12.png",
+ "target": "local/test/sample12.png",
+ "size": 4866,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample13.png",
+ "target": "local/test/sample13.png",
+ "size": 5958,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample14.png",
+ "target": "local/test/sample14.png",
+ "size": 26624,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample15.png",
+ "target": "local/test/sample15.png",
+ "size": 54985,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample16.png",
+ "target": "local/test/sample16.png",
+ "size": 34791,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample17.png",
+ "target": "local/test/sample17.png",
+ "size": 57295,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample18.png",
+ "target": "local/test/sample18.png",
+ "size": 7162,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample19.png",
+ "target": "local/test/sample19.png",
+ "size": 4019,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample20.png",
+ "target": "local/test/sample20.png",
+ "size": 5615,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample21.png",
+ "target": "local/test/sample21.png",
+ "size": 6161,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample22.png",
+ "target": "local/test/sample22.png",
+ "size": 4866,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample23.png",
+ "target": "local/test/sample23.png",
+ "size": 5958,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample24.png",
+ "target": "local/test/sample24.png",
+ "size": 26624,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample25.png",
+ "target": "local/test/sample25.png",
+ "size": 54985,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample26.png",
+ "target": "local/test/sample26.png",
+ "size": 34791,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample27.png",
+ "target": "local/test/sample27.png",
+ "size": 57295,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample29.png",
+ "target": "local/test/sample29.png",
+ "size": 4019,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample28.png",
+ "target": "local/test/sample28.png",
+ "size": 7162,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample30.png",
+ "target": "local/test/sample30.png",
+ "size": 5615,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample31.png",
+ "target": "local/test/sample31.png",
+ "size": 6161,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample32.png",
+ "target": "local/test/sample32.png",
+ "size": 4866,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample33.png",
+ "target": "local/test/sample33.png",
+ "size": 5958,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample34.png",
+ "target": "local/test/sample34.png",
+ "size": 26624,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample35.png",
+ "target": "local/test/sample35.png",
+ "size": 54985,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample36.png",
+ "target": "local/test/sample36.png",
+ "size": 34791,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample37.png",
+ "target": "local/test/sample37.png",
+ "size": 57295,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample38.png",
+ "target": "local/test/sample38.png",
+ "size": 7162,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample39.png",
+ "target": "local/test/sample39.png",
+ "size": 4019,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample40.png",
+ "target": "local/test/sample40.png",
+ "size": 5615,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample41.png",
+ "target": "local/test/sample41.png",
+ "size": 6161,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample42.png",
+ "target": "local/test/sample42.png",
+ "size": 4866,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample43.png",
+ "target": "local/test/sample43.png",
+ "size": 5958,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample44.png",
+ "target": "local/test/sample44.png",
+ "size": 26624,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample45.png",
+ "target": "local/test/sample45.png",
+ "size": 54985,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample46.png",
+ "target": "local/test/sample46.png",
+ "size": 34791,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample47.png",
+ "target": "local/test/sample47.png",
+ "size": 57295,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample48.png",
+ "target": "local/test/sample48.png",
+ "size": 7162,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/test/sample49.png",
+ "target": "local/test/sample49.png",
+ "size": 4019,
+ "totalCount": 50,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "total": 0,
+ "transferred": 1037380,
+ "speed": 123991.3932350535
+}

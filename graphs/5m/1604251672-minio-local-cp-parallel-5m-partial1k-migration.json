@@ -1,0 +1,8006 @@
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample002.png",
+ "target": "local/openwhisk/sample002.png",
+ "size": 4866,
+ "totalCount": 3,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample005.png",
+ "target": "local/openwhisk/sample005.png",
+ "size": 54985,
+ "totalCount": 6,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample000.png",
+ "target": "local/openwhisk/sample000.png",
+ "size": 5615,
+ "totalCount": 3,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample003.png",
+ "target": "local/openwhisk/sample003.png",
+ "size": 5958,
+ "totalCount": 4,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample009.png",
+ "target": "local/openwhisk/sample009.png",
+ "size": 4019,
+ "totalCount": 10,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample008.png",
+ "target": "local/openwhisk/sample008.png",
+ "size": 7162,
+ "totalCount": 9,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample004.png",
+ "target": "local/openwhisk/sample004.png",
+ "size": 26624,
+ "totalCount": 5,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample001.png",
+ "target": "local/openwhisk/sample001.png",
+ "size": 6161,
+ "totalCount": 3,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample011.png",
+ "target": "local/openwhisk/sample011.png",
+ "size": 6161,
+ "totalCount": 12,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample007.png",
+ "target": "local/openwhisk/sample007.png",
+ "size": 57295,
+ "totalCount": 8,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample006.png",
+ "target": "local/openwhisk/sample006.png",
+ "size": 34791,
+ "totalCount": 7,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample010.png",
+ "target": "local/openwhisk/sample010.png",
+ "size": 5615,
+ "totalCount": 11,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample012.png",
+ "target": "local/openwhisk/sample012.png",
+ "size": 4866,
+ "totalCount": 13,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample013.png",
+ "target": "local/openwhisk/sample013.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample014.png",
+ "target": "local/openwhisk/sample014.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample015.png",
+ "target": "local/openwhisk/sample015.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample016.png",
+ "target": "local/openwhisk/sample016.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample017.png",
+ "target": "local/openwhisk/sample017.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample018.png",
+ "target": "local/openwhisk/sample018.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample019.png",
+ "target": "local/openwhisk/sample019.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample020.png",
+ "target": "local/openwhisk/sample020.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample021.png",
+ "target": "local/openwhisk/sample021.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample022.png",
+ "target": "local/openwhisk/sample022.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample023.png",
+ "target": "local/openwhisk/sample023.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample024.png",
+ "target": "local/openwhisk/sample024.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample025.png",
+ "target": "local/openwhisk/sample025.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample026.png",
+ "target": "local/openwhisk/sample026.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample027.png",
+ "target": "local/openwhisk/sample027.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample028.png",
+ "target": "local/openwhisk/sample028.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample029.png",
+ "target": "local/openwhisk/sample029.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample030.png",
+ "target": "local/openwhisk/sample030.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample031.png",
+ "target": "local/openwhisk/sample031.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample032.png",
+ "target": "local/openwhisk/sample032.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample033.png",
+ "target": "local/openwhisk/sample033.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample034.png",
+ "target": "local/openwhisk/sample034.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample035.png",
+ "target": "local/openwhisk/sample035.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample036.png",
+ "target": "local/openwhisk/sample036.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample037.png",
+ "target": "local/openwhisk/sample037.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample038.png",
+ "target": "local/openwhisk/sample038.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample039.png",
+ "target": "local/openwhisk/sample039.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample040.png",
+ "target": "local/openwhisk/sample040.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample041.png",
+ "target": "local/openwhisk/sample041.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample042.png",
+ "target": "local/openwhisk/sample042.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample043.png",
+ "target": "local/openwhisk/sample043.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample044.png",
+ "target": "local/openwhisk/sample044.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample045.png",
+ "target": "local/openwhisk/sample045.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample046.png",
+ "target": "local/openwhisk/sample046.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample047.png",
+ "target": "local/openwhisk/sample047.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample048.png",
+ "target": "local/openwhisk/sample048.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample049.png",
+ "target": "local/openwhisk/sample049.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample050.png",
+ "target": "local/openwhisk/sample050.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample051.png",
+ "target": "local/openwhisk/sample051.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample052.png",
+ "target": "local/openwhisk/sample052.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample053.png",
+ "target": "local/openwhisk/sample053.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample054.png",
+ "target": "local/openwhisk/sample054.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample055.png",
+ "target": "local/openwhisk/sample055.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample060.png",
+ "target": "local/openwhisk/sample060.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample058.png",
+ "target": "local/openwhisk/sample058.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample056.png",
+ "target": "local/openwhisk/sample056.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample057.png",
+ "target": "local/openwhisk/sample057.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample059.png",
+ "target": "local/openwhisk/sample059.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample061.png",
+ "target": "local/openwhisk/sample061.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample062.png",
+ "target": "local/openwhisk/sample062.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample063.png",
+ "target": "local/openwhisk/sample063.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample064.png",
+ "target": "local/openwhisk/sample064.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample065.png",
+ "target": "local/openwhisk/sample065.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample066.png",
+ "target": "local/openwhisk/sample066.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample067.png",
+ "target": "local/openwhisk/sample067.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample068.png",
+ "target": "local/openwhisk/sample068.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample069.png",
+ "target": "local/openwhisk/sample069.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample070.png",
+ "target": "local/openwhisk/sample070.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample071.png",
+ "target": "local/openwhisk/sample071.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample072.png",
+ "target": "local/openwhisk/sample072.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample073.png",
+ "target": "local/openwhisk/sample073.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample074.png",
+ "target": "local/openwhisk/sample074.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample075.png",
+ "target": "local/openwhisk/sample075.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample076.png",
+ "target": "local/openwhisk/sample076.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample077.png",
+ "target": "local/openwhisk/sample077.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample078.png",
+ "target": "local/openwhisk/sample078.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample079.png",
+ "target": "local/openwhisk/sample079.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample080.png",
+ "target": "local/openwhisk/sample080.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample081.png",
+ "target": "local/openwhisk/sample081.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample082.png",
+ "target": "local/openwhisk/sample082.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample083.png",
+ "target": "local/openwhisk/sample083.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample084.png",
+ "target": "local/openwhisk/sample084.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample085.png",
+ "target": "local/openwhisk/sample085.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample086.png",
+ "target": "local/openwhisk/sample086.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample087.png",
+ "target": "local/openwhisk/sample087.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample088.png",
+ "target": "local/openwhisk/sample088.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample089.png",
+ "target": "local/openwhisk/sample089.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample090.png",
+ "target": "local/openwhisk/sample090.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample091.png",
+ "target": "local/openwhisk/sample091.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample092.png",
+ "target": "local/openwhisk/sample092.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample093.png",
+ "target": "local/openwhisk/sample093.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample095.png",
+ "target": "local/openwhisk/sample095.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample094.png",
+ "target": "local/openwhisk/sample094.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample096.png",
+ "target": "local/openwhisk/sample096.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample097.png",
+ "target": "local/openwhisk/sample097.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample098.png",
+ "target": "local/openwhisk/sample098.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample099.png",
+ "target": "local/openwhisk/sample099.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample100.png",
+ "target": "local/openwhisk/sample100.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample101.png",
+ "target": "local/openwhisk/sample101.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample102.png",
+ "target": "local/openwhisk/sample102.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample103.png",
+ "target": "local/openwhisk/sample103.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample104.png",
+ "target": "local/openwhisk/sample104.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample105.png",
+ "target": "local/openwhisk/sample105.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample106.png",
+ "target": "local/openwhisk/sample106.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample108.png",
+ "target": "local/openwhisk/sample108.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample107.png",
+ "target": "local/openwhisk/sample107.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample109.png",
+ "target": "local/openwhisk/sample109.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample111.png",
+ "target": "local/openwhisk/sample111.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample110.png",
+ "target": "local/openwhisk/sample110.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample112.png",
+ "target": "local/openwhisk/sample112.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample113.png",
+ "target": "local/openwhisk/sample113.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample114.png",
+ "target": "local/openwhisk/sample114.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample115.png",
+ "target": "local/openwhisk/sample115.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample116.png",
+ "target": "local/openwhisk/sample116.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample117.png",
+ "target": "local/openwhisk/sample117.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample118.png",
+ "target": "local/openwhisk/sample118.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample119.png",
+ "target": "local/openwhisk/sample119.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample120.png",
+ "target": "local/openwhisk/sample120.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample121.png",
+ "target": "local/openwhisk/sample121.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample122.png",
+ "target": "local/openwhisk/sample122.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample123.png",
+ "target": "local/openwhisk/sample123.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample124.png",
+ "target": "local/openwhisk/sample124.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample125.png",
+ "target": "local/openwhisk/sample125.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample126.png",
+ "target": "local/openwhisk/sample126.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample127.png",
+ "target": "local/openwhisk/sample127.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample128.png",
+ "target": "local/openwhisk/sample128.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample129.png",
+ "target": "local/openwhisk/sample129.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample130.png",
+ "target": "local/openwhisk/sample130.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample131.png",
+ "target": "local/openwhisk/sample131.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample132.png",
+ "target": "local/openwhisk/sample132.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample133.png",
+ "target": "local/openwhisk/sample133.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample134.png",
+ "target": "local/openwhisk/sample134.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample135.png",
+ "target": "local/openwhisk/sample135.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample136.png",
+ "target": "local/openwhisk/sample136.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample137.png",
+ "target": "local/openwhisk/sample137.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample138.png",
+ "target": "local/openwhisk/sample138.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample139.png",
+ "target": "local/openwhisk/sample139.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample140.png",
+ "target": "local/openwhisk/sample140.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample141.png",
+ "target": "local/openwhisk/sample141.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample142.png",
+ "target": "local/openwhisk/sample142.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample143.png",
+ "target": "local/openwhisk/sample143.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample144.png",
+ "target": "local/openwhisk/sample144.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample145.png",
+ "target": "local/openwhisk/sample145.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample146.png",
+ "target": "local/openwhisk/sample146.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample147.png",
+ "target": "local/openwhisk/sample147.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample148.png",
+ "target": "local/openwhisk/sample148.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample149.png",
+ "target": "local/openwhisk/sample149.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample150.png",
+ "target": "local/openwhisk/sample150.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample151.png",
+ "target": "local/openwhisk/sample151.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample152.png",
+ "target": "local/openwhisk/sample152.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample153.png",
+ "target": "local/openwhisk/sample153.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample154.png",
+ "target": "local/openwhisk/sample154.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample155.png",
+ "target": "local/openwhisk/sample155.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample156.png",
+ "target": "local/openwhisk/sample156.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample157.png",
+ "target": "local/openwhisk/sample157.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample158.png",
+ "target": "local/openwhisk/sample158.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample159.png",
+ "target": "local/openwhisk/sample159.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample160.png",
+ "target": "local/openwhisk/sample160.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample162.png",
+ "target": "local/openwhisk/sample162.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample161.png",
+ "target": "local/openwhisk/sample161.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample163.png",
+ "target": "local/openwhisk/sample163.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample164.png",
+ "target": "local/openwhisk/sample164.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample165.png",
+ "target": "local/openwhisk/sample165.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample166.png",
+ "target": "local/openwhisk/sample166.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample167.png",
+ "target": "local/openwhisk/sample167.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample168.png",
+ "target": "local/openwhisk/sample168.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample169.png",
+ "target": "local/openwhisk/sample169.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample170.png",
+ "target": "local/openwhisk/sample170.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample171.png",
+ "target": "local/openwhisk/sample171.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample172.png",
+ "target": "local/openwhisk/sample172.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample173.png",
+ "target": "local/openwhisk/sample173.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample174.png",
+ "target": "local/openwhisk/sample174.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample175.png",
+ "target": "local/openwhisk/sample175.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample176.png",
+ "target": "local/openwhisk/sample176.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample177.png",
+ "target": "local/openwhisk/sample177.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample178.png",
+ "target": "local/openwhisk/sample178.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample179.png",
+ "target": "local/openwhisk/sample179.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample180.png",
+ "target": "local/openwhisk/sample180.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample181.png",
+ "target": "local/openwhisk/sample181.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample182.png",
+ "target": "local/openwhisk/sample182.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample183.png",
+ "target": "local/openwhisk/sample183.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample184.png",
+ "target": "local/openwhisk/sample184.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample185.png",
+ "target": "local/openwhisk/sample185.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample186.png",
+ "target": "local/openwhisk/sample186.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample187.png",
+ "target": "local/openwhisk/sample187.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample188.png",
+ "target": "local/openwhisk/sample188.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample189.png",
+ "target": "local/openwhisk/sample189.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample190.png",
+ "target": "local/openwhisk/sample190.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample191.png",
+ "target": "local/openwhisk/sample191.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample192.png",
+ "target": "local/openwhisk/sample192.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample193.png",
+ "target": "local/openwhisk/sample193.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample194.png",
+ "target": "local/openwhisk/sample194.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample195.png",
+ "target": "local/openwhisk/sample195.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample196.png",
+ "target": "local/openwhisk/sample196.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample197.png",
+ "target": "local/openwhisk/sample197.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample198.png",
+ "target": "local/openwhisk/sample198.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample199.png",
+ "target": "local/openwhisk/sample199.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample200.png",
+ "target": "local/openwhisk/sample200.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample201.png",
+ "target": "local/openwhisk/sample201.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample202.png",
+ "target": "local/openwhisk/sample202.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample203.png",
+ "target": "local/openwhisk/sample203.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample204.png",
+ "target": "local/openwhisk/sample204.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample205.png",
+ "target": "local/openwhisk/sample205.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample206.png",
+ "target": "local/openwhisk/sample206.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample207.png",
+ "target": "local/openwhisk/sample207.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample208.png",
+ "target": "local/openwhisk/sample208.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample209.png",
+ "target": "local/openwhisk/sample209.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample210.png",
+ "target": "local/openwhisk/sample210.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample211.png",
+ "target": "local/openwhisk/sample211.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample212.png",
+ "target": "local/openwhisk/sample212.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample213.png",
+ "target": "local/openwhisk/sample213.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample214.png",
+ "target": "local/openwhisk/sample214.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample215.png",
+ "target": "local/openwhisk/sample215.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample216.png",
+ "target": "local/openwhisk/sample216.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample219.png",
+ "target": "local/openwhisk/sample219.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample217.png",
+ "target": "local/openwhisk/sample217.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample218.png",
+ "target": "local/openwhisk/sample218.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample220.png",
+ "target": "local/openwhisk/sample220.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample221.png",
+ "target": "local/openwhisk/sample221.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample222.png",
+ "target": "local/openwhisk/sample222.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample223.png",
+ "target": "local/openwhisk/sample223.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample224.png",
+ "target": "local/openwhisk/sample224.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample225.png",
+ "target": "local/openwhisk/sample225.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample226.png",
+ "target": "local/openwhisk/sample226.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample227.png",
+ "target": "local/openwhisk/sample227.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample228.png",
+ "target": "local/openwhisk/sample228.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample229.png",
+ "target": "local/openwhisk/sample229.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample230.png",
+ "target": "local/openwhisk/sample230.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample231.png",
+ "target": "local/openwhisk/sample231.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample232.png",
+ "target": "local/openwhisk/sample232.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample233.png",
+ "target": "local/openwhisk/sample233.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample234.png",
+ "target": "local/openwhisk/sample234.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample235.png",
+ "target": "local/openwhisk/sample235.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample236.png",
+ "target": "local/openwhisk/sample236.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample237.png",
+ "target": "local/openwhisk/sample237.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample238.png",
+ "target": "local/openwhisk/sample238.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample239.png",
+ "target": "local/openwhisk/sample239.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample240.png",
+ "target": "local/openwhisk/sample240.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample241.png",
+ "target": "local/openwhisk/sample241.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample242.png",
+ "target": "local/openwhisk/sample242.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample243.png",
+ "target": "local/openwhisk/sample243.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample244.png",
+ "target": "local/openwhisk/sample244.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample245.png",
+ "target": "local/openwhisk/sample245.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample246.png",
+ "target": "local/openwhisk/sample246.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample247.png",
+ "target": "local/openwhisk/sample247.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample248.png",
+ "target": "local/openwhisk/sample248.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample249.png",
+ "target": "local/openwhisk/sample249.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample250.png",
+ "target": "local/openwhisk/sample250.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample251.png",
+ "target": "local/openwhisk/sample251.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample252.png",
+ "target": "local/openwhisk/sample252.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample253.png",
+ "target": "local/openwhisk/sample253.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample254.png",
+ "target": "local/openwhisk/sample254.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample255.png",
+ "target": "local/openwhisk/sample255.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample256.png",
+ "target": "local/openwhisk/sample256.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample257.png",
+ "target": "local/openwhisk/sample257.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample258.png",
+ "target": "local/openwhisk/sample258.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample259.png",
+ "target": "local/openwhisk/sample259.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample260.png",
+ "target": "local/openwhisk/sample260.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample261.png",
+ "target": "local/openwhisk/sample261.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample262.png",
+ "target": "local/openwhisk/sample262.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample263.png",
+ "target": "local/openwhisk/sample263.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample264.png",
+ "target": "local/openwhisk/sample264.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample265.png",
+ "target": "local/openwhisk/sample265.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample266.png",
+ "target": "local/openwhisk/sample266.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample267.png",
+ "target": "local/openwhisk/sample267.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample268.png",
+ "target": "local/openwhisk/sample268.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample269.png",
+ "target": "local/openwhisk/sample269.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample270.png",
+ "target": "local/openwhisk/sample270.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample271.png",
+ "target": "local/openwhisk/sample271.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample272.png",
+ "target": "local/openwhisk/sample272.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample273.png",
+ "target": "local/openwhisk/sample273.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample274.png",
+ "target": "local/openwhisk/sample274.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample275.png",
+ "target": "local/openwhisk/sample275.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample276.png",
+ "target": "local/openwhisk/sample276.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample277.png",
+ "target": "local/openwhisk/sample277.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample278.png",
+ "target": "local/openwhisk/sample278.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample279.png",
+ "target": "local/openwhisk/sample279.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample280.png",
+ "target": "local/openwhisk/sample280.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample281.png",
+ "target": "local/openwhisk/sample281.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample282.png",
+ "target": "local/openwhisk/sample282.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample283.png",
+ "target": "local/openwhisk/sample283.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample285.png",
+ "target": "local/openwhisk/sample285.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample284.png",
+ "target": "local/openwhisk/sample284.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample286.png",
+ "target": "local/openwhisk/sample286.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample287.png",
+ "target": "local/openwhisk/sample287.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample288.png",
+ "target": "local/openwhisk/sample288.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample289.png",
+ "target": "local/openwhisk/sample289.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample290.png",
+ "target": "local/openwhisk/sample290.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample291.png",
+ "target": "local/openwhisk/sample291.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample292.png",
+ "target": "local/openwhisk/sample292.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample293.png",
+ "target": "local/openwhisk/sample293.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample294.png",
+ "target": "local/openwhisk/sample294.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample295.png",
+ "target": "local/openwhisk/sample295.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample296.png",
+ "target": "local/openwhisk/sample296.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample297.png",
+ "target": "local/openwhisk/sample297.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample298.png",
+ "target": "local/openwhisk/sample298.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample299.png",
+ "target": "local/openwhisk/sample299.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample300.png",
+ "target": "local/openwhisk/sample300.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample301.png",
+ "target": "local/openwhisk/sample301.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample302.png",
+ "target": "local/openwhisk/sample302.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample303.png",
+ "target": "local/openwhisk/sample303.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample304.png",
+ "target": "local/openwhisk/sample304.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample305.png",
+ "target": "local/openwhisk/sample305.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample306.png",
+ "target": "local/openwhisk/sample306.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample307.png",
+ "target": "local/openwhisk/sample307.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample308.png",
+ "target": "local/openwhisk/sample308.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample309.png",
+ "target": "local/openwhisk/sample309.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample310.png",
+ "target": "local/openwhisk/sample310.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample311.png",
+ "target": "local/openwhisk/sample311.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample312.png",
+ "target": "local/openwhisk/sample312.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample313.png",
+ "target": "local/openwhisk/sample313.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample314.png",
+ "target": "local/openwhisk/sample314.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample315.png",
+ "target": "local/openwhisk/sample315.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample316.png",
+ "target": "local/openwhisk/sample316.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample317.png",
+ "target": "local/openwhisk/sample317.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample318.png",
+ "target": "local/openwhisk/sample318.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample319.png",
+ "target": "local/openwhisk/sample319.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample320.png",
+ "target": "local/openwhisk/sample320.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample321.png",
+ "target": "local/openwhisk/sample321.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample322.png",
+ "target": "local/openwhisk/sample322.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample323.png",
+ "target": "local/openwhisk/sample323.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample324.png",
+ "target": "local/openwhisk/sample324.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample325.png",
+ "target": "local/openwhisk/sample325.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample326.png",
+ "target": "local/openwhisk/sample326.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample327.png",
+ "target": "local/openwhisk/sample327.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample328.png",
+ "target": "local/openwhisk/sample328.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample329.png",
+ "target": "local/openwhisk/sample329.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample330.png",
+ "target": "local/openwhisk/sample330.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample331.png",
+ "target": "local/openwhisk/sample331.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample332.png",
+ "target": "local/openwhisk/sample332.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample333.png",
+ "target": "local/openwhisk/sample333.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample334.png",
+ "target": "local/openwhisk/sample334.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample335.png",
+ "target": "local/openwhisk/sample335.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample336.png",
+ "target": "local/openwhisk/sample336.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample337.png",
+ "target": "local/openwhisk/sample337.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample338.png",
+ "target": "local/openwhisk/sample338.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample339.png",
+ "target": "local/openwhisk/sample339.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample340.png",
+ "target": "local/openwhisk/sample340.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample341.png",
+ "target": "local/openwhisk/sample341.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample342.png",
+ "target": "local/openwhisk/sample342.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample343.png",
+ "target": "local/openwhisk/sample343.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample344.png",
+ "target": "local/openwhisk/sample344.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample345.png",
+ "target": "local/openwhisk/sample345.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample346.png",
+ "target": "local/openwhisk/sample346.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample347.png",
+ "target": "local/openwhisk/sample347.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample348.png",
+ "target": "local/openwhisk/sample348.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample349.png",
+ "target": "local/openwhisk/sample349.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample350.png",
+ "target": "local/openwhisk/sample350.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample351.png",
+ "target": "local/openwhisk/sample351.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample352.png",
+ "target": "local/openwhisk/sample352.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample353.png",
+ "target": "local/openwhisk/sample353.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample354.png",
+ "target": "local/openwhisk/sample354.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample355.png",
+ "target": "local/openwhisk/sample355.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample356.png",
+ "target": "local/openwhisk/sample356.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample357.png",
+ "target": "local/openwhisk/sample357.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample358.png",
+ "target": "local/openwhisk/sample358.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample359.png",
+ "target": "local/openwhisk/sample359.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample360.png",
+ "target": "local/openwhisk/sample360.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample361.png",
+ "target": "local/openwhisk/sample361.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample362.png",
+ "target": "local/openwhisk/sample362.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample363.png",
+ "target": "local/openwhisk/sample363.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample364.png",
+ "target": "local/openwhisk/sample364.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample365.png",
+ "target": "local/openwhisk/sample365.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample366.png",
+ "target": "local/openwhisk/sample366.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample367.png",
+ "target": "local/openwhisk/sample367.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample368.png",
+ "target": "local/openwhisk/sample368.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample369.png",
+ "target": "local/openwhisk/sample369.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample370.png",
+ "target": "local/openwhisk/sample370.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample371.png",
+ "target": "local/openwhisk/sample371.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample372.png",
+ "target": "local/openwhisk/sample372.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample373.png",
+ "target": "local/openwhisk/sample373.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample374.png",
+ "target": "local/openwhisk/sample374.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample375.png",
+ "target": "local/openwhisk/sample375.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample376.png",
+ "target": "local/openwhisk/sample376.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample377.png",
+ "target": "local/openwhisk/sample377.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample378.png",
+ "target": "local/openwhisk/sample378.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample379.png",
+ "target": "local/openwhisk/sample379.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample380.png",
+ "target": "local/openwhisk/sample380.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample381.png",
+ "target": "local/openwhisk/sample381.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample382.png",
+ "target": "local/openwhisk/sample382.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample383.png",
+ "target": "local/openwhisk/sample383.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample384.png",
+ "target": "local/openwhisk/sample384.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample385.png",
+ "target": "local/openwhisk/sample385.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample386.png",
+ "target": "local/openwhisk/sample386.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample387.png",
+ "target": "local/openwhisk/sample387.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample388.png",
+ "target": "local/openwhisk/sample388.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample389.png",
+ "target": "local/openwhisk/sample389.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample390.png",
+ "target": "local/openwhisk/sample390.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample391.png",
+ "target": "local/openwhisk/sample391.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample392.png",
+ "target": "local/openwhisk/sample392.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample393.png",
+ "target": "local/openwhisk/sample393.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample394.png",
+ "target": "local/openwhisk/sample394.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample395.png",
+ "target": "local/openwhisk/sample395.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample396.png",
+ "target": "local/openwhisk/sample396.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample397.png",
+ "target": "local/openwhisk/sample397.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample398.png",
+ "target": "local/openwhisk/sample398.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample399.png",
+ "target": "local/openwhisk/sample399.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample400.png",
+ "target": "local/openwhisk/sample400.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample401.png",
+ "target": "local/openwhisk/sample401.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample402.png",
+ "target": "local/openwhisk/sample402.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample403.png",
+ "target": "local/openwhisk/sample403.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample404.png",
+ "target": "local/openwhisk/sample404.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample405.png",
+ "target": "local/openwhisk/sample405.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample406.png",
+ "target": "local/openwhisk/sample406.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample407.png",
+ "target": "local/openwhisk/sample407.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample408.png",
+ "target": "local/openwhisk/sample408.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample409.png",
+ "target": "local/openwhisk/sample409.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample410.png",
+ "target": "local/openwhisk/sample410.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample411.png",
+ "target": "local/openwhisk/sample411.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample412.png",
+ "target": "local/openwhisk/sample412.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample413.png",
+ "target": "local/openwhisk/sample413.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample414.png",
+ "target": "local/openwhisk/sample414.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample415.png",
+ "target": "local/openwhisk/sample415.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample416.png",
+ "target": "local/openwhisk/sample416.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample417.png",
+ "target": "local/openwhisk/sample417.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample418.png",
+ "target": "local/openwhisk/sample418.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample419.png",
+ "target": "local/openwhisk/sample419.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample420.png",
+ "target": "local/openwhisk/sample420.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample421.png",
+ "target": "local/openwhisk/sample421.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample422.png",
+ "target": "local/openwhisk/sample422.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample423.png",
+ "target": "local/openwhisk/sample423.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample424.png",
+ "target": "local/openwhisk/sample424.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample425.png",
+ "target": "local/openwhisk/sample425.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample426.png",
+ "target": "local/openwhisk/sample426.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample427.png",
+ "target": "local/openwhisk/sample427.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample428.png",
+ "target": "local/openwhisk/sample428.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample430.png",
+ "target": "local/openwhisk/sample430.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample429.png",
+ "target": "local/openwhisk/sample429.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample431.png",
+ "target": "local/openwhisk/sample431.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample432.png",
+ "target": "local/openwhisk/sample432.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample433.png",
+ "target": "local/openwhisk/sample433.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample434.png",
+ "target": "local/openwhisk/sample434.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample435.png",
+ "target": "local/openwhisk/sample435.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample436.png",
+ "target": "local/openwhisk/sample436.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample437.png",
+ "target": "local/openwhisk/sample437.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample438.png",
+ "target": "local/openwhisk/sample438.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample439.png",
+ "target": "local/openwhisk/sample439.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample440.png",
+ "target": "local/openwhisk/sample440.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample441.png",
+ "target": "local/openwhisk/sample441.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample442.png",
+ "target": "local/openwhisk/sample442.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample443.png",
+ "target": "local/openwhisk/sample443.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample444.png",
+ "target": "local/openwhisk/sample444.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample445.png",
+ "target": "local/openwhisk/sample445.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample446.png",
+ "target": "local/openwhisk/sample446.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample447.png",
+ "target": "local/openwhisk/sample447.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample448.png",
+ "target": "local/openwhisk/sample448.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample449.png",
+ "target": "local/openwhisk/sample449.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample450.png",
+ "target": "local/openwhisk/sample450.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample451.png",
+ "target": "local/openwhisk/sample451.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample452.png",
+ "target": "local/openwhisk/sample452.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample453.png",
+ "target": "local/openwhisk/sample453.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample454.png",
+ "target": "local/openwhisk/sample454.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample455.png",
+ "target": "local/openwhisk/sample455.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample456.png",
+ "target": "local/openwhisk/sample456.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample457.png",
+ "target": "local/openwhisk/sample457.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample458.png",
+ "target": "local/openwhisk/sample458.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample459.png",
+ "target": "local/openwhisk/sample459.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample460.png",
+ "target": "local/openwhisk/sample460.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample461.png",
+ "target": "local/openwhisk/sample461.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample462.png",
+ "target": "local/openwhisk/sample462.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample463.png",
+ "target": "local/openwhisk/sample463.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample464.png",
+ "target": "local/openwhisk/sample464.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample465.png",
+ "target": "local/openwhisk/sample465.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample466.png",
+ "target": "local/openwhisk/sample466.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample467.png",
+ "target": "local/openwhisk/sample467.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample468.png",
+ "target": "local/openwhisk/sample468.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample469.png",
+ "target": "local/openwhisk/sample469.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample470.png",
+ "target": "local/openwhisk/sample470.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample471.png",
+ "target": "local/openwhisk/sample471.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample472.png",
+ "target": "local/openwhisk/sample472.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample473.png",
+ "target": "local/openwhisk/sample473.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample474.png",
+ "target": "local/openwhisk/sample474.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample475.png",
+ "target": "local/openwhisk/sample475.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample476.png",
+ "target": "local/openwhisk/sample476.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample477.png",
+ "target": "local/openwhisk/sample477.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample478.png",
+ "target": "local/openwhisk/sample478.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample479.png",
+ "target": "local/openwhisk/sample479.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample480.png",
+ "target": "local/openwhisk/sample480.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample481.png",
+ "target": "local/openwhisk/sample481.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample482.png",
+ "target": "local/openwhisk/sample482.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample483.png",
+ "target": "local/openwhisk/sample483.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample484.png",
+ "target": "local/openwhisk/sample484.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample485.png",
+ "target": "local/openwhisk/sample485.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample486.png",
+ "target": "local/openwhisk/sample486.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample487.png",
+ "target": "local/openwhisk/sample487.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample488.png",
+ "target": "local/openwhisk/sample488.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample489.png",
+ "target": "local/openwhisk/sample489.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample490.png",
+ "target": "local/openwhisk/sample490.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample491.png",
+ "target": "local/openwhisk/sample491.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample492.png",
+ "target": "local/openwhisk/sample492.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample493.png",
+ "target": "local/openwhisk/sample493.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample494.png",
+ "target": "local/openwhisk/sample494.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample495.png",
+ "target": "local/openwhisk/sample495.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample496.png",
+ "target": "local/openwhisk/sample496.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample497.png",
+ "target": "local/openwhisk/sample497.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample498.png",
+ "target": "local/openwhisk/sample498.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample499.png",
+ "target": "local/openwhisk/sample499.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample500.png",
+ "target": "local/openwhisk/sample500.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample501.png",
+ "target": "local/openwhisk/sample501.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample502.png",
+ "target": "local/openwhisk/sample502.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample503.png",
+ "target": "local/openwhisk/sample503.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample504.png",
+ "target": "local/openwhisk/sample504.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample505.png",
+ "target": "local/openwhisk/sample505.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample506.png",
+ "target": "local/openwhisk/sample506.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample507.png",
+ "target": "local/openwhisk/sample507.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample508.png",
+ "target": "local/openwhisk/sample508.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample509.png",
+ "target": "local/openwhisk/sample509.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample510.png",
+ "target": "local/openwhisk/sample510.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample511.png",
+ "target": "local/openwhisk/sample511.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample512.png",
+ "target": "local/openwhisk/sample512.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample513.png",
+ "target": "local/openwhisk/sample513.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample514.png",
+ "target": "local/openwhisk/sample514.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample515.png",
+ "target": "local/openwhisk/sample515.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample516.png",
+ "target": "local/openwhisk/sample516.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample517.png",
+ "target": "local/openwhisk/sample517.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample518.png",
+ "target": "local/openwhisk/sample518.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample519.png",
+ "target": "local/openwhisk/sample519.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample520.png",
+ "target": "local/openwhisk/sample520.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample521.png",
+ "target": "local/openwhisk/sample521.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample522.png",
+ "target": "local/openwhisk/sample522.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample523.png",
+ "target": "local/openwhisk/sample523.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample524.png",
+ "target": "local/openwhisk/sample524.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample525.png",
+ "target": "local/openwhisk/sample525.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample526.png",
+ "target": "local/openwhisk/sample526.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample527.png",
+ "target": "local/openwhisk/sample527.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample528.png",
+ "target": "local/openwhisk/sample528.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample529.png",
+ "target": "local/openwhisk/sample529.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample530.png",
+ "target": "local/openwhisk/sample530.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample531.png",
+ "target": "local/openwhisk/sample531.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample532.png",
+ "target": "local/openwhisk/sample532.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample533.png",
+ "target": "local/openwhisk/sample533.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample534.png",
+ "target": "local/openwhisk/sample534.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample535.png",
+ "target": "local/openwhisk/sample535.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample536.png",
+ "target": "local/openwhisk/sample536.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample538.png",
+ "target": "local/openwhisk/sample538.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample537.png",
+ "target": "local/openwhisk/sample537.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample539.png",
+ "target": "local/openwhisk/sample539.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample540.png",
+ "target": "local/openwhisk/sample540.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample541.png",
+ "target": "local/openwhisk/sample541.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample542.png",
+ "target": "local/openwhisk/sample542.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample543.png",
+ "target": "local/openwhisk/sample543.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample544.png",
+ "target": "local/openwhisk/sample544.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample545.png",
+ "target": "local/openwhisk/sample545.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample546.png",
+ "target": "local/openwhisk/sample546.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample547.png",
+ "target": "local/openwhisk/sample547.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample548.png",
+ "target": "local/openwhisk/sample548.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample549.png",
+ "target": "local/openwhisk/sample549.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample550.png",
+ "target": "local/openwhisk/sample550.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample551.png",
+ "target": "local/openwhisk/sample551.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample552.png",
+ "target": "local/openwhisk/sample552.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample553.png",
+ "target": "local/openwhisk/sample553.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample554.png",
+ "target": "local/openwhisk/sample554.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample555.png",
+ "target": "local/openwhisk/sample555.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample556.png",
+ "target": "local/openwhisk/sample556.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample557.png",
+ "target": "local/openwhisk/sample557.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample558.png",
+ "target": "local/openwhisk/sample558.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample559.png",
+ "target": "local/openwhisk/sample559.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample560.png",
+ "target": "local/openwhisk/sample560.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample561.png",
+ "target": "local/openwhisk/sample561.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample562.png",
+ "target": "local/openwhisk/sample562.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample563.png",
+ "target": "local/openwhisk/sample563.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample564.png",
+ "target": "local/openwhisk/sample564.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample565.png",
+ "target": "local/openwhisk/sample565.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample566.png",
+ "target": "local/openwhisk/sample566.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample567.png",
+ "target": "local/openwhisk/sample567.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample568.png",
+ "target": "local/openwhisk/sample568.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample569.png",
+ "target": "local/openwhisk/sample569.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample570.png",
+ "target": "local/openwhisk/sample570.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample571.png",
+ "target": "local/openwhisk/sample571.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample572.png",
+ "target": "local/openwhisk/sample572.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample573.png",
+ "target": "local/openwhisk/sample573.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample574.png",
+ "target": "local/openwhisk/sample574.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample575.png",
+ "target": "local/openwhisk/sample575.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample576.png",
+ "target": "local/openwhisk/sample576.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample577.png",
+ "target": "local/openwhisk/sample577.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample578.png",
+ "target": "local/openwhisk/sample578.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample579.png",
+ "target": "local/openwhisk/sample579.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample580.png",
+ "target": "local/openwhisk/sample580.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample581.png",
+ "target": "local/openwhisk/sample581.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample582.png",
+ "target": "local/openwhisk/sample582.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample583.png",
+ "target": "local/openwhisk/sample583.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample584.png",
+ "target": "local/openwhisk/sample584.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample585.png",
+ "target": "local/openwhisk/sample585.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample586.png",
+ "target": "local/openwhisk/sample586.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample587.png",
+ "target": "local/openwhisk/sample587.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample588.png",
+ "target": "local/openwhisk/sample588.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample589.png",
+ "target": "local/openwhisk/sample589.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample590.png",
+ "target": "local/openwhisk/sample590.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample591.png",
+ "target": "local/openwhisk/sample591.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample592.png",
+ "target": "local/openwhisk/sample592.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample593.png",
+ "target": "local/openwhisk/sample593.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample595.png",
+ "target": "local/openwhisk/sample595.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample594.png",
+ "target": "local/openwhisk/sample594.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample596.png",
+ "target": "local/openwhisk/sample596.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample597.png",
+ "target": "local/openwhisk/sample597.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample598.png",
+ "target": "local/openwhisk/sample598.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample599.png",
+ "target": "local/openwhisk/sample599.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample600.png",
+ "target": "local/openwhisk/sample600.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample601.png",
+ "target": "local/openwhisk/sample601.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample602.png",
+ "target": "local/openwhisk/sample602.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample603.png",
+ "target": "local/openwhisk/sample603.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample604.png",
+ "target": "local/openwhisk/sample604.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample605.png",
+ "target": "local/openwhisk/sample605.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample606.png",
+ "target": "local/openwhisk/sample606.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample607.png",
+ "target": "local/openwhisk/sample607.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample608.png",
+ "target": "local/openwhisk/sample608.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample609.png",
+ "target": "local/openwhisk/sample609.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample610.png",
+ "target": "local/openwhisk/sample610.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample611.png",
+ "target": "local/openwhisk/sample611.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample612.png",
+ "target": "local/openwhisk/sample612.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample613.png",
+ "target": "local/openwhisk/sample613.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample614.png",
+ "target": "local/openwhisk/sample614.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample615.png",
+ "target": "local/openwhisk/sample615.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample616.png",
+ "target": "local/openwhisk/sample616.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample617.png",
+ "target": "local/openwhisk/sample617.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample618.png",
+ "target": "local/openwhisk/sample618.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample619.png",
+ "target": "local/openwhisk/sample619.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample620.png",
+ "target": "local/openwhisk/sample620.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample621.png",
+ "target": "local/openwhisk/sample621.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample622.png",
+ "target": "local/openwhisk/sample622.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample623.png",
+ "target": "local/openwhisk/sample623.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample624.png",
+ "target": "local/openwhisk/sample624.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample625.png",
+ "target": "local/openwhisk/sample625.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample626.png",
+ "target": "local/openwhisk/sample626.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample627.png",
+ "target": "local/openwhisk/sample627.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample628.png",
+ "target": "local/openwhisk/sample628.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample629.png",
+ "target": "local/openwhisk/sample629.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample630.png",
+ "target": "local/openwhisk/sample630.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample631.png",
+ "target": "local/openwhisk/sample631.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample632.png",
+ "target": "local/openwhisk/sample632.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample633.png",
+ "target": "local/openwhisk/sample633.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample634.png",
+ "target": "local/openwhisk/sample634.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample635.png",
+ "target": "local/openwhisk/sample635.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample636.png",
+ "target": "local/openwhisk/sample636.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample637.png",
+ "target": "local/openwhisk/sample637.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample638.png",
+ "target": "local/openwhisk/sample638.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample639.png",
+ "target": "local/openwhisk/sample639.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample640.png",
+ "target": "local/openwhisk/sample640.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample641.png",
+ "target": "local/openwhisk/sample641.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample642.png",
+ "target": "local/openwhisk/sample642.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample643.png",
+ "target": "local/openwhisk/sample643.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample644.png",
+ "target": "local/openwhisk/sample644.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample645.png",
+ "target": "local/openwhisk/sample645.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample646.png",
+ "target": "local/openwhisk/sample646.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample647.png",
+ "target": "local/openwhisk/sample647.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample648.png",
+ "target": "local/openwhisk/sample648.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample649.png",
+ "target": "local/openwhisk/sample649.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample650.png",
+ "target": "local/openwhisk/sample650.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample651.png",
+ "target": "local/openwhisk/sample651.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample652.png",
+ "target": "local/openwhisk/sample652.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample653.png",
+ "target": "local/openwhisk/sample653.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample654.png",
+ "target": "local/openwhisk/sample654.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample655.png",
+ "target": "local/openwhisk/sample655.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample656.png",
+ "target": "local/openwhisk/sample656.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample657.png",
+ "target": "local/openwhisk/sample657.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample658.png",
+ "target": "local/openwhisk/sample658.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample659.png",
+ "target": "local/openwhisk/sample659.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample660.png",
+ "target": "local/openwhisk/sample660.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample661.png",
+ "target": "local/openwhisk/sample661.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample662.png",
+ "target": "local/openwhisk/sample662.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample663.png",
+ "target": "local/openwhisk/sample663.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample664.png",
+ "target": "local/openwhisk/sample664.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample665.png",
+ "target": "local/openwhisk/sample665.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample666.png",
+ "target": "local/openwhisk/sample666.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample667.png",
+ "target": "local/openwhisk/sample667.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample668.png",
+ "target": "local/openwhisk/sample668.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample669.png",
+ "target": "local/openwhisk/sample669.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample670.png",
+ "target": "local/openwhisk/sample670.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample671.png",
+ "target": "local/openwhisk/sample671.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample672.png",
+ "target": "local/openwhisk/sample672.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample673.png",
+ "target": "local/openwhisk/sample673.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample674.png",
+ "target": "local/openwhisk/sample674.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample675.png",
+ "target": "local/openwhisk/sample675.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample676.png",
+ "target": "local/openwhisk/sample676.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample677.png",
+ "target": "local/openwhisk/sample677.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample678.png",
+ "target": "local/openwhisk/sample678.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample679.png",
+ "target": "local/openwhisk/sample679.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample680.png",
+ "target": "local/openwhisk/sample680.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample681.png",
+ "target": "local/openwhisk/sample681.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample682.png",
+ "target": "local/openwhisk/sample682.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample683.png",
+ "target": "local/openwhisk/sample683.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample684.png",
+ "target": "local/openwhisk/sample684.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample685.png",
+ "target": "local/openwhisk/sample685.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample686.png",
+ "target": "local/openwhisk/sample686.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample687.png",
+ "target": "local/openwhisk/sample687.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample688.png",
+ "target": "local/openwhisk/sample688.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample689.png",
+ "target": "local/openwhisk/sample689.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample690.png",
+ "target": "local/openwhisk/sample690.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample691.png",
+ "target": "local/openwhisk/sample691.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample692.png",
+ "target": "local/openwhisk/sample692.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample693.png",
+ "target": "local/openwhisk/sample693.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample694.png",
+ "target": "local/openwhisk/sample694.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample695.png",
+ "target": "local/openwhisk/sample695.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample696.png",
+ "target": "local/openwhisk/sample696.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample697.png",
+ "target": "local/openwhisk/sample697.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample698.png",
+ "target": "local/openwhisk/sample698.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample699.png",
+ "target": "local/openwhisk/sample699.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample700.png",
+ "target": "local/openwhisk/sample700.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample701.png",
+ "target": "local/openwhisk/sample701.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample702.png",
+ "target": "local/openwhisk/sample702.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample703.png",
+ "target": "local/openwhisk/sample703.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample704.png",
+ "target": "local/openwhisk/sample704.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample705.png",
+ "target": "local/openwhisk/sample705.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample706.png",
+ "target": "local/openwhisk/sample706.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample707.png",
+ "target": "local/openwhisk/sample707.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample708.png",
+ "target": "local/openwhisk/sample708.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample709.png",
+ "target": "local/openwhisk/sample709.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample710.png",
+ "target": "local/openwhisk/sample710.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample711.png",
+ "target": "local/openwhisk/sample711.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample712.png",
+ "target": "local/openwhisk/sample712.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample713.png",
+ "target": "local/openwhisk/sample713.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample714.png",
+ "target": "local/openwhisk/sample714.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample715.png",
+ "target": "local/openwhisk/sample715.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample716.png",
+ "target": "local/openwhisk/sample716.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample717.png",
+ "target": "local/openwhisk/sample717.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample718.png",
+ "target": "local/openwhisk/sample718.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample719.png",
+ "target": "local/openwhisk/sample719.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample720.png",
+ "target": "local/openwhisk/sample720.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample721.png",
+ "target": "local/openwhisk/sample721.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample722.png",
+ "target": "local/openwhisk/sample722.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample723.png",
+ "target": "local/openwhisk/sample723.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample724.png",
+ "target": "local/openwhisk/sample724.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample725.png",
+ "target": "local/openwhisk/sample725.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample726.png",
+ "target": "local/openwhisk/sample726.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample727.png",
+ "target": "local/openwhisk/sample727.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample728.png",
+ "target": "local/openwhisk/sample728.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample729.png",
+ "target": "local/openwhisk/sample729.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample730.png",
+ "target": "local/openwhisk/sample730.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample731.png",
+ "target": "local/openwhisk/sample731.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample732.png",
+ "target": "local/openwhisk/sample732.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample733.png",
+ "target": "local/openwhisk/sample733.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample734.png",
+ "target": "local/openwhisk/sample734.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample735.png",
+ "target": "local/openwhisk/sample735.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample736.png",
+ "target": "local/openwhisk/sample736.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample737.png",
+ "target": "local/openwhisk/sample737.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample738.png",
+ "target": "local/openwhisk/sample738.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample739.png",
+ "target": "local/openwhisk/sample739.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample740.png",
+ "target": "local/openwhisk/sample740.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample741.png",
+ "target": "local/openwhisk/sample741.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample742.png",
+ "target": "local/openwhisk/sample742.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample743.png",
+ "target": "local/openwhisk/sample743.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample744.png",
+ "target": "local/openwhisk/sample744.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample745.png",
+ "target": "local/openwhisk/sample745.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample746.png",
+ "target": "local/openwhisk/sample746.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample747.png",
+ "target": "local/openwhisk/sample747.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample748.png",
+ "target": "local/openwhisk/sample748.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample749.png",
+ "target": "local/openwhisk/sample749.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample750.png",
+ "target": "local/openwhisk/sample750.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample751.png",
+ "target": "local/openwhisk/sample751.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample752.png",
+ "target": "local/openwhisk/sample752.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample753.png",
+ "target": "local/openwhisk/sample753.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample754.png",
+ "target": "local/openwhisk/sample754.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample755.png",
+ "target": "local/openwhisk/sample755.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample756.png",
+ "target": "local/openwhisk/sample756.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample757.png",
+ "target": "local/openwhisk/sample757.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample758.png",
+ "target": "local/openwhisk/sample758.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample759.png",
+ "target": "local/openwhisk/sample759.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample760.png",
+ "target": "local/openwhisk/sample760.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample761.png",
+ "target": "local/openwhisk/sample761.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample762.png",
+ "target": "local/openwhisk/sample762.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample763.png",
+ "target": "local/openwhisk/sample763.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample764.png",
+ "target": "local/openwhisk/sample764.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample765.png",
+ "target": "local/openwhisk/sample765.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample766.png",
+ "target": "local/openwhisk/sample766.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample767.png",
+ "target": "local/openwhisk/sample767.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample768.png",
+ "target": "local/openwhisk/sample768.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample769.png",
+ "target": "local/openwhisk/sample769.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample770.png",
+ "target": "local/openwhisk/sample770.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample771.png",
+ "target": "local/openwhisk/sample771.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample772.png",
+ "target": "local/openwhisk/sample772.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample773.png",
+ "target": "local/openwhisk/sample773.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample774.png",
+ "target": "local/openwhisk/sample774.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample775.png",
+ "target": "local/openwhisk/sample775.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample776.png",
+ "target": "local/openwhisk/sample776.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample777.png",
+ "target": "local/openwhisk/sample777.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample778.png",
+ "target": "local/openwhisk/sample778.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample779.png",
+ "target": "local/openwhisk/sample779.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample780.png",
+ "target": "local/openwhisk/sample780.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample781.png",
+ "target": "local/openwhisk/sample781.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample782.png",
+ "target": "local/openwhisk/sample782.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample783.png",
+ "target": "local/openwhisk/sample783.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample784.png",
+ "target": "local/openwhisk/sample784.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample785.png",
+ "target": "local/openwhisk/sample785.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample786.png",
+ "target": "local/openwhisk/sample786.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample787.png",
+ "target": "local/openwhisk/sample787.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample788.png",
+ "target": "local/openwhisk/sample788.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample789.png",
+ "target": "local/openwhisk/sample789.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample790.png",
+ "target": "local/openwhisk/sample790.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample791.png",
+ "target": "local/openwhisk/sample791.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample792.png",
+ "target": "local/openwhisk/sample792.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample793.png",
+ "target": "local/openwhisk/sample793.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample794.png",
+ "target": "local/openwhisk/sample794.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample795.png",
+ "target": "local/openwhisk/sample795.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample796.png",
+ "target": "local/openwhisk/sample796.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample797.png",
+ "target": "local/openwhisk/sample797.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample798.png",
+ "target": "local/openwhisk/sample798.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample799.png",
+ "target": "local/openwhisk/sample799.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample800.png",
+ "target": "local/openwhisk/sample800.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample801.png",
+ "target": "local/openwhisk/sample801.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample802.png",
+ "target": "local/openwhisk/sample802.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample803.png",
+ "target": "local/openwhisk/sample803.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample804.png",
+ "target": "local/openwhisk/sample804.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample805.png",
+ "target": "local/openwhisk/sample805.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample806.png",
+ "target": "local/openwhisk/sample806.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample807.png",
+ "target": "local/openwhisk/sample807.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample808.png",
+ "target": "local/openwhisk/sample808.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample809.png",
+ "target": "local/openwhisk/sample809.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample810.png",
+ "target": "local/openwhisk/sample810.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample811.png",
+ "target": "local/openwhisk/sample811.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample812.png",
+ "target": "local/openwhisk/sample812.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample813.png",
+ "target": "local/openwhisk/sample813.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample814.png",
+ "target": "local/openwhisk/sample814.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample815.png",
+ "target": "local/openwhisk/sample815.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample816.png",
+ "target": "local/openwhisk/sample816.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample817.png",
+ "target": "local/openwhisk/sample817.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample818.png",
+ "target": "local/openwhisk/sample818.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample819.png",
+ "target": "local/openwhisk/sample819.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample820.png",
+ "target": "local/openwhisk/sample820.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample821.png",
+ "target": "local/openwhisk/sample821.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample822.png",
+ "target": "local/openwhisk/sample822.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample823.png",
+ "target": "local/openwhisk/sample823.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample824.png",
+ "target": "local/openwhisk/sample824.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample825.png",
+ "target": "local/openwhisk/sample825.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample826.png",
+ "target": "local/openwhisk/sample826.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample827.png",
+ "target": "local/openwhisk/sample827.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample828.png",
+ "target": "local/openwhisk/sample828.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample829.png",
+ "target": "local/openwhisk/sample829.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample830.png",
+ "target": "local/openwhisk/sample830.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample831.png",
+ "target": "local/openwhisk/sample831.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample832.png",
+ "target": "local/openwhisk/sample832.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample833.png",
+ "target": "local/openwhisk/sample833.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample834.png",
+ "target": "local/openwhisk/sample834.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample835.png",
+ "target": "local/openwhisk/sample835.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample836.png",
+ "target": "local/openwhisk/sample836.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample837.png",
+ "target": "local/openwhisk/sample837.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample838.png",
+ "target": "local/openwhisk/sample838.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample839.png",
+ "target": "local/openwhisk/sample839.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample840.png",
+ "target": "local/openwhisk/sample840.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample841.png",
+ "target": "local/openwhisk/sample841.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample842.png",
+ "target": "local/openwhisk/sample842.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample843.png",
+ "target": "local/openwhisk/sample843.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample844.png",
+ "target": "local/openwhisk/sample844.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample845.png",
+ "target": "local/openwhisk/sample845.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample846.png",
+ "target": "local/openwhisk/sample846.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample847.png",
+ "target": "local/openwhisk/sample847.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample848.png",
+ "target": "local/openwhisk/sample848.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample849.png",
+ "target": "local/openwhisk/sample849.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample850.png",
+ "target": "local/openwhisk/sample850.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample851.png",
+ "target": "local/openwhisk/sample851.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample852.png",
+ "target": "local/openwhisk/sample852.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample853.png",
+ "target": "local/openwhisk/sample853.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample854.png",
+ "target": "local/openwhisk/sample854.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample855.png",
+ "target": "local/openwhisk/sample855.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample856.png",
+ "target": "local/openwhisk/sample856.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample857.png",
+ "target": "local/openwhisk/sample857.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample858.png",
+ "target": "local/openwhisk/sample858.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample859.png",
+ "target": "local/openwhisk/sample859.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample860.png",
+ "target": "local/openwhisk/sample860.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample861.png",
+ "target": "local/openwhisk/sample861.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample862.png",
+ "target": "local/openwhisk/sample862.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample863.png",
+ "target": "local/openwhisk/sample863.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample864.png",
+ "target": "local/openwhisk/sample864.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample865.png",
+ "target": "local/openwhisk/sample865.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample866.png",
+ "target": "local/openwhisk/sample866.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample867.png",
+ "target": "local/openwhisk/sample867.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample868.png",
+ "target": "local/openwhisk/sample868.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample869.png",
+ "target": "local/openwhisk/sample869.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample870.png",
+ "target": "local/openwhisk/sample870.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample871.png",
+ "target": "local/openwhisk/sample871.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample872.png",
+ "target": "local/openwhisk/sample872.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample873.png",
+ "target": "local/openwhisk/sample873.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample874.png",
+ "target": "local/openwhisk/sample874.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample875.png",
+ "target": "local/openwhisk/sample875.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample876.png",
+ "target": "local/openwhisk/sample876.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample877.png",
+ "target": "local/openwhisk/sample877.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample878.png",
+ "target": "local/openwhisk/sample878.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample879.png",
+ "target": "local/openwhisk/sample879.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample880.png",
+ "target": "local/openwhisk/sample880.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample881.png",
+ "target": "local/openwhisk/sample881.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample882.png",
+ "target": "local/openwhisk/sample882.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample883.png",
+ "target": "local/openwhisk/sample883.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample884.png",
+ "target": "local/openwhisk/sample884.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample885.png",
+ "target": "local/openwhisk/sample885.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample886.png",
+ "target": "local/openwhisk/sample886.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample887.png",
+ "target": "local/openwhisk/sample887.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample888.png",
+ "target": "local/openwhisk/sample888.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample889.png",
+ "target": "local/openwhisk/sample889.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample890.png",
+ "target": "local/openwhisk/sample890.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample891.png",
+ "target": "local/openwhisk/sample891.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample892.png",
+ "target": "local/openwhisk/sample892.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample893.png",
+ "target": "local/openwhisk/sample893.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample894.png",
+ "target": "local/openwhisk/sample894.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample895.png",
+ "target": "local/openwhisk/sample895.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample896.png",
+ "target": "local/openwhisk/sample896.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample897.png",
+ "target": "local/openwhisk/sample897.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample898.png",
+ "target": "local/openwhisk/sample898.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample899.png",
+ "target": "local/openwhisk/sample899.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample900.png",
+ "target": "local/openwhisk/sample900.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample901.png",
+ "target": "local/openwhisk/sample901.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample902.png",
+ "target": "local/openwhisk/sample902.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample903.png",
+ "target": "local/openwhisk/sample903.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample904.png",
+ "target": "local/openwhisk/sample904.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample905.png",
+ "target": "local/openwhisk/sample905.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample906.png",
+ "target": "local/openwhisk/sample906.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample907.png",
+ "target": "local/openwhisk/sample907.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample908.png",
+ "target": "local/openwhisk/sample908.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample909.png",
+ "target": "local/openwhisk/sample909.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample910.png",
+ "target": "local/openwhisk/sample910.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample911.png",
+ "target": "local/openwhisk/sample911.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample912.png",
+ "target": "local/openwhisk/sample912.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample913.png",
+ "target": "local/openwhisk/sample913.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample914.png",
+ "target": "local/openwhisk/sample914.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample915.png",
+ "target": "local/openwhisk/sample915.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample916.png",
+ "target": "local/openwhisk/sample916.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample917.png",
+ "target": "local/openwhisk/sample917.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample918.png",
+ "target": "local/openwhisk/sample918.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample919.png",
+ "target": "local/openwhisk/sample919.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample920.png",
+ "target": "local/openwhisk/sample920.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample921.png",
+ "target": "local/openwhisk/sample921.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample922.png",
+ "target": "local/openwhisk/sample922.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample923.png",
+ "target": "local/openwhisk/sample923.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample924.png",
+ "target": "local/openwhisk/sample924.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample925.png",
+ "target": "local/openwhisk/sample925.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample926.png",
+ "target": "local/openwhisk/sample926.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample927.png",
+ "target": "local/openwhisk/sample927.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample928.png",
+ "target": "local/openwhisk/sample928.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample929.png",
+ "target": "local/openwhisk/sample929.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample930.png",
+ "target": "local/openwhisk/sample930.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample931.png",
+ "target": "local/openwhisk/sample931.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample932.png",
+ "target": "local/openwhisk/sample932.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample933.png",
+ "target": "local/openwhisk/sample933.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample934.png",
+ "target": "local/openwhisk/sample934.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample935.png",
+ "target": "local/openwhisk/sample935.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample936.png",
+ "target": "local/openwhisk/sample936.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample937.png",
+ "target": "local/openwhisk/sample937.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample938.png",
+ "target": "local/openwhisk/sample938.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample939.png",
+ "target": "local/openwhisk/sample939.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample940.png",
+ "target": "local/openwhisk/sample940.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample941.png",
+ "target": "local/openwhisk/sample941.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample942.png",
+ "target": "local/openwhisk/sample942.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample943.png",
+ "target": "local/openwhisk/sample943.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample944.png",
+ "target": "local/openwhisk/sample944.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample945.png",
+ "target": "local/openwhisk/sample945.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample946.png",
+ "target": "local/openwhisk/sample946.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample947.png",
+ "target": "local/openwhisk/sample947.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample948.png",
+ "target": "local/openwhisk/sample948.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample949.png",
+ "target": "local/openwhisk/sample949.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample950.png",
+ "target": "local/openwhisk/sample950.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample951.png",
+ "target": "local/openwhisk/sample951.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample952.png",
+ "target": "local/openwhisk/sample952.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample953.png",
+ "target": "local/openwhisk/sample953.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample954.png",
+ "target": "local/openwhisk/sample954.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample955.png",
+ "target": "local/openwhisk/sample955.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample956.png",
+ "target": "local/openwhisk/sample956.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample957.png",
+ "target": "local/openwhisk/sample957.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample958.png",
+ "target": "local/openwhisk/sample958.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample959.png",
+ "target": "local/openwhisk/sample959.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample960.png",
+ "target": "local/openwhisk/sample960.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample961.png",
+ "target": "local/openwhisk/sample961.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample962.png",
+ "target": "local/openwhisk/sample962.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample963.png",
+ "target": "local/openwhisk/sample963.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample964.png",
+ "target": "local/openwhisk/sample964.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample965.png",
+ "target": "local/openwhisk/sample965.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample966.png",
+ "target": "local/openwhisk/sample966.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample967.png",
+ "target": "local/openwhisk/sample967.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample968.png",
+ "target": "local/openwhisk/sample968.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample969.png",
+ "target": "local/openwhisk/sample969.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample970.png",
+ "target": "local/openwhisk/sample970.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample971.png",
+ "target": "local/openwhisk/sample971.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample972.png",
+ "target": "local/openwhisk/sample972.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample973.png",
+ "target": "local/openwhisk/sample973.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample974.png",
+ "target": "local/openwhisk/sample974.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample975.png",
+ "target": "local/openwhisk/sample975.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample976.png",
+ "target": "local/openwhisk/sample976.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample977.png",
+ "target": "local/openwhisk/sample977.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample978.png",
+ "target": "local/openwhisk/sample978.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample979.png",
+ "target": "local/openwhisk/sample979.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample980.png",
+ "target": "local/openwhisk/sample980.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample981.png",
+ "target": "local/openwhisk/sample981.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample982.png",
+ "target": "local/openwhisk/sample982.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample983.png",
+ "target": "local/openwhisk/sample983.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample984.png",
+ "target": "local/openwhisk/sample984.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample985.png",
+ "target": "local/openwhisk/sample985.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample986.png",
+ "target": "local/openwhisk/sample986.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample987.png",
+ "target": "local/openwhisk/sample987.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample988.png",
+ "target": "local/openwhisk/sample988.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample989.png",
+ "target": "local/openwhisk/sample989.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample990.png",
+ "target": "local/openwhisk/sample990.png",
+ "size": 5615,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample991.png",
+ "target": "local/openwhisk/sample991.png",
+ "size": 6161,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample992.png",
+ "target": "local/openwhisk/sample992.png",
+ "size": 4866,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample993.png",
+ "target": "local/openwhisk/sample993.png",
+ "size": 5958,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample994.png",
+ "target": "local/openwhisk/sample994.png",
+ "size": 26624,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample995.png",
+ "target": "local/openwhisk/sample995.png",
+ "size": 54985,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample996.png",
+ "target": "local/openwhisk/sample996.png",
+ "size": 34791,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample997.png",
+ "target": "local/openwhisk/sample997.png",
+ "size": 57295,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample998.png",
+ "target": "local/openwhisk/sample998.png",
+ "size": 7162,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample999.png",
+ "target": "local/openwhisk/sample999.png",
+ "size": 4019,
+ "totalCount": 1000,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "total": 0,
+ "transferred": 20747600,
+ "speed": 201562.97868959326
+}

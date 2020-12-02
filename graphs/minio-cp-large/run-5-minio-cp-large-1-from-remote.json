@@ -1,0 +1,14 @@
+{
+ "status": "success",
+ "source": "remote/test/sample00.png",
+ "target": "local/test/sample00.png",
+ "size": 228354,
+ "totalCount": 1,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "total": 0,
+ "transferred": 228354,
+ "speed": 54568.947690363835
+}

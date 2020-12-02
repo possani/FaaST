@@ -1,0 +1,14 @@
+{
+ "status": "success",
+ "source": "remote/openwhisk/sample00.png",
+ "target": "local/openwhisk/sample00.png",
+ "size": 5615,
+ "totalCount": 1,
+ "totalSize": 0
+}
+{
+ "status": "success",
+ "total": 0,
+ "transferred": 5615,
+ "speed": 3562.2936220638526
+}
