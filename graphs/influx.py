@@ -8,9 +8,6 @@ import re
 
 def get_files(filter, duration, case):
     files = glob.glob("*{}-{}-{}-summary.json".format(filter, duration, case))
-    for f in files:
-        if re.match('[0-9]+-[0-9]+-', f):
-            files.remove(f)  # remove partial1k remote phase
     files = sorted(files)
     return files
 
@@ -39,6 +36,8 @@ def query_data(duration, file, p90, group_by):
     data = resp.json()
     return data
 
+def has_data(data):
+    return "results" in data["results"][0]
 
 def extract_values(data):
     raw_values = data["results"][0]["series"][0]["values"]
@@ -81,9 +80,7 @@ def create_gpi(duration, case):
     f.write("set terminal pngcairo size 960,540 enhanced font 'Verdana,10'")
     f.write("\nset title 'Cumulative - {} - {}'".format(duration, case))
     f.write("\nset output 'cumulative-{}-{}.png'".format(duration, case))
-    # f.write("\nset yrange [0:10]")
     f.write("\nset ylabel 'Requests'")
-    # f.write("\nset style line 1 linecolor rgb '#0060ad' linetype 1 linewidth 2 pointtype 7 pointsize 0.05")
     files = glob.glob("*-{}-{}.dat".format(duration, case))
     n_files = len(files)
     for i in range(n_files):
@@ -111,8 +108,6 @@ def create_p90_gpi(duration):
         f.write(
             "\nset title 'P(90) - http\_request\_duration (ms) - {}'".format(files[i], duration))
         f.write("\nset output '{}.png'".format(files[i][:-4]))
-        # f.write("\nset yrange [0:10]")
-        # f.write("\nset ylabel 'http\_request\_duration'")
         f.write("\nplot '{}' using 1: 2 with lines title '{}' \\".format(
             files[i], files[i][:-4]))
         f.close()
@@ -151,6 +146,8 @@ if __name__ == "__main__":
     files = get_files(filter, duration, case)
     for f in files:
         data = query_data(duration, f, p90, group_by)
+        if not has_data(data):
+            continue
         values = extract_values(data)
         if not p90:
             values = accumulate_values(values)
