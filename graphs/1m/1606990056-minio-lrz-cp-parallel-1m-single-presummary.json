@@ -1,0 +1,29 @@
+{
+    "metrics": {
+        "data_received": {
+            "count": 1313,
+            "rate": 307.1701728177923
+        },
+        "data_sent": {
+            "count": 955,
+            "rate": 223.41775707615508
+        },
+        "vus": {
+            "max": 1,
+            "min": 1,
+            "value": 1
+        },
+        "vus_max": {
+            "max": 1,
+            "min": 1,
+            "value": 1
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {}
+    }
+}
