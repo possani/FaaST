@@ -1,70 +1,71 @@
 #!/bin/bash
 
-# Remove images
-docker run -it --entrypoint="" --network host minio/mc sh -c " \
-    mc -q config host add remote http://$REMOTE:9000 $REMOTE_ACCESS_KEY $REMOTE_SECRET_KEY > /dev/null; \
-    mc -q rm --recursive --force remote/openwhisk/"
-
-for case in single multiple partial
+for cluster in lrz 
 do
-    if [ $case == "single" ]
-    then 
-        docker run -v "$(pwd)"/images:/tmp/images -it --entrypoint="" --network host minio/mc sh -c " \
-            mc -q config host add remote http://$REMOTE:9000 $REMOTE_ACCESS_KEY $REMOTE_SECRET_KEY > /dev/null;
-            mc -q cp /tmp/images/sample000.png remote/openwhisk/"
-    elif [ $case == "multiple" ]
-    then
-        for i in {0..9}
-        do
-            docker run -v "$(pwd)"/images:/tmp/images -it --entrypoint="" --network host minio/mc sh -c " \
-                mc -q config host add remote http://$REMOTE:9000 $REMOTE_ACCESS_KEY $REMOTE_SECRET_KEY > /dev/null;
-                mc -q cp /tmp/images/sample0$i.png remote/openwhisk/"
-        done
-    else
-        docker run -v "$(pwd)"/images:/tmp/images -it --entrypoint="" --network host minio/mc sh -c " \
-            mc -q config host add remote http://$REMOTE:9000 $REMOTE_ACCESS_KEY $REMOTE_SECRET_KEY > /dev/null;
-            mc -q cp -r /tmp/images/ remote/openwhisk/"
-    fi
+    export KUBECONFIG=$PWD/../ansible/from_remote/local-master-01/etc/kubernetes/admin.conf
 
-    for i in 30m
+    CLUSTER=${cluster^^}
+    CLUSTER_PORT=${cluster^^}_PORT
+    CLUSTER_ACCESS_KEY=${cluster^^}_ACCESS_KEY
+    CLUSTER_SECRET_KEY=${cluster^^}_SECRET_KEY
+
+    single_regex="000"  
+    multiple_regex="00[0-9]"
+    partial_regex="0[0-9][0-9]"
+    partial1k_regex="*"
+
+    # Remove images
+    docker run -it --entrypoint="" --network host minio/mc sh -c " \
+        mc -q config host add remote http://$REMOTE:9000 $REMOTE_ACCESS_KEY $REMOTE_SECRET_KEY > /dev/null; \
+        mc -q rm --recursive --force remote/openwhisk/"
+
+    for case in single multiple partial partial1k
     do
-        export DURATION=$i
-        payload="${FUNCTION^^}_LOCAL_${case^^}_PAYLOAD"
-        if [ -z "${!payload}" ]
-        then
-            echo "There's no such variable ${payload}"
-            continue
-        fi
-
-        export PAYLOAD=${!payload}
         echo $case
-        echo $PAYLOAD
+        regex=${case}_regex
+        docker run -v "$(pwd)"/images:/tmp/images -it --entrypoint="" --network host minio/mc sh -c " \
+            mc -q config host add remote http://$REMOTE:9000 $REMOTE_ACCESS_KEY $REMOTE_SECRET_KEY > /dev/null;
+            mc -q find /tmp/images --regex \"sample${!regex}.png\" --exec \"mc -q cp {} remote/openwhisk\" "        
 
-        DATE=$(date +%s)
-        # Copy images
-        docker run -it --entrypoint="" --network host minio/mc sh -c " \
-            mc -q config host add local http://$LOCAL:31003 $LOCAL_ACCESS_KEY $LOCAL_SECRET_KEY > /dev/null; \
-            mc -q config host add remote http://$REMOTE:9000 $REMOTE_ACCESS_KEY $REMOTE_SECRET_KEY > /dev/null; \
-            mc -q --json cp -r remote/openwhisk/ local/openwhisk/ " > ${DATE}-minio-local-cp-${DURATION}-${case}-migration.json
+        for i in 1m 5m 15m 30m
+        do
+            export DURATION=$i
+            payload="${FUNCTION^^}_${CLUSTER}_${case^^}_PAYLOAD"
+            if [ -z "${!payload}" ]
+            then
+                echo "There's no such variable ${payload}"
+                continue
+            fi
 
-        export SERVER_IP=${LOCAL}
-        DATE2=$(date +%s)
-        DIFF=`expr $DATE2 - $DATE`
-        k6 run ../script.js --duration ${DURATION} \
-                --out influxdb=http://admin:admin@${SERVER_IP}:31002/db \
-                --summary-export=${DATE}-${DIFF}-minio-local-cp-${DURATION}-${case}-summary.json     
+            export PAYLOAD=${!payload}
+            echo $case
+            echo $PAYLOAD
 
-        sleep 5m
+            DATE=$(date +%s)
+            # Copy images
+            docker run -it --entrypoint="" --network host minio/mc sh -c " \
+                mc -q config host add local http://${!CLUSTER}:${!CLUSTER_PORT} ${!CLUSTER_ACCESS_KEY} ${!CLUSTER_SECRET_KEY} > /dev/null; \
+                mc -q config host add remote http://$REMOTE:9000 $REMOTE_ACCESS_KEY $REMOTE_SECRET_KEY > /dev/null; \
+                mc -q --json cp -r remote/openwhisk/ local/openwhisk/ " > ${DATE}-minio-${cluster}-cp-${DURATION}-${case}-migration.json
 
-        # Clean up running PODs
-        export KUBECONFIG=$PWD/../ansible/from_remote/local-master-01/etc/kubernetes/admin.conf
-        kubectl -n openwhisk delete pod -l user-action-pod=true
+            export SERVER_IP=${LOCAL}
+            DATE2=$(date +%s)
+            DIFF=`expr $DATE2 - $DATE`
+            k6 run ../script.js --duration ${DURATION} \
+                    --out influxdb=http://admin:admin@${SERVER_IP}:31002/db \
+                    --summary-export=${DATE}-${DIFF}-minio-${cluster}-cp-${DURATION}-${case}-summary.json     
 
-        sleep 5m
+            sleep 5m
+
+            # Clean up running PODs
+            kubectl -n openwhisk delete pod -l user-action-pod=true
+
+            sleep 5m
+        done
     done
-done
 
-# Remove images
-docker run -it --entrypoint="" --network host minio/mc sh -c " \
-    mc -q config host add remote http://$REMOTE:9000 $REMOTE_ACCESS_KEY $REMOTE_SECRET_KEY > /dev/null; \
-    mc -q rm --recursive --force remote/openwhisk/"
+    # Remove images
+    docker run -it --entrypoint="" --network host minio/mc sh -c " \
+        mc -q config host add remote http://$REMOTE:9000 $REMOTE_ACCESS_KEY $REMOTE_SECRET_KEY > /dev/null; \
+        mc -q rm --recursive --force remote/openwhisk/"
+done
