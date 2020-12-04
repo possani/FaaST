@@ -73,7 +73,7 @@ def get_line_title(title, duration, case):
     title = re.sub('\.dat$', '', title)
     title = re.sub('-{}$'.format(case), '', title)
     title = re.sub('-{}$'.format(duration), '', title)
-    title = re.sub('^minio-', '', title)
+    # title = re.sub('^minio-', '', title)
     return title
 
 
