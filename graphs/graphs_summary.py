@@ -19,6 +19,8 @@ filepath = ""
 def aggregate_results(be_files):
     result = 0.0
     values = []
+    reqs = []
+    weighted_values = []
 
     if not be_files:
         return result
@@ -26,21 +28,30 @@ def aggregate_results(be_files):
     for be_file in be_files:
         with open(be_file) as f:
             data = json.load(f)
+            if not metric in data["metrics"]:
+                continue
             values.append(data["metrics"][metric][submetric])
+            reqs.append(data["metrics"]["http_reqs"]["count"])
+            weighted_values.append(values[-1]*reqs[-1])
 
     if submetric == "max":
         result = max(values)
     elif submetric == "min":
         result = min(values)
     else:
-        result = float(sum(values)/len(values))
+        result = float(sum(weighted_values)/sum(reqs))
 
     return result
 
 
 def get_files(test, duration):
     files = glob.glob(
-        "**/*{}-{}-{}-{}-summary.json".format(function, test, duration, case),recursive=True)
+        "**/*{}-{}-{}-{}-summary.json".format(function, test, duration, case), recursive=True)
+    if test.find("parallel") != -1:
+        files2 = glob.glob(
+            "**/*{}-{}-{}-{}-presummary.json".format(function, test, duration, case), recursive=True)
+        files += files2
+
     files = sorted(files)
     return files
 
@@ -52,8 +63,9 @@ def create_dat():
     for duration in durations:
         f.write("\n{}".format(duration))
         for test in tests:
-            test_files = get_files(test,duration)
+            test_files = get_files(test, duration)
             if not test_files:
+                f.write("\t0.0")
                 continue
             result = aggregate_results(test_files)
             f.write("\t{}".format(result/factor))
@@ -78,7 +90,7 @@ def create_gpi():
         for t in tests[1:]:
             f.write(", \\")
             f.write("\n'' using {}:xtic(1) title col".format(col))
-            col+=1
+            col += 1
     f.close()
 
 
@@ -114,7 +126,7 @@ if __name__ == "__main__":
                         help="select the case")
     parser.add_argument("--delete-in", nargs='?', default="",
                         help="delete gpi, dat, and png generated files")
-    parser.add_argument("-D","--delete-all", help="delete all gpi, dat, and png generated files in the current directory",
+    parser.add_argument("-D", "--delete-all", help="delete all gpi, dat, and png generated files in the current directory",
                         action="store_true")
     parser.add_argument("-s", "--seconds", help="display the time in seconds",
                         action="store_true")
