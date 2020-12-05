@@ -1,0 +1,61 @@
+@startuml
+
+hide footbox
+
+actor user as u
+participant benchmark as b
+participant local as l
+participant remote as r
+participant k6 as k6
+participant openwhisk as o
+participant influxdb as i
+participant kubernetes as k8s
+
+
+u -> b: run()
+activate b
+loop object storage instances (lrz remote)
+    b -> b: exportEnvVars()
+    b -> r: emptyBucket()
+    activate r
+    r --> b:
+    deactivate r
+
+    loop cases (single multiple ...)
+        b -> r: initBucket()
+        activate r
+        r --> b: 
+        deactivate r
+
+        loop durations (1m 5m ...)
+            b -> r: copyImages()
+            activate r
+            r --> l: images
+            deactivate r
+
+            b -> k6: run()
+            activate k6
+            loop duration x
+                k6 -> o: callAction()
+                activate o
+                o --> k6:
+                deactivate o
+                k6 -> i: pushData()
+                activate i
+                i --> k6:
+                deactivate i
+            end
+            k6 --> b: k6 summary duration x
+            deactivate k6
+            b --> u: k6 summary duration x
+
+            b -> k8s: deletePods()
+            activate k8s
+            k8s --> b: 
+            deactivate k8s
+        end
+    end
+end
+deactivate b
+
+@enduml
