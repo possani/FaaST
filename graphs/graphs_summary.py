@@ -73,24 +73,49 @@ def create_dat():
     f.close()
 
 
+def set_offset(t, n_tests):
+    if n_tests % 2 == 0:
+        return 1./(n_tests+5)
+    elif t == int(n_tests/2):
+        return 0.0
+    else:
+        return 1./(n_tests+2)
+
+
+def set_sign(t, n_tests):
+    if n_tests % 2 == 0 and t >= n_tests/2:
+        return "+"
+    elif n_tests % 2 != 0 and t >= int(n_tests/2):
+        return "+"
+    else:
+        return "-"
+
+
 def create_gpi():
+    n_tests = len(tests)
     f = open("{}.gpi".format(filename_prefix), "w")
     f.write("set terminal pngcairo size 960,540 enhanced font 'Verdana,10'")
     f.write("\nset title \"Comparison - {}\"".format(function))
     f.write("\nset output '{}.png'".format(filename_prefix))
     f.write("\nset style data histogram")
-    f.write("\nset style fill solid 1.0 border -1")
+    f.write("\nset style fill pattern 1.0 border -1")
     f.write("\nset ylabel '{} ({})'".format(metric.replace("_", "\_"), unity))
     f.write("\nset yrange [0:*]")
-    f.write("\nplot '{}.dat' using 2:xtic(1) title col".format(
-        filename_prefix))
-    n_tests = len(tests)
+    f.write("\nset grid")    
+    f.write("\nfn(v) = sprintf(\"%.1f\", v)")
+    f.write("\nplot for [COL=2:{}] '{}.dat' using COL:xticlabels(1) title columnheader".format(
+        n_tests+1, filename_prefix))
     if n_tests > 1:
-        col = 3
-        for t in tests[1:]:
+        col = 2
+        sign = "-"
+        for t in range(n_tests):
+            offset = set_offset(t, n_tests)
+            sign = set_sign(t, n_tests)
             f.write(", \\")
-            f.write("\n'' using {}:xtic(1) title col".format(col))
+            f.write(
+                "\n'' u ($0-1{}{}):{}:(fn(${})) with labels offset char 0,0.5 t ''".format(sign, offset, col, col))
             col += 1
+
     f.close()
 
 
