@@ -74,12 +74,22 @@ def create_dat():
 
 
 def set_offset(t, n_tests):
-    if n_tests % 2 == 0:
-        return 1./(n_tests+5)
-    elif t == int(n_tests/2):
+    
+    if t == int(n_tests/2):
         return 0.0
+
+    if n_tests % 2 == 0:
+        mid_left = int(n_tests/2)-1
+        factor = abs(mid_left-t)
+        space = 5
+        if t <= mid_left:
+            factor += 1
     else:
-        return 1./(n_tests+2)
+        mid = int(n_tests/2)
+        factor = abs(mid-t)
+        space = 2
+    
+    return (1./(n_tests+space))*factor
 
 
 def set_sign(t, n_tests):
