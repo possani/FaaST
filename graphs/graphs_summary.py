@@ -112,7 +112,10 @@ def create_gpi():
     f.write("\nset ylabel '{} ({})'".format(metric.replace("_", "\_"), unity))
     f.write("\nset yrange [0:*]")
     f.write("\nset grid")    
-    f.write("\nfn(v) = sprintf(\"%.1f\", v)")
+    if submetric == "count":
+        f.write("\nfn(v) = sprintf(\"%d\", v)")
+    else:
+        f.write("\nfn(v) = sprintf(\"%.1f\", v)")
     f.write("\nplot for [COL=2:{}] '{}.dat' using COL:xticlabels(1) title columnheader".format(
         n_tests+1, filename_prefix))
     if n_tests > 1:
