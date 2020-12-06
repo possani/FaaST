@@ -57,10 +57,10 @@
   command: /snap/bin/helm repo add bitnami https://charts.bitnami.com/bitnami
 
 - name: Install MinIO
-  command: /snap/bin/helm install minio bitnami/minio --set accessKey.password=minio-access-key --set secretKey.password=minio-secret-key --set service.type=NodePort --set service.nodePort=31003 --set defaultBuckets=openwhisk
+  command: /snap/bin/helm install minio bitnami/minio --set accessKey.password={{ minio_user }} --set secretKey.password={{ minio_pw }} --set service.type=NodePort --set service.nodePort=31003 --set defaultBuckets=openwhisk
 
 - name: Install MongoDB
-  command: /snap/bin/helm install mongodb bitnami/mongodb --set auth.username=mongodb --set auth.password=master-thesis --set auth.database=openwhisk
+  command: /snap/bin/helm install mongodb bitnami/mongodb --set auth.username={{ mongodb_pw }} --set auth.password={{ mongodb_pw }} --set auth.database=openwhisk
 
 - name: Copy daemon-rbac.yaml
   copy:
