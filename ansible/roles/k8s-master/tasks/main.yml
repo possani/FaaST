@@ -93,6 +93,7 @@
     dest: $PWD/.kube/config
     owner: "{{ user }}"
     group: "{{ user }}"
+    mode: 0600
   become: True
 
 - name: Fetch config
