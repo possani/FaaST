@@ -75,7 +75,7 @@ def create_dat():
 
 def set_offset(t, n_tests):
     
-    if t == int(n_tests/2):
+    if n_tests % 2 != 0 and t == int(n_tests/2):
         return 0.0
 
     if n_tests % 2 == 0:
