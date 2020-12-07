@@ -38,6 +38,8 @@ def aggregate_results(be_files):
         result = max(values)
     elif submetric == "min":
         result = min(values)
+    elif submetric == "count":
+        result = sum(reqs)/len(be_files)
     else:
         result = float(sum(weighted_values)/sum(reqs))
 
