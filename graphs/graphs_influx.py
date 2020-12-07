@@ -79,10 +79,11 @@ def get_line_title(title, duration, case):
 
 def create_gpi(duration, case):
     f = open("cumulative-{}-{}.gpi".format(duration, case), "w")
-    f.write("set terminal pngcairo size 960,540 enhanced font 'Verdana,10'")
-    f.write("\nset title 'Cumulative - {} - {}'".format(duration, case))
+    f.write("set terminal pngcairo size 960,540 enhanced font 'Verdana,12'")
     f.write("\nset output 'cumulative-{}-{}.png'".format(duration, case))
-    f.write("\nset ylabel 'Requests'")
+    f.write("\nset ylabel 'Cumulative Number of Requests'")
+    f.write("\nset xlabel 'Seconds'")
+    f.write("\nset grid")
     files = glob.glob("*-{}-{}.dat".format(duration, case))
     n_files = len(files)
     for i in range(n_files):
@@ -93,8 +94,8 @@ def create_gpi(duration, case):
             f.write("\n, ")
 
         new_title = get_line_title(files[i], duration, case)
-        f.write("'{}' using 1: 2 with lines title '{}'".format(
-            files[i], new_title))
+        f.write("'{}' using 1: 2 with lines lw 1.5 dt {} title '{}'".format(
+            files[i], i+2, new_title))
 
         if i != n_files-1:
             f.write(" \\")
@@ -106,7 +107,7 @@ def create_p90_gpi(duration):
     n_files = len(files)
     for i in range(n_files):
         f = open("{}.gpi".format(files[i][:-4]), "w")
-        f.write("set terminal pngcairo size 960,540 enhanced font 'Verdana,10'")
+        f.write("set terminal pngcairo size 960,540 enhanced font 'Verdana,12'")
         f.write(
             "\nset title 'P(90) - http\_request\_duration (ms) - {}'".format(files[i], duration))
         f.write("\nset output '{}.png'".format(files[i][:-4]))
