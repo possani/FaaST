@@ -1,4 +1,4 @@
-# Master Thesis
+# FaaST
 
 ## Requirements
 
