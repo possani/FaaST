@@ -1,11 +1,13 @@
 @startuml
-
+scale 2400*1600
 hide footbox
 
 actor user as u
-participant faast as f
-participant local as l
-participant remote as r
+participant FaaST as f
+participant DataAwareness as da
+participant DataMigration as dm
+participant localDB as l
+participant remoteDB as r
 
 u -> f: function request
 activate f
@@ -13,10 +15,15 @@ activate f
 f -> f: checkPayload()
 activate f
 loop over every item
-    f -> l: exists()
+    f -> da: exists()
+    activate da
+    da -> l: exists()
     activate l
-    f <-- l: bool
+    da <-- l: bool
     deactivate l
+
+    f <-- da: bool
+    deactivate da
 end
 f <-- f: missingItems
 deactivate f
@@ -27,19 +34,30 @@ alt not missing items
     f <-- l:
     deactivate l
     u <-- f: function response
-else 
+else missing items
     f ->> r: callFunction()
     activate r
     f <<-- r:
     deactivate r
+    u <<-- f: function response
     f -> f: copyItems()
     activate f
-    u <<-- f: function response
+    
     loop over every item
-        f -> r: copy(item)
+        f -> dm: copy(item)
+        activate dm
+        dm -> r: copy(item)
         activate r
         l <-- r: item
         deactivate r
+
+        da <-- dm: update()
+
+        activate da
+        da -> f: copied
+        deactivate da
+
+        deactivate dm
     end
 end
 
